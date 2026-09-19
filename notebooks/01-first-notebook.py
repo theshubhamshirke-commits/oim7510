@@ -159,6 +159,12 @@ def _(freight_charges):
     return
 
 
+@app.cell
+def _(freight_charges):
+    total = sum(freight_charges)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -187,6 +193,18 @@ def _(mo):
     3. Error
     4. Yes, it would run.
     """)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    sorted(freight_charges, reverse=True)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    sorted(freight_charges)
     return
 
 
@@ -296,6 +314,20 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    1. error
+    2. Since this is a slice, I am expecting the first three values to show up, which would be [999.99, 22.25, 25.00]
+    3. I do not see anything in common.
+    4. Here, since, we have only one thing inside the category, the output will be 1.
+    5. Yes. It would.
+    6. Yes, neither one is an error because both are separate equations, which non-interferring outcomes.
+    7. First, sorted function arranged the values in the freight_charges in ascending order, and then, reverse=True reversed the list, and made it into a descending order list.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     # ▶️ What Type Is It
 
     What kind of value is each thing in these two lists?
@@ -335,6 +367,28 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    I initially thought the first line would add the numbers, and the second line would give me an error.
+    """)
+    return
+
+
+@app.cell
+def _():
+    "16.75" + "22.25"
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    16.75 + "22.25"
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     # ▶️ What Came Back
 
     The first line gives `'16.7522.25'`. Both values are text, so `+` joins them end to end.
@@ -363,6 +417,30 @@ def _(mo):
 
     📖 Handbook: Python §3 Expressions and operators
     """)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[0] > 20
+    return
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[-1] == max(freight_charges)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    type(freight_charges[0] > 20)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    type(freight_charges[-1] == max(freight_charges))
     return
 
 
@@ -401,6 +479,12 @@ def _(mo):
 
     Your sentence should show `$120.50` and `$24.10`.
     """)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    print(f"Total freight is ${sum(freight_charges):.2f} and the average charge is ${ sum(freight_charges) / len(freight_charges):.2f}.")
     return
 
 
@@ -454,6 +538,35 @@ def _(mo):
     return
 
 
+@app.cell
+def _():
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Change < to <=
+    """)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    under_25 = []
+    for charge_amount in freight_charges:
+        if charge_amount <= 25:
+            under_25.append(charge_amount)
+    under_25
+    return (under_25,)
+
+
+@app.cell
+def _(under_25):
+    print(f"There are {len(under_25)} charges under 25, totaling ${sum(under_25):.2f}.")
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -468,6 +581,22 @@ def _(mo):
     Delete the cell once you have read it.
 
     📖 Handbook: Python §10 Reading a traceback
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    freight_charges[5]
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    IndexError achieved.
     """)
     return
 
@@ -495,11 +624,62 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    import pandsa
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    open("sales.csv")
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    new_charges = [16.75, 22.25
+    """)
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     # 🙋 A Line That Does Not Break
 
     Write down what this gives, then run it in a cell of your own.
 
     `max(["9.50", "16.75", "22.25"])`
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    I think the output would be the maximum value out of those 3.
+    """)
+    return
+
+
+@app.cell
+def _():
+    max(["9.50", "16.75", "22.25"])
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Surprising! :)
     """)
     return
 
@@ -553,6 +733,16 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    1. Python points to line 3.
+    2. freight_charges has unsupported operand type(s). One is float, another is string.
+    3. The fix is to convert the string value to a float before performing the arithmetic operation. Or coding it in such a way that the system will ignore the string value.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     # ▶️ The List as a Bar Chart
 
     > **Advanced.** Nothing later depends on this.
@@ -576,6 +766,18 @@ def _(mo):
 
     The square brackets inside `_ax.bar(...)` are a **list comprehension**, which **iterates** over `orders` and turns each number into text.
     """)
+    return
+
+
+@app.cell
+def _(freight_charges, orders):
+    import matplotlib.pyplot as plt
+
+    _fig, _ax = plt.subplots(figsize=(6, 2.6))
+    _ax.bar([str(_o) for _o in orders], freight_charges)
+    _ax.set_ylabel("freight")
+    _fig
+
     return
 
 
