@@ -1023,6 +1023,25 @@ def _(mo):
         _where = f"could not write into {_data_dir}: {_error}"
 
     _where
+    return (portfolio_csv,)
+
+
+@app.cell
+def _(portfolio_csv):
+    with open(portfolio_csv) as file:
+        lines = file.readlines()
+
+    print("name     shares     price")
+    file_portfolio_cost = 0
+    for line in lines[1:]:
+        parts = line.strip().split(",")
+        name = parts[0]
+        shares = int(parts[1])
+        share_price = float(parts[2])
+        file_portfolio_cost = file_portfolio_cost + shares * share_price
+        print(f"{name:8} {shares:6} {share_price:9.2f}")
+
+    print(f"Total cost: ${file_portfolio_cost:.2f}")
     return
 
 

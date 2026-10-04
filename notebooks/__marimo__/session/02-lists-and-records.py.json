@@ -937,13 +937,20 @@
     },
     {
       "id": "kfHG",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "959c3e581df8f58f3ac651ea6b049ebb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">portfolio_cost = 0 \u2014 starts a running total at zero, same pattern as total and total_freight before it.\nfor holding in portfolio: \u2014 loops through each of the 6 records in your portfolio list, one at a time.\nholding[\"Shares\"] * holding[\"Price\"] \u2014 reads two fields out of the current record by name, and multiplies them: number of shares times price per share gives the cost of that one holding.\nportfolio_cost = portfolio_cost + ... \u2014 adds that holding's cost to the running total.\nAfter the loop finishes, portfolio_cost holds the total cost of buying every holding.</span></span>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "iMII",
-      "code_hash": "b69d88631c9f3d423437ab1f49aea440",
+      "code_hash": "ea2aad5b31c6b95059e61754e89a6fe4",
       "outputs": [
         {
           "type": "data",
@@ -992,6 +999,26 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "RsKi",
+      "code_hash": "85072cc55a5631e0ce30fb61dafc9dc3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "name     shares     price\nAAPL        100    173.93\nMSFT         50    319.53\nGOOG         80    131.36\nAMZN        200    129.33\nNVDA         20    410.17\nTSLA        150    255.70\nTotal cost: $116302.70\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "LJZf",
