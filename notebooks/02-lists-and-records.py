@@ -127,6 +127,11 @@ def _(mo):
 
 @app.cell
 def _():
+    return
+
+
+@app.cell
+def _():
     cost = float(input("Enter the cost: "))
     tax = float(input("Enter the tax: "))
     return cost, tax
@@ -214,6 +219,16 @@ def _(mo):
 def _():
     charges = [16.75, 22.25, 25.00, 20.25, 36.25]
     charges
+    return (charges,)
+
+
+@app.cell
+def _(charges):
+    total = 0
+    for charge in charges:
+        if charge < 25:
+            total = total + charge
+    total
     return
 
 
@@ -257,13 +272,15 @@ def _(mo):
     it, write under the letter, and press `Ctrl+Enter`. Code still goes in cells of your
     own, added with the **+** button.
 
-    **A ·**
+    **A ·** When a score satisfies two of these tests at once, the first one it meets, going top to bottom, decides what gets printed — Python checks each condition in order and stops at the first one that is True, ignoring any later ones that would also be true.
 
-    **C ·**
+    **C ·** .append() always adds exactly one item, no matter what you hand it — even a whole list counts as just one item, which is why .extend() is needed instead, since it adds each item from another list separately.
 
-    **D ·**
+    **D ·** sorted(tickers) is a function. You give it a list as an argument, and it builds and returns a brand new list — the original tickers is untouched.
+    tickers.sort() is a method — it belongs to the list itself (notice the dot: tickers.sort(), not sort(tickers)). Methods like this one that change the list in place (rearranging the existing tickers list itself) follow a Python convention: they return None, because their job is to make a change, not to hand you a new value. Since print() just shows you whatever .sort() handed back, and .sort() handed back nothing, you see None.
+    So the surprise isn't that tickers.sort() failed — it worked, it just doesn't return the sorted list the way sorted() does. If you ran tickers by itself in a later cell, you'd see it's now sorted, even though print(tickers.sort()) showed None.
 
-    **E ·**
+    **E ·** You'd want two names pointing to the same list on purpose when you want a change made through one name — like adding an item — to automatically show up wherever the other name is used, such as a shared shopping cart that both a "current order" and a "checkout summary" refer to.
     """)
     return
 
@@ -292,7 +309,7 @@ def _(mo):
 
 @app.cell
 def _():
-    score = 77
+    score = 95
     if score >= 95:
         print("A")
     elif score >=90:
@@ -303,7 +320,10 @@ def _():
 
 
 @app.cell(hide_code=True)
-def _():
+def _(mo):
+    mo.md(r"""
+    When a score satisfies two of these tests at once, the first one it meets, going top to bottom, decides what gets printed — Python checks each condition in order and stops at the first one that is True, ignoring any later ones that would also be true.
+    """)
     return
 
 
@@ -348,6 +368,34 @@ def _():
     print(f"packages shipped = {shipped}")
     print(f"packages pending = {pending}")
     print(f"packages cancelled = {cancelled}")
+
+
+    percentage_orders_shipped = print(f"{(shipped / len(statuses)) * 100}%")
+    return
+
+
+@app.cell
+def _():
+    statusess = ["shipped", "pending", "shipped", "cancelled", "shipped"]
+    statusess
+
+    _shipped = 0
+    not_shipped = 0
+
+
+
+    for statuss in statusess:
+        if statuss == "shipped":
+            _shipped += 1
+        elif statuss != "shipped":
+            not_shipped += 1
+
+
+    print(f"packages shipped = {_shipped}")
+    print(f"packages not_pending = {not_shipped}")
+
+    percent_orders_shipped = (_shipped / len(statusess)) * 100
+    print(f"percent of orders shipped = {percent_orders_shipped}%")
     return
 
 
@@ -375,8 +423,23 @@ def _(mo):
 @app.cell
 def _():
     order_lines = ["notebook", "pen"]
-    order_lines.append(["stapler", "tape"])
+    order_lines.extend(["stapler", "tape"])
     len(order_lines)
+    print(order_lines[2])
+    return (order_lines,)
+
+
+@app.cell
+def _(order_lines):
+    print(order_lines)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(rf"""
+    .append() always adds exactly one item, no matter what you hand it — even a whole list counts as just one item, which is why .extend() is needed instead, since it adds each item from another list separately.
+    """)
     return
 
 
@@ -405,8 +468,25 @@ def _(mo):
 def _():
     tickers = ["NVDA", "AAPL", "MSFT"]
     print(sorted(tickers))
+    print(tickers)
     print(tickers.sort())
-    tickers
+    print(tickers)
+    return (tickers,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    sorted(tickers) is a function. You give it a list as an argument, and it builds and returns a brand new list — the original tickers is untouched.
+    tickers.sort() is a method — it belongs to the list itself (notice the dot: tickers.sort(), not sort(tickers)). Methods like this one that change the list in place (rearranging the existing tickers list itself) follow a Python convention: they return None, because their job is to make a change, not to hand you a new value. Since print() just shows you whatever .sort() handed back, and .sort() handed back nothing, you see None.
+    So the surprise isn't that tickers.sort() failed — it worked, it just doesn't return the sorted list the way sorted() does. If you ran tickers by itself in a later cell, you'd see it's now sorted, even though print(tickers.sort()) showed None.
+    """)
+    return
+
+
+@app.cell
+def _(tickers):
+    sorted(tickers, reverse=True)
     return
 
 
@@ -443,6 +523,44 @@ def _():
     sale_prices = prices
     sale_prices.append(4.99)
     prices
+    return prices, sale_prices
+
+
+@app.cell
+def _(prices, sale_prices):
+    prices is sale_prices
+    return
+
+
+@app.cell
+def _():
+    pricess = [12.50, 8.00, 19.99]
+    sale_pricess = pricess[:]
+    sale_pricess.append(4.99)
+    pricess
+    return pricess, sale_pricess
+
+
+@app.cell
+def _(pricess, sale_pricess):
+    pricess is sale_pricess
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    You'd want two names pointing to the same list on purpose when you want a change made through one name — like adding an item — to automatically show up wherever the other name is used, such as a shared shopping cart that both a "current order" and a "checkout summary" refer to.
+    """)
+    return
+
+
+@app.cell
+def _(sale_pricess):
+    discounted_sale_pricess = []
+    for price in sale_pricess:
+        discounted_sale_pricess.append(round(price * 0.9, 2))
+    discounted_sale_pricess
     return
 
 
@@ -471,6 +589,34 @@ def _(mo):
 def _():
     print("100" + "50")
     print(100 + 50)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    "100" + "50" joined the two pieces of text end to end to give "10050", which is reasonable for text because + on strings means "stick them together" (concatenation), not "add their numeric values."
+    """)
+    return
+
+
+@app.cell
+def _():
+    print(int("100") + int("50"))
+    return
+
+
+@app.cell
+def _():
+    int("100.5")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    the last line tells you int() cannot turn the text "100.5" into a whole number, because "100.5" isn't a whole number — it has a decimal point. int() only understands text that looks like a plain whole number (like "100"), not one with a fraction in it.
+    """)
     return
 
 
@@ -565,7 +711,21 @@ def _(first_order):
 
 @app.cell
 def _(first_order):
-    first_order["freight"]
+    first_order["Freight"]
+    return
+
+
+@app.cell
+def _(first_order):
+    first_order[0]
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    first_order["freight"] fails because of spelling correction.
+    """)
     return
 
 
@@ -664,7 +824,25 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(orders):
+    total_freight = 0
+    for order in orders:
+        total_freight = total_freight + order["Freight"]
+    print(total_freight)
+
+
+    no_shipped_date = 0
+    for order in orders:
+        if order["ShippedDate"] is None:
+            no_shipped_date = no_shipped_date + 1
+    print(no_shipped_date)
+
+    largest_freight_order = orders[0]
+    for ord_rec in orders:
+        if ord_rec["Freight"] > largest_freight_order["Freight"]:
+            largest_freight_order = ord_rec
+    print(largest_freight_order)
+
     return
 
 
@@ -677,7 +855,7 @@ def _(mo):
     in words somebody outside this course would understand. Name what a row *is*. Listing
     the columns is not an answer.
 
-    Start it with *One row is...*
+    ## **One row is one order a customer placed — a single purchase, with its own shipping and freight details.**
 
     Then check it: if a row were what you just wrote, **how many rows would this table
     have?** Does that match 30?
@@ -685,10 +863,16 @@ def _(mo):
     return
 
 
+@app.cell
+def _(orders):
+    len(orders)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *One row is ...*
+    *One row is one order a customer placed — a single purchase, with its own shipping and freight details.*
 
     *(Replace this line with your own sentence. If this cell shows you code instead of
     text, use the cell menu to turn it into a markdown cell.)*
@@ -729,6 +913,66 @@ def _():
         {"Symbol": "TSLA", "Shares": 150, "Price": 255.70},
     ]
     portfolio
+    return (portfolio,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    So, in my plain words: In order to determine the cost of the portfolio, we will have to start my multiplying the numbers of shares for a particular company by the price per share for that company, and then sum up the results for all the companies in the portfolio.
+    """)
+    return
+
+
+@app.cell
+def _(portfolio):
+    portfolio_cost = 0
+    for holding in portfolio:
+        portfolio_cost = portfolio_cost + holding["Shares"] * holding["Price"]
+    portfolio_cost
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    portfolio_cost = 0 — starts a running total at zero, same pattern as total and total_freight before it.
+    for holding in portfolio: — loops through each of the 6 records in your portfolio list, one at a time.
+    holding["Shares"] * holding["Price"] — reads two fields out of the current record by name, and multiplies them: number of shares times price per share gives the cost of that one holding.
+    portfolio_cost = portfolio_cost + ... — adds that holding's cost to the running total.
+    After the loop finishes, portfolio_cost holds the total cost of buying every holding.
+    """)
+    return
+
+
+@app.cell
+def _():
+    ## SIMILAR PROBLEM ##
+
+
+    inventory = [
+        {"Title": "Python Basics", "Copies": 12, "Price": 24.99},
+        {"Title": "Data Stories", "Copies": 8, "Price": 32.50},
+        {"Title": "The Quiet Market", "Copies": 15, "Price": 18.75},
+        {"Title": "Numbers at Night", "Copies": 5, "Price": 45.00},
+    ]
+    inventory
+
+
+    ## Your task
+
+    ##Run the cell above to see the four records.
+    ## Write your own cell, in your own words first if you like, that computes the total value of the inventory — multiplying Copies by Price for each title, and adding it all up.
+    ## Check yourself: the total should come to $1066.13. ##
+    return (inventory,)
+
+
+@app.cell
+def _(inventory):
+    inventory_value = 0
+    for book in inventory:
+        inventory_value = inventory_value + book["Copies"] * book["Price"]
+    inventory_value
     return
 
 

@@ -32,6 +32,19 @@
       "console": []
     },
     {
+      "id": "jMDs",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "vblA",
       "code_hash": "6f7654bb3c1b63cb732da46522b80d73",
       "outputs": [
@@ -46,7 +59,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Enter the cost:  15\nEnter the tax:  3\n",
+          "text": "Enter the cost:  1\nEnter the tax:  1\n",
           "mimetype": "text/plain"
         }
       ]
@@ -79,7 +92,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "The total cost is $ 18.00.\n",
+          "text": "The total cost is $ 2.00.\n",
           "mimetype": "text/plain"
         }
       ]
@@ -137,6 +150,19 @@
       "console": []
     },
     {
+      "id": "NKtk",
+      "code_hash": "c69aabcc95556e47720f514ac485e34c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>59.25</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "RGSE",
       "code_hash": "8b92c83e94bc2769763f79661e30f6eb",
       "outputs": [
@@ -151,12 +177,12 @@
     },
     {
       "id": "Kclp",
-      "code_hash": "19fcbdf4ffd48826b1d19dcc06b0483d",
+      "code_hash": "665ff7ea712e30b3ac3d099747d0548d",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"your-written-answers\">Your written answers</h3>\n<span class=\"paragraph\">Four of the drills below ask for a sentence. This cell is where they go. Click into\nit, write under the letter, and press <code>Ctrl+Enter</code>. Code still goes in cells of your\nown, added with the <strong>+</strong> button.</span>\n<span class=\"paragraph\"><strong>A \u00b7</strong></span>\n<span class=\"paragraph\"><strong>C \u00b7</strong></span>\n<span class=\"paragraph\"><strong>D \u00b7</strong></span>\n<span class=\"paragraph\"><strong>E \u00b7</strong></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"your-written-answers\">Your written answers</h3>\n<span class=\"paragraph\">Four of the drills below ask for a sentence. This cell is where they go. Click into\nit, write under the letter, and press <code>Ctrl+Enter</code>. Code still goes in cells of your\nown, added with the <strong>+</strong> button.</span>\n<span class=\"paragraph\"><strong>A \u00b7</strong> When a score satisfies two of these tests at once, the first one it meets, going top to bottom, decides what gets printed \u2014 Python checks each condition in order and stops at the first one that is True, ignoring any later ones that would also be true.</span>\n<span class=\"paragraph\"><strong>C \u00b7</strong> .append() always adds exactly one item, no matter what you hand it \u2014 even a whole list counts as just one item, which is why .extend() is needed instead, since it adds each item from another list separately.</span>\n<span class=\"paragraph\"><strong>D \u00b7</strong> sorted(tickers) is a function. You give it a list as an argument, and it builds and returns a brand new list \u2014 the original tickers is untouched.\ntickers.sort() is a method \u2014 it belongs to the list itself (notice the dot: tickers.sort(), not sort(tickers)). Methods like this one that change the list in place (rearranging the existing tickers list itself) follow a Python convention: they return None, because their job is to make a change, not to hand you a new value. Since print() just shows you whatever .sort() handed back, and .sort() handed back nothing, you see None.\nSo the surprise isn't that tickers.sort() failed \u2014 it worked, it just doesn't return the sorted list the way sorted() does. If you ran tickers by itself in a later cell, you'd see it's now sorted, even though print(tickers.sort()) showed None.</span>\n<span class=\"paragraph\"><strong>E \u00b7</strong> You'd want two names pointing to the same list on purpose when you want a change made through one name \u2014 like adding an item \u2014 to automatically show up wherever the other name is used, such as a shared shopping cart that both a \"current order\" and a \"checkout summary\" refer to.</span></span>"
           }
         }
       ],
@@ -177,7 +203,7 @@
     },
     {
       "id": "Hstk",
-      "code_hash": "f0a2c618c329a3297b150f21a8bf1775",
+      "code_hash": "89c7171cb0c708d5619c879310735b2e",
       "outputs": [
         {
           "type": "data",
@@ -190,19 +216,19 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "B\n",
+          "text": "A\n",
           "mimetype": "text/plain"
         }
       ]
     },
     {
       "id": "nWHF",
-      "code_hash": null,
+      "code_hash": "bc766716a76737f649814cb8fd62cac4",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">When a score satisfies two of these tests at once, the first one it meets, going top to bottom, decides what gets printed \u2014 Python checks each condition in order and stops at the first one that is True, ignoring any later ones that would also be true.</span></span>"
           }
         }
       ],
@@ -223,7 +249,7 @@
     },
     {
       "id": "ZHCJ",
-      "code_hash": "f0112ebc3b6acc0a450555d78bf82d52",
+      "code_hash": "33b87376169b998cbbfbe4f7f443d3f5",
       "outputs": [
         {
           "type": "data",
@@ -236,7 +262,27 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "packages shipped = 3\npackages pending = 1\npackages cancelled = 1\n",
+          "text": "packages shipped = 3\npackages pending = 1\npackages cancelled = 1\n60.0%\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "xnNZ",
+      "code_hash": "93c9cdca6b732846ae7e193d90fcd4d7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "packages shipped = 3\npackages not_pending = 2\npercent of orders shipped = 60.0%\n",
           "mimetype": "text/plain"
         }
       ]
@@ -256,12 +302,52 @@
     },
     {
       "id": "qnkX",
-      "code_hash": "d7f1e30a273b00c372f58d2c77801a99",
+      "code_hash": "e7590ed7d0722f62178cad0f6d201183",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<pre class='text-xs'>3</pre>"
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "stapler\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "rlPx",
+      "code_hash": "e21dc467ddf40e199c0b58160d6a1533",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "['notebook', 'pen', 'stapler', 'tape']\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "bWPb",
+      "code_hash": "81c74b2716df025cd76d30f621c90080",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">.append() always adds exactly one item, no matter what you hand it \u2014 even a whole list counts as just one item, which is why .extend() is needed instead, since it adds each item from another list separately.</span></span>"
           }
         }
       ],
@@ -282,12 +368,12 @@
     },
     {
       "id": "Vxnm",
-      "code_hash": "01a8d5269858a498482cb962fade9d87",
+      "code_hash": "99cd874571154adef1b5ed38e86426d1",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "application/json": "[\"AAPL\", \"MSFT\", \"NVDA\"]"
+            "text/plain": ""
           }
         }
       ],
@@ -295,10 +381,36 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "['AAPL', 'MSFT', 'NVDA']\nNone\n",
+          "text": "['AAPL', 'MSFT', 'NVDA']\n['NVDA', 'AAPL', 'MSFT']\nNone\n['AAPL', 'MSFT', 'NVDA']\n",
           "mimetype": "text/plain"
         }
       ]
+    },
+    {
+      "id": "CRoz",
+      "code_hash": "af9a105a88ff5534e8a1661a47d95496",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">sorted(tickers) is a function. You give it a list as an argument, and it builds and returns a brand new list \u2014 the original tickers is untouched.\ntickers.sort() is a method \u2014 it belongs to the list itself (notice the dot: tickers.sort(), not sort(tickers)). Methods like this one that change the list in place (rearranging the existing tickers list itself) follow a Python convention: they return None, because their job is to make a change, not to hand you a new value. Since print() just shows you whatever .sort() handed back, and .sort() handed back nothing, you see None.\nSo the surprise isn't that tickers.sort() failed \u2014 it worked, it just doesn't return the sorted list the way sorted() does. If you ran tickers by itself in a later cell, you'd see it's now sorted, even though print(tickers.sort()) showed None.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HJBW",
+      "code_hash": "976ab415ada8b578bfa5f54bec60eec0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"NVDA\", \"MSFT\", \"AAPL\"]"
+          }
+        }
+      ],
+      "console": []
     },
     {
       "id": "DnEU",
@@ -321,6 +433,71 @@
           "type": "data",
           "data": {
             "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\", \"text/plain+float:4.99\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tzFT",
+      "code_hash": "da56d086dd6116a545e315bc3806642d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>True</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "byHa",
+      "code_hash": "e6d0c5d4ac81278389231aecc70c25fb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "siSI",
+      "code_hash": "0c5ace6299b54820b2541ea5a208bcbb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>False</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jQIP",
+      "code_hash": "e2b03aeeba65e1889384b5c78de0db69",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">You'd want two names pointing to the same list on purpose when you want a change made through one name \u2014 like adding an item \u2014 to automatically show up wherever the other name is used, such as a shared shopping cart that both a \"current order\" and a \"checkout summary\" refer to.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xSKw",
+      "code_hash": "711dd9a38ac980f87231b91b3a0a6775",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:11.25\", \"text/plain+float:7.2\", \"text/plain+float:17.99\", \"text/plain+float:4.49\"]"
           }
         }
       ],
@@ -358,6 +535,72 @@
           "mimetype": "text/plain"
         }
       ]
+    },
+    {
+      "id": "EXOo",
+      "code_hash": "0269dc29835ef818b16a5be6cbd5483e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\"100\" + \"50\" joined the two pieces of text end to end to give \"10050\", which is reasonable for text because + on strings means \"stick them together\" (concatenation), not \"add their numeric values.\"</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qoDO",
+      "code_hash": "ca9b34ba04cb0c82764164612079017e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "150\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "JaJi",
+      "code_hash": "428866640000dc925c086c6f264cb8b5",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "invalid literal for int() with base 10: '100.5'",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_23636\\__marimo__cell_JaJi_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"nb\">int</span><span class=\"p\">(</span><span class=\"s2\">\"100.5\"</span><span class=\"p\">)</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~^^^^^^^^^</span>\n<span class=\"gr\">ValueError</span>: <span class=\"n\">invalid literal for int() with base 10: '100.5'</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "SotF",
+      "code_hash": "a6bd0525483fc60e6e85c6522459d68e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">the last line tells you int() cannot turn the text \"100.5\" into a whole number, because \"100.5\" isn't a whole number \u2014 it has a decimal point. int() only understands text that looks like a plain whole number (like \"100\"), not one with a fraction in it.</span></span>"
+          }
+        }
+      ],
+      "console": []
     },
     {
       "id": "ZBYS",
@@ -425,7 +668,7 @@
       "console": []
     },
     {
-      "id": "AfYM",
+      "id": "pHFh",
       "code_hash": "b4c4fb6a4f42fd5d98b6b18739a03241",
       "outputs": [
         {
@@ -438,21 +681,8 @@
       "console": []
     },
     {
-      "id": "Mznl",
-      "code_hash": "2bfc2c56d92d1252dcea892b8285d87a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>16.75</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "kUhb",
-      "code_hash": "2c0ebdac371fde0a720bc52f0ec33995",
+      "id": "NCOB",
+      "code_hash": "1750e9e558d7f3dcf0998e55862d3f2b",
       "outputs": [
         {
           "type": "error",
@@ -465,13 +695,26 @@
         {
           "type": "stream",
           "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_17700\\__marimo__cell_kUhb_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">first_order</span><span class=\"p\">[</span><span class=\"s2\">\"freight\"</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~^^^^^^^^^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">'freight'</span>\n</pre></div>\n</span>",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_23636\\__marimo__cell_NCOB_.py\"</span>, line <span class=\"m\">2</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">first_order</span><span class=\"p\">[</span><span class=\"s2\">\"freight\"</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~^^^^^^^^^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">'freight'</span>\n</pre></div>\n</span>",
           "mimetype": "application/vnd.marimo+traceback"
         }
       ]
     },
     {
-      "id": "wHvw",
+      "id": "aqbW",
+      "code_hash": "2bfc2c56d92d1252dcea892b8285d87a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>16.75</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KyQj",
       "code_hash": "8c9992a7ee25d4caccd1bebf692690ee",
       "outputs": [
         {
@@ -485,13 +728,39 @@
         {
           "type": "stream",
           "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_17700\\__marimo__cell_wHvw_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">first_order</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">0</span>\n</pre></div>\n</span>",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_23636\\__marimo__cell_KyQj_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">first_order</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">0</span>\n</pre></div>\n</span>",
           "mimetype": "application/vnd.marimo+traceback"
         }
       ]
     },
     {
-      "id": "NCOB",
+      "id": "fiBA",
+      "code_hash": "d597151141620fbee5ac73f9a2b6df22",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">first_order[\"freight\"] fails because of spelling correction.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TXez",
       "code_hash": "0ed1e9cc210d89a44e791cc8866fac27",
       "outputs": [
         {
@@ -504,7 +773,7 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "dNNg",
       "code_hash": "af619d6cdbdc5ee9a3c5a66144027f0f",
       "outputs": [
         {
@@ -517,7 +786,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "yCnT",
       "code_hash": "215e85cc1d798eb376e760e2e6876215",
       "outputs": [
         {
@@ -530,7 +799,7 @@
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "wlCL",
       "code_hash": "56ae7cf264083e0936598623c21b783a",
       "outputs": [
         {
@@ -543,7 +812,7 @@
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "kqZH",
       "code_hash": "362a604c80a321d2e4d5c0c5e80b4671",
       "outputs": [
         {
@@ -556,39 +825,66 @@
       "console": []
     },
     {
-      "id": "OMIo",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "yCnT",
-      "code_hash": "276567fb8e96c73de1480e5e345ad8c1",
+      "id": "wAgl",
+      "code_hash": "910ea9c7a206e43775e080a8759a29ce",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-one-row-means\">\u270f\ufe0f What One Row Means</h2>\n<span class=\"paragraph\"><strong>In the markdown cell below</strong>, replace the placeholder line with your own sentence,\nin words somebody outside this course would understand. Name what a row <em>is</em>. Listing\nthe columns is not an answer.</span>\n<span class=\"paragraph\">Start it with <em>One row is...</em></span>\n<span class=\"paragraph\">Then check it: if a row were what you just wrote, <strong>how many rows would this table\nhave?</strong> Does that match 30?</span></span>"
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "827.0\n3\n{'OrderID': 10263, 'CustomerID': 'ERNSH', 'ShipCountry': 'Austria', 'ShipCity': 'Graz', 'OrderDate': '2016-07-23', 'ShippedDate': '2016-07-31', 'Freight': 56.0}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "rEll",
+      "code_hash": "1db6fb36a777f99e76a4a3b0b6f1325b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-one-row-means\">\u270f\ufe0f What One Row Means</h2>\n<span class=\"paragraph\"><strong>In the markdown cell below</strong>, replace the placeholder line with your own sentence,\nin words somebody outside this course would understand. Name what a row <em>is</em>. Listing\nthe columns is not an answer.</span>\n<h2 id=\"one-row-is-one-order-a-customer-placed-a-single-purchase-with-its-own-shipping-and-freight-details\"><strong>One row is one order a customer placed \u2014 a single purchase, with its own shipping and freight details.</strong></h2>\n<span class=\"paragraph\">Then check it: if a row were what you just wrote, <strong>how many rows would this table\nhave?</strong> Does that match 30?</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "wlCL",
-      "code_hash": "1a951e63750454427afca99d94d5c044",
+      "id": "xqEF",
+      "code_hash": "dcdb5686d152ccc2cbdedf160299d54e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>One row is ...</em></span>\n<span class=\"paragraph\"><em>(Replace this line with your own sentence. If this cell shows you code instead of\ntext, use the cell menu to turn it into a markdown cell.)</em></span></span>"
+            "text/html": "<pre class='text-xs'>30</pre>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "dGlV",
+      "code_hash": "98e4b9cdfc6ca91909eea05761f082a6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>One row is one order a customer placed \u2014 a single purchase, with its own shipping and freight details.</em></span>\n<span class=\"paragraph\"><em>(Replace this line with your own sentence. If this cell shows you code instead of\ntext, use the cell menu to turn it into a markdown cell.)</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SdmI",
       "code_hash": "33f3e6ba51f144e4af890984773e0cfc",
       "outputs": [
         {
@@ -601,7 +897,7 @@
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "lgWD",
       "code_hash": "ee04f5dc9b3e474ede5f3f883c3aa33e",
       "outputs": [
         {
@@ -614,7 +910,65 @@
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "MslE",
+      "code_hash": "b994f778929db5420c7a123f68bf822f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">So, in my plain words: In order to determine the cost of the portfolio, we will have to start my multiplying the numbers of shares for a particular company by the price per share for that company, and then sum up the results for all the companies in the portfolio.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lLwz",
+      "code_hash": "974f4577752d3e9d2de56ae4e34287e9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>116302.7</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kfHG",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iMII",
+      "code_hash": "b69d88631c9f3d423437ab1f49aea440",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"Title\": \"Python Basics\", \"Copies\": 12, \"Price\": \"text/plain+float:24.99\"}, {\"Title\": \"Data Stories\", \"Copies\": 8, \"Price\": \"text/plain+float:32.5\"}, {\"Title\": \"The Quiet Market\", \"Copies\": 15, \"Price\": \"text/plain+float:18.75\"}, {\"Title\": \"Numbers at Night\", \"Copies\": 5, \"Price\": \"text/plain+float:45.0\"}]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "belR",
+      "code_hash": "1bfec084314f8d841ac1e0e1fb0e68e5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>1066.13</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yOPj",
       "code_hash": "d7c2e174de0e810f192e0ebcd5f38e05",
       "outputs": [
         {
@@ -627,7 +981,7 @@
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "fwwy",
       "code_hash": "84a6141f626588f299934afdd739184b",
       "outputs": [
         {
@@ -640,7 +994,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "LJZf",
       "code_hash": "d8cb88a4a782aa1a3abecba9ae2a81aa",
       "outputs": [
         {
@@ -653,7 +1007,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "urSm",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
       "outputs": [
         {
