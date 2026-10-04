@@ -155,7 +155,7 @@ def _(mo):
 
     Several questions below ask for a sentence. This cell is where they go. Click into it, write under the letter, and press `Ctrl+Enter` (Windows) or `Cmd+Enter` (macOS).
 
-    **B ·**
+    **B ·** France, Germany, Brazil, and USA are tied for the most orders, each with 4.
 
     **C ·**
 
@@ -192,6 +192,46 @@ def _():
     return (closing_prices,)
 
 
+@app.cell
+def _(closing_prices):
+    closing_prices["AAPL"]
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices["TSLA"]
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices.get("TSLA")
+    return
+
+
+@app.cell
+def _(closing_prices):
+    above_200 = []
+    for ticker, price in closing_prices.items():
+        if price > 200:
+            above_200.append(ticker)
+    above_200
+    return
+
+
+@app.cell
+def _(closing_prices):
+    highest_ticker = None
+    highest_price = 0
+    for ticker_, prices in closing_prices.items():
+        if prices > highest_price:
+            highest_price = prices
+            highest_ticker = ticker_
+    highest_ticker, highest_price
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -217,6 +257,15 @@ def _():
     ]
     len(ship_countries)
     return (ship_countries,)
+
+
+@app.cell
+def _(ship_countries):
+    country_counts = {}
+    for country in ship_countries:
+        country_counts[country] = country_counts.get(country, 0) + 1
+    country_counts
+    return
 
 
 @app.cell(hide_code=True)
