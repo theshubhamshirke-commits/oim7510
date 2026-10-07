@@ -466,6 +466,17 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    1.list
+    2. set
+    3. dictionary
+    4. tuple
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## ✏️ D · The portfolio again
 
     Notebook 2 held the six holdings as a list of dictionaries. Here they are as a list of tuples, one holding per tuple.
@@ -492,6 +503,21 @@ def _():
         ("TSLA", 150, 255.70),
     ]
     holdings
+    return (holdings,)
+
+
+@app.cell
+def _(holdings):
+    total_cost = 0
+    #use the for loop to calculate the total_cost
+
+    for stock in holdings:
+        shares = stock[1]
+        prices = stock[2]
+        subtotal = shares * prices
+        total_cost +=subtotal
+
+    total_cost
     return
 
 
@@ -563,6 +589,7 @@ def _(requests):
     )
     babson_reply = requests.get(babson_url, timeout=10)
     babson_reply.status_code
+
     return (babson_reply,)
 
 
@@ -686,12 +713,36 @@ def _(mo):
     return
 
 
+@app.cell
+def _(babson_weather):
+    print(f"The wind speed is {babson_weather['current']['wind_speed_10m']} {babson_weather['current_units']['wind_speed_10m']}.")
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
     **F · Another town.** Search for `Wellesley` the way the misspelled search did, with the correct spelling. Take the first place out of `results`, then its `latitude`, `longitude` and `admin1`. *Check yourself: latitude 42.29649, in Massachusetts.*
     """)
     return
+
+
+@app.cell
+def _(requests):
+    wellesley_reply = requests.get(
+        "https://geocoding-api.open-meteo.com/v1/search?name=Wellesley&count=1",
+        timeout=10,
+    )
+    wellesley_reply.status_code
+
+
+    wellesley_places = wellesley_reply.json()
+    first_place = wellesley_places["results"][0]
+    first_place
+
+
+    first_place["latitude"], first_place["longitude"], first_place["admin1"]
+    return (first_place,)
 
 
 @app.cell(hide_code=True)
@@ -701,6 +752,18 @@ def _(mo):
 
     **Going further.** Use F's coordinates to ask for Wellesley's current temperature. Build the address with an f-string, so that changing the town changes the forecast.
     """)
+    return
+
+
+@app.cell
+def _(first_place, requests):
+    wellesley_url = (
+        f"https://api.open-meteo.com/v1/forecast"
+        f"?latitude={first_place['latitude']}&longitude={first_place['longitude']}"
+        f"&current=temperature_2m&temperature_unit=fahrenheit&timezone=America/New_York"
+    )
+    wellesley_weather_reply = requests.get(wellesley_url, timeout=10)
+    wellesley_weather_reply.json()
     return
 
 

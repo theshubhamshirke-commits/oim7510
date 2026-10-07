@@ -32,86 +32,37 @@
       "console": []
     },
     {
-      "id": "jMDs",
+      "id": "vblA",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "vblA",
-      "code_hash": "6f7654bb3c1b63cb732da46522b80d73",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Enter the cost:  1\nEnter the tax:  1\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
       "id": "bkHC",
-      "code_hash": "0c1a0fba8feedb0f5083f82fde2de432",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "code_hash": "6f7654bb3c1b63cb732da46522b80d73",
+      "outputs": [],
       "console": []
     },
     {
       "id": "lEQa",
-      "code_hash": "3c32b2b6ecb66345c9c65d47ab0fa3d5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "The total cost is $ 2.00.\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "code_hash": "0c1a0fba8feedb0f5083f82fde2de432",
+      "outputs": [],
+      "console": []
     },
     {
       "id": "PKri",
-      "code_hash": "115cdc766461e63d887742e99ed47a5d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "code_hash": "3c32b2b6ecb66345c9c65d47ab0fa3d5",
+      "outputs": [],
       "console": []
     },
     {
       "id": "Xref",
+      "code_hash": "115cdc766461e63d887742e99ed47a5d",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
       "code_hash": "9b44ca46a3aeb5b1fdd7baa4989e7e88",
       "outputs": [
         {
@@ -124,7 +75,7 @@
       "console": []
     },
     {
-      "id": "SFPL",
+      "id": "BYtC",
       "code_hash": "18db72514e4744db7535f15264da6a85",
       "outputs": [
         {
@@ -137,33 +88,19 @@
       "console": []
     },
     {
-      "id": "BYtC",
-      "code_hash": "3162e71c11ea9d96662b50a13fe21705",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "NKtk",
-      "code_hash": "c69aabcc95556e47720f514ac485e34c",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>59.25</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "RGSE",
+      "code_hash": "3162e71c11ea9d96662b50a13fe21705",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "c69aabcc95556e47720f514ac485e34c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "emfo",
       "code_hash": "8b92c83e94bc2769763f79661e30f6eb",
       "outputs": [
         {
@@ -176,7 +113,7 @@
       "console": []
     },
     {
-      "id": "Kclp",
+      "id": "Hstk",
       "code_hash": "665ff7ea712e30b3ac3d099747d0548d",
       "outputs": [
         {
@@ -189,7 +126,7 @@
       "console": []
     },
     {
-      "id": "emfo",
+      "id": "nWHF",
       "code_hash": "9b6d1aeb948c609622d2cb77220b7d81",
       "outputs": [
         {
@@ -202,27 +139,13 @@
       "console": []
     },
     {
-      "id": "Hstk",
+      "id": "iLit",
       "code_hash": "89c7171cb0c708d5619c879310735b2e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "A\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "nWHF",
+      "id": "ZHCJ",
       "code_hash": "bc766716a76737f649814cb8fd62cac4",
       "outputs": [
         {
@@ -235,7 +158,7 @@
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "ROlb",
       "code_hash": "fb022f81dfbffed89f3565af612fe5ec",
       "outputs": [
         {
@@ -248,47 +171,19 @@
       "console": []
     },
     {
-      "id": "ZHCJ",
+      "id": "qnkX",
       "code_hash": "33b87376169b998cbbfbe4f7f443d3f5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "packages shipped = 3\npackages pending = 1\npackages cancelled = 1\n60.0%\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "xnNZ",
+      "id": "TqIu",
       "code_hash": "93c9cdca6b732846ae7e193d90fcd4d7",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "packages shipped = 3\npackages not_pending = 2\npercent of orders shipped = 60.0%\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "ROlb",
+      "id": "Vxnm",
       "code_hash": "53b3a52a2d49ccac692ab047603ba4c1",
       "outputs": [
         {
@@ -301,47 +196,19 @@
       "console": []
     },
     {
-      "id": "qnkX",
+      "id": "DnEU",
       "code_hash": "e7590ed7d0722f62178cad0f6d201183",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "stapler\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "rlPx",
+      "id": "ulZA",
       "code_hash": "e21dc467ddf40e199c0b58160d6a1533",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "['notebook', 'pen', 'stapler', 'tape']\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "bWPb",
+      "id": "ecfG",
       "code_hash": "81c74b2716df025cd76d30f621c90080",
       "outputs": [
         {
@@ -354,7 +221,7 @@
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "Pvdt",
       "code_hash": "6935532a36f420a3c62570d37b41c982",
       "outputs": [
         {
@@ -367,27 +234,13 @@
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "ZBYS",
       "code_hash": "99cd874571154adef1b5ed38e86426d1",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "['AAPL', 'MSFT', 'NVDA']\n['NVDA', 'AAPL', 'MSFT']\nNone\n['AAPL', 'MSFT', 'NVDA']\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "CRoz",
+      "id": "aLJB",
       "code_hash": "af9a105a88ff5534e8a1661a47d95496",
       "outputs": [
         {
@@ -400,20 +253,13 @@
       "console": []
     },
     {
-      "id": "HJBW",
+      "id": "nHfw",
       "code_hash": "976ab415ada8b578bfa5f54bec60eec0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"NVDA\", \"MSFT\", \"AAPL\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "xXTn",
       "code_hash": "f405b348260f91aaa0a73e40c618af25",
       "outputs": [
         {
@@ -426,59 +272,31 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "AjVT",
       "code_hash": "8d95c8f244caaf7e1606caf938476e98",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\", \"text/plain+float:4.99\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "tzFT",
+      "id": "pHFh",
       "code_hash": "da56d086dd6116a545e315bc3806642d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>True</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "byHa",
+      "id": "NCOB",
       "code_hash": "e6d0c5d4ac81278389231aecc70c25fb",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "siSI",
+      "id": "aqbW",
       "code_hash": "0c5ace6299b54820b2541ea5a208bcbb",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>False</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "jQIP",
+      "id": "TRpd",
       "code_hash": "e2b03aeeba65e1889384b5c78de0db69",
       "outputs": [
         {
@@ -491,20 +309,13 @@
       "console": []
     },
     {
-      "id": "xSKw",
+      "id": "TXez",
       "code_hash": "711dd9a38ac980f87231b91b3a0a6775",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:11.25\", \"text/plain+float:7.2\", \"text/plain+float:17.99\", \"text/plain+float:4.49\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "dNNg",
       "code_hash": "8e5e2a59e9f4c3607fa0b5cb1f86f715",
       "outputs": [
         {
@@ -517,27 +328,13 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "yCnT",
       "code_hash": "e22c9fe5df8633ecd9c695b5510cb87f",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "10050\n150\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "EXOo",
+      "id": "wlCL",
       "code_hash": "0269dc29835ef818b16a5be6cbd5483e",
       "outputs": [
         {
@@ -550,47 +347,19 @@
       "console": []
     },
     {
-      "id": "qoDO",
+      "id": "kqZH",
       "code_hash": "ca9b34ba04cb0c82764164612079017e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "150\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "JaJi",
+      "id": "wAgl",
       "code_hash": "428866640000dc925c086c6f264cb8b5",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "invalid literal for int() with base 10: '100.5'",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_23636\\__marimo__cell_JaJi_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"nb\">int</span><span class=\"p\">(</span><span class=\"s2\">\"100.5\"</span><span class=\"p\">)</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~^^^^^^^^^</span>\n<span class=\"gr\">ValueError</span>: <span class=\"n\">invalid literal for int() with base 10: '100.5'</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "SotF",
+      "id": "rEll",
       "code_hash": "a6bd0525483fc60e6e85c6522459d68e",
       "outputs": [
         {
@@ -603,7 +372,7 @@
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "dGlV",
       "code_hash": "1d4cd33d87f69cef37de87f6bdd519ca",
       "outputs": [
         {
@@ -616,7 +385,7 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "SdmI",
       "code_hash": "b9a8a3f558e3abd939892755cdb675a5",
       "outputs": [
         {
@@ -629,20 +398,13 @@
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "lgWD",
       "code_hash": "53f7fdf6f5abd48e8964538bd017999e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"OrderID\": 10248, \"CustomerID\": \"VINET\", \"ShipCountry\": \"France\", \"ShipCity\": \"Reims\", \"OrderDate\": \"2016-07-04\", \"ShippedDate\": \"2016-07-16\", \"Freight\": \"text/plain+float:16.75\"}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "yOPj",
       "code_hash": "692b58e986493ab11653c79bccc2af34",
       "outputs": [
         {
@@ -655,20 +417,13 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "fwwy",
       "code_hash": "332446c7b3958fd46ca5386ebac32217",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;France&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "LJZf",
       "code_hash": "b4c4fb6a4f42fd5d98b6b18739a03241",
       "outputs": [
         {
@@ -681,60 +436,25 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "urSm",
       "code_hash": "1750e9e558d7f3dcf0998e55862d3f2b",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "'freight'",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_23636\\__marimo__cell_NCOB_.py\"</span>, line <span class=\"m\">2</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">first_order</span><span class=\"p\">[</span><span class=\"s2\">\"freight\"</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~^^^^^^^^^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">'freight'</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
-    },
-    {
-      "id": "aqbW",
-      "code_hash": "2bfc2c56d92d1252dcea892b8285d87a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>16.75</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "KyQj",
-      "code_hash": "8c9992a7ee25d4caccd1bebf692690ee",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "0",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_23636\\__marimo__cell_KyQj_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">first_order</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">0</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
+      "id": "jxvo",
+      "code_hash": "2bfc2c56d92d1252dcea892b8285d87a",
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "fiBA",
+      "id": "mWxS",
+      "code_hash": "8c9992a7ee25d4caccd1bebf692690ee",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "CcZR",
       "code_hash": "d597151141620fbee5ac73f9a2b6df22",
       "outputs": [
         {
@@ -747,20 +467,13 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "YWSi",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "zlud",
       "code_hash": "0ed1e9cc210d89a44e791cc8866fac27",
       "outputs": [
         {
@@ -773,20 +486,13 @@
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "tZnO",
       "code_hash": "af619d6cdbdc5ee9a3c5a66144027f0f",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[30, \"text/plain:<class 'list'>\", \"text/plain:<class 'dict'>\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "xvXZ",
       "code_hash": "215e85cc1d798eb376e760e2e6876215",
       "outputs": [
         {
@@ -799,20 +505,13 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "CLip",
       "code_hash": "56ae7cf264083e0936598623c21b783a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;France&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "YECM",
       "code_hash": "362a604c80a321d2e4d5c0c5e80b4671",
       "outputs": [
         {
@@ -825,27 +524,13 @@
       "console": []
     },
     {
-      "id": "wAgl",
-      "code_hash": "910ea9c7a206e43775e080a8759a29ce",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "827.0\n3\n{'OrderID': 10263, 'CustomerID': 'ERNSH', 'ShipCountry': 'Austria', 'ShipCity': 'Graz', 'OrderDate': '2016-07-23', 'ShippedDate': '2016-07-31', 'Freight': 56.0}\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "id": "cEAS",
+      "code_hash": "540962f6345d9dd68b21be47f3ad5f52",
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "rEll",
+      "id": "iXej",
       "code_hash": "1db6fb36a777f99e76a4a3b0b6f1325b",
       "outputs": [
         {
@@ -858,20 +543,13 @@
       "console": []
     },
     {
-      "id": "xqEF",
+      "id": "EJmg",
       "code_hash": "dcdb5686d152ccc2cbdedf160299d54e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>30</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "UmEG",
       "code_hash": "98e4b9cdfc6ca91909eea05761f082a6",
       "outputs": [
         {
@@ -884,7 +562,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "vEBW",
       "code_hash": "33f3e6ba51f144e4af890984773e0cfc",
       "outputs": [
         {
@@ -897,7 +575,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "kLmu",
       "code_hash": "ee04f5dc9b3e474ede5f3f883c3aa33e",
       "outputs": [
         {
@@ -910,7 +588,7 @@
       "console": []
     },
     {
-      "id": "MslE",
+      "id": "IpqN",
       "code_hash": "b994f778929db5420c7a123f68bf822f",
       "outputs": [
         {
@@ -923,7 +601,7 @@
       "console": []
     },
     {
-      "id": "lLwz",
+      "id": "dxZZ",
       "code_hash": "974f4577752d3e9d2de56ae4e34287e9",
       "outputs": [
         {
@@ -936,7 +614,7 @@
       "console": []
     },
     {
-      "id": "kfHG",
+      "id": "dlnW",
       "code_hash": "959c3e581df8f58f3ac651ea6b049ebb",
       "outputs": [
         {
@@ -949,33 +627,19 @@
       "console": []
     },
     {
-      "id": "iMII",
+      "id": "TTti",
       "code_hash": "ea2aad5b31c6b95059e61754e89a6fe4",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[{\"Title\": \"Python Basics\", \"Copies\": 12, \"Price\": \"text/plain+float:24.99\"}, {\"Title\": \"Data Stories\", \"Copies\": 8, \"Price\": \"text/plain+float:32.5\"}, {\"Title\": \"The Quiet Market\", \"Copies\": 15, \"Price\": \"text/plain+float:18.75\"}, {\"Title\": \"Numbers at Night\", \"Copies\": 5, \"Price\": \"text/plain+float:45.0\"}]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "belR",
+      "id": "RKFZ",
       "code_hash": "1bfec084314f8d841ac1e0e1fb0e68e5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>1066.13</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "IaQp",
       "code_hash": "d7c2e174de0e810f192e0ebcd5f38e05",
       "outputs": [
         {
@@ -988,40 +652,19 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "IWgg",
       "code_hash": "84a6141f626588f299934afdd739184b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;D:\\\\oim7510\\\\data\\\\portfolio.csv&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "RsKi",
+      "id": "fCoF",
       "code_hash": "85072cc55a5631e0ce30fb61dafc9dc3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "name     shares     price\nAAPL        100    173.93\nMSFT         50    319.53\nGOOG         80    131.36\nAMZN        200    129.33\nNVDA         20    410.17\nTSLA        150    255.70\nTotal cost: $116302.70\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "LJZf",
+      "id": "LkGn",
       "code_hash": "d8cb88a4a782aa1a3abecba9ae2a81aa",
       "outputs": [
         {
@@ -1034,16 +677,9 @@
       "console": []
     },
     {
-      "id": "urSm",
+      "id": "zVRe",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     }
   ]

@@ -73,14 +73,7 @@
     {
       "id": "PKri",
       "code_hash": "3ec179977eb886c2c66062090edededa",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"Symbol\": \"GOOG\", \"Price\": \"text/plain+float:133.1\", \"Currency\": \"USD\"}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -99,14 +92,7 @@
     {
       "id": "SFPL",
       "code_hash": "eea132fed27efd6f1db408185f7d665e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>True</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -125,14 +111,7 @@
     {
       "id": "RGSE",
       "code_hash": "d36c2544a9da3d7ca41366697fa9ad45",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>0</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -151,14 +130,7 @@
     {
       "id": "emfo",
       "code_hash": "c6eaa2401b0fa36823b5bb26bdb54aba",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"Symbol: GOOG\", \"Price: 133.1\", \"Currency: USD\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -177,14 +149,7 @@
     {
       "id": "nWHF",
       "code_hash": "a098e7088e3366c7409a5de0cd5ca558",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"shipped\": 4, \"pending\": 2, \"cancelled\": 1}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -216,90 +181,41 @@
     {
       "id": "ROlb",
       "code_hash": "b3baada9d1fcfdd58bb210c538eb3881",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"AAPL\": \"text/plain+float:260.81\", \"NVDA\": \"text/plain+float:186.0\", \"MSFT\": \"text/plain+float:404.88\", \"GOOG\": \"text/plain+float:308.42\"}"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "BNnK",
-      "code_hash": "1ac612db125e3b2944b69318890e73bd",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>260.81</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "oBDI",
-      "code_hash": "68b2c05c327f302524823762c7ee6234",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "'TSLA'",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_26288\\__marimo__cell_oBDI_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">closing_prices</span><span class=\"p\">[</span><span class=\"s2\">\"TSLA\"</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~~~~^^^^^^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">'TSLA'</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
-    },
-    {
-      "id": "vADg",
-      "code_hash": "186b62d24d492ec154bdd903af6eb017",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "zvYQ",
-      "code_hash": "e50dc0f1820fdfb883f7a58688608192",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"AAPL\", \"MSFT\", \"GOOG\"]"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "pPYI",
-      "code_hash": "c78a28dff5fdd7a4323af2f0603f7fd4",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"MSFT\", \"text/plain+float:404.88\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "qnkX",
+      "code_hash": "1ac612db125e3b2944b69318890e73bd",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "68b2c05c327f302524823762c7ee6234",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "186b62d24d492ec154bdd903af6eb017",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "e50dc0f1820fdfb883f7a58688608192",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "c78a28dff5fdd7a4323af2f0603f7fd4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ecfG",
       "code_hash": "38e3929260a968d03b1c60e535823939",
       "outputs": [
         {
@@ -312,33 +228,19 @@
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "Pvdt",
       "code_hash": "cf013d266ae6857b91858009b7c8ab48",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>30</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "CCgo",
+      "id": "ZBYS",
       "code_hash": "105738795eff53fa26cbc2a2f5e3cbb0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"France\": 4, \"Germany\": 4, \"Brazil\": 4, \"Belgium\": 1, \"Switzerland\": 2, \"Venezuela\": 3, \"Austria\": 3, \"Mexico\": 1, \"USA\": 4, \"Sweden\": 1, \"Finland\": 2, \"Argentina\": 1}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "aLJB",
       "code_hash": "3576afafe4f102de73f70bcc988d0156",
       "outputs": [
         {
@@ -351,20 +253,13 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "nHfw",
       "code_hash": "28bb1887819d424fa39aa23560629d78",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"GOOG\", 3]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "xXTn",
       "code_hash": "7c943e39264a8aef1d3cc8633eb583a7",
       "outputs": [
         {
@@ -377,7 +272,7 @@
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "AjVT",
       "code_hash": "e71c30995427d2372c2b45f530459055",
       "outputs": [
         {
@@ -390,20 +285,13 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "pHFh",
       "code_hash": "8cb4b4c9b56148cf5915a10cbe0dd092",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;GOOG cost $13,136.00&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "NCOB",
       "code_hash": "509a47f88e82e63dc61ce34410d09c99",
       "outputs": [
         {
@@ -416,7 +304,7 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "aqbW",
       "code_hash": "bf81f0030fc2e70a06a4810783a2cb1a",
       "outputs": [
         {
@@ -429,20 +317,13 @@
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "TRpd",
       "code_hash": "95a3924e5bdeb1262241b6861ecbb4f2",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[20, 10]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "TXez",
       "code_hash": "c92111f8ba93cd61e7dac40805e86c03",
       "outputs": [
         {
@@ -455,20 +336,13 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "dNNg",
       "code_hash": "f01f1fda7f571e14bf2a6509ace69186",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;Independence Day&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "yCnT",
       "code_hash": "cb4baa718dd7852085fc8ba738deffb8",
       "outputs": [
         {
@@ -481,20 +355,13 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "wlCL",
       "code_hash": "3ec454296bb0dc1ab5b1eba9bb86ad77",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[7, 4, [\"AAPL\", \"GOOG\", \"MSFT\", \"TSLA\"]]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "kqZH",
       "code_hash": "e8e9d094fc7d0401397d4d636d248303",
       "outputs": [
         {
@@ -507,7 +374,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "wAgl",
       "code_hash": "63c7a81e8331a57d1b8de839772f6fb3",
       "outputs": [
         {
@@ -520,13 +387,13 @@
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "rEll",
       "code_hash": "fd30a3b2532bb06bb2b05ca93f53b70c",
       "outputs": [],
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "dGlV",
       "code_hash": "c6c75ddcafc956ac599c5182c747b1f7",
       "outputs": [
         {
@@ -539,7 +406,7 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "SdmI",
       "code_hash": "1f8ec4989f418d94de26cf9165d7d390",
       "outputs": [
         {
@@ -552,7 +419,7 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "lgWD",
       "code_hash": "2687f8e179dd9abafc8e640ae9eef324",
       "outputs": [
         {
@@ -565,7 +432,20 @@
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "yOPj",
+      "code_hash": "93c6fca1f0bb407aad61de8b8d02ea63",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">1.list</span>\n<ol start=\"2\">\n<li>set</li>\n<li>dictionary</li>\n<li>tuple</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fwwy",
       "code_hash": "eaa7dc8bc1c38a0f67724dfe79a290ae",
       "outputs": [
         {
@@ -578,13 +458,19 @@
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "LJZf",
       "code_hash": "c8f862e56b4e11f6d7863336e449abd5",
       "outputs": [],
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "urSm",
+      "code_hash": "06346e254b841ade34ad084691bb8e73",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "jxvo",
       "code_hash": "80ac93ce1158d39d28b9c7f255b5c0d2",
       "outputs": [
         {
@@ -597,13 +483,13 @@
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "mWxS",
       "code_hash": "fa923984c3255ec447f3c2f9d1ae94e5",
       "outputs": [],
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "CcZR",
       "code_hash": "14f7cd4877cce0e4ddc59b2059d2e199",
       "outputs": [
         {
@@ -616,13 +502,20 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "YWSi",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "zlud",
       "code_hash": "b6080cd361c22f299a5a16f332dc3b04",
       "outputs": [
         {
@@ -635,13 +528,20 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "tZnO",
       "code_hash": "b0a00ff4650826e66e32fe0666f52a91",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>200</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "LJZf",
+      "id": "xvXZ",
       "code_hash": "9ca0b6832430b8774e2b359e92902d58",
       "outputs": [
         {
@@ -654,13 +554,20 @@
       "console": []
     },
     {
-      "id": "urSm",
+      "id": "CLip",
       "code_hash": "25e9c1190b53d7f608172bbf33825be4",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"latitude\": \"text/plain+float:42.299843\", \"longitude\": \"text/plain+float:-71.27756\", \"generationtime_ms\": \"text/plain+float:0.064849853515625\", \"utc_offset_seconds\": -14400, \"timezone\": \"America/New_York\", \"timezone_abbreviation\": \"GMT-4\", \"elevation\": \"text/plain+float:49.0\", \"current_units\": {\"time\": \"iso8601\", \"interval\": \"seconds\", \"temperature_2m\": \"\\u00b0F\", \"wind_speed_10m\": \"mp/h\"}, \"current\": {\"time\": \"2026-10-06T20:30\", \"interval\": 900, \"temperature_2m\": \"text/plain+float:50.7\", \"wind_speed_10m\": \"text/plain+float:5.6\"}}"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "jxvo",
+      "id": "YECM",
       "code_hash": "bfc8683999bf41d5fa95b968a6d7ac0f",
       "outputs": [
         {
@@ -673,13 +580,13 @@
       "console": []
     },
     {
-      "id": "mWxS",
+      "id": "cEAS",
       "code_hash": "11b5f79650a5781c25cfe837407d6333",
       "outputs": [],
       "console": []
     },
     {
-      "id": "CcZR",
+      "id": "iXej",
       "code_hash": "c3425bba2f14018ddc2c77f648f7f0c1",
       "outputs": [
         {
@@ -692,7 +599,7 @@
       "console": []
     },
     {
-      "id": "YWSi",
+      "id": "EJmg",
       "code_hash": "633b6cde8fbf36c51e0cad83b24a6182",
       "outputs": [
         {
@@ -705,13 +612,13 @@
       "console": []
     },
     {
-      "id": "zlud",
+      "id": "UmEG",
       "code_hash": "80c6a8567fd12b007ce7e420740ff83e",
       "outputs": [],
       "console": []
     },
     {
-      "id": "tZnO",
+      "id": "vEBW",
       "code_hash": "a808c15a06a4a161083f4687541bd128",
       "outputs": [
         {
@@ -724,13 +631,13 @@
       "console": []
     },
     {
-      "id": "xvXZ",
+      "id": "kLmu",
       "code_hash": "5bd422ed104db59bf08fcd74f9c7c304",
       "outputs": [],
       "console": []
     },
     {
-      "id": "CLip",
+      "id": "IpqN",
       "code_hash": "79e04dc9b5727678afbbc571d99b4d01",
       "outputs": [
         {
@@ -743,13 +650,13 @@
       "console": []
     },
     {
-      "id": "YECM",
+      "id": "dxZZ",
       "code_hash": "9e24f0f5b2cd162f0e0a7f9d94eefd0c",
       "outputs": [],
       "console": []
     },
     {
-      "id": "cEAS",
+      "id": "dlnW",
       "code_hash": "068ff4723243a56161860dcad659cc27",
       "outputs": [
         {
@@ -762,7 +669,7 @@
       "console": []
     },
     {
-      "id": "iXej",
+      "id": "TTti",
       "code_hash": "9b744f95f434d09a4522ab2b8b9b534b",
       "outputs": [
         {
@@ -775,7 +682,27 @@
       "console": []
     },
     {
-      "id": "EJmg",
+      "id": "nqBp",
+      "code_hash": "402a861a6cb04b4e8b60901ded9097e9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "The wind speed is 5.6 mp/h.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "RKFZ",
       "code_hash": "ad89aa8c2d83a0b134f6b703f4e3576d",
       "outputs": [
         {
@@ -788,7 +715,20 @@
       "console": []
     },
     {
-      "id": "UmEG",
+      "id": "UXwW",
+      "code_hash": "b537a1412065f539aca48641e9a344b3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:42.29649\", \"text/plain+float:-71.29256\", \"Massachusetts\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IaQp",
       "code_hash": "21d3ca8f95327f43ccfb133da060a48a",
       "outputs": [
         {
@@ -801,7 +741,20 @@
       "console": []
     },
     {
-      "id": "vEBW",
+      "id": "CbxN",
+      "code_hash": "1e3e66ba2716b5048df1821f0246f559",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"latitude\": \"text/plain+float:42.299843\", \"longitude\": \"text/plain+float:-71.27756\", \"generationtime_ms\": \"text/plain+float:0.025391578674316406\", \"utc_offset_seconds\": -14400, \"timezone\": \"America/New_York\", \"timezone_abbreviation\": \"GMT-4\", \"elevation\": \"text/plain+float:46.0\", \"current_units\": {\"time\": \"iso8601\", \"interval\": \"seconds\", \"temperature_2m\": \"\\u00b0F\"}, \"current\": {\"time\": \"2026-10-06T20:45\", \"interval\": 900, \"temperature_2m\": \"text/plain+float:50.3\"}}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IWgg",
       "code_hash": "993c8a3d00fea66424451e25fc63bfe3",
       "outputs": [
         {
@@ -814,7 +767,7 @@
       "console": []
     },
     {
-      "id": "kLmu",
+      "id": "fCoF",
       "code_hash": "4bf25d1302150d2ee75e97a52bb32a39",
       "outputs": [
         {
@@ -827,7 +780,7 @@
       "console": []
     },
     {
-      "id": "IpqN",
+      "id": "LkGn",
       "code_hash": "d33a80332bb754e18621714c2c9aee30",
       "outputs": [
         {
@@ -840,7 +793,7 @@
       "console": []
     },
     {
-      "id": "dxZZ",
+      "id": "zVRe",
       "code_hash": "a76520898c0a49d002fbce90b67204b1",
       "outputs": [
         {
