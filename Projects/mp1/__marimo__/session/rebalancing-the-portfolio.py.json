@@ -45,20 +45,20 @@
       "console": []
     },
     {
-      "id": "jklA",
-      "code_hash": "6d3036d59330a7db4a39198a694c4d92",
+      "id": "bkHC",
+      "code_hash": "03e5374b04290add04c879a0dcca427e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">As the title says, Rebalancing the portfolio, this particular tool will help a financial advisor/ people handing their own portfolio to balance different aspects of their portfolio ensuring that the overall allocation aligns with the desired risk tolerance and investment goals. It also calculates how many shares of each stock to buy or sell and how much cash will remain after those trades. </span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">As the title says, Rebalancing the portfolio, this particular tool will help a financial advisor/ people handing their own portfolio to balance different aspects of their portfolio ensuring that the overall allocation aligns with the desired risk tolerance and investment goals. It also calculates how many shares of each stock to buy or sell and how much cash will remain after those trades.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "bkHC",
+      "id": "lEQa",
       "code_hash": "f5e3e0e704045272fd881089e5d00c3d",
       "outputs": [
         {
@@ -71,7 +71,7 @@
       "console": []
     },
     {
-      "id": "YwLw",
+      "id": "PKri",
       "code_hash": "6cebd3c4f93733639faf21063deba723",
       "outputs": [
         {
@@ -84,7 +84,7 @@
       "console": []
     },
     {
-      "id": "zrIG",
+      "id": "Xref",
       "code_hash": "50c290db1889e00989267f1e72570a2f",
       "outputs": [
         {
@@ -97,7 +97,7 @@
       "console": []
     },
     {
-      "id": "lEQa",
+      "id": "SFPL",
       "code_hash": "89874429ffcd1ba52cfa091ae5bcd456",
       "outputs": [
         {
@@ -110,20 +110,13 @@
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "BYtC",
       "code_hash": "f3e6b82fe642f300292fc021e6f6f068",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "Xref",
+      "id": "RGSE",
       "code_hash": "71d32bd63e1b86444a83f18329c3c3f8",
       "outputs": [
         {
@@ -136,27 +129,13 @@
       "console": []
     },
     {
-      "id": "SFPL",
+      "id": "Kclp",
       "code_hash": "ea412cca2f58b11719b5fcfa700422f0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Total portfolio value: $121,302.70\n\nAAPL: Current = 14.34%, Target = 20.00%\nMSFT: Current = 13.17%, Target = 20.00%\nGOOG: Current = 8.66%, Target = 15.00%\nAMZN: Current = 21.32%, Target = 15.00%\nNVDA: Current = 6.76%, Target = 15.00%\nTSLA: Current = 31.62%, Target = 15.00%\nCash allocation: 4.12%\n\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "BYtC",
+      "id": "emfo",
       "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
       "outputs": [
         {
@@ -169,27 +148,13 @@
       "console": []
     },
     {
-      "id": "RGSE",
+      "id": "Hstk",
       "code_hash": "65a331c1eb342a3b58981ef981f83a3d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Ticker    Shares now  Target shares    Buy/Sell   Value after ($)   Weight after    Gap (pp)\nAAPL             100            139         +39         24,176.27       19.9305%     -0.0695\nMSFT              50             75         +25         23,964.75       19.7562%     -0.2438\nGOOG              80            138         +58         18,127.68       14.9442%     -0.0558\nAMZN             200            140         -60         18,106.20       14.9265%     -0.0735\nNVDA              20             44         +24         18,047.48       14.8781%     -0.1219\nTSLA             150             71         -79         18,154.70       14.9664%     -0.0336\n\nCash remaining: $725.62\nCash as a share of the portfolio: 0.5982%\n\nBuy/Sell: positive means buy; negative means sell; zero means hold.\nGap (pp): difference from the target in percentage points.\nA negative gap means below target; a positive gap means above target.\n\nThe largest absolute gap from a target is 0.2438 percentage points.\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "Kclp",
+      "id": "nWHF",
       "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
       "outputs": [
         {
@@ -202,33 +167,26 @@
       "console": []
     },
     {
-      "id": "emfo",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "FeTR",
-      "code_hash": "d8a388cc1a76f756add98bcc3d4d1b35",
+      "id": "iLit",
+      "code_hash": "62df6c80027f875f0a3c89b3da81b98b",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I checked whether the total portfolio value before rebalancing equals the value after rebalancing. To calculate the final value independently, I multiplied each final share count by its original stock price and added the remaining cash. The final stocks are worth $120,577.08, and the remaining cash is $725.62, giving a total of $121,302.70. This matches the original portfolio value, so the difference is $0.00.</span></span>"
           }
         }
       ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Original portfolio value: $121,302.70\nFinal stock value:        $120,577.08\nRemaining cash:           $725.62\nFinal portfolio value:    $121,302.70\nDifference:              $0.00\nCheck passed: the portfolio value is unchanged.\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "console": []
     },
     {
-      "id": "Hstk",
+      "id": "ZHCJ",
+      "code_hash": "d8a388cc1a76f756add98bcc3d4d1b35",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ROlb",
       "code_hash": "4fa513d08c761dfe89641eaef1357bc2",
       "outputs": [
         {
@@ -241,13 +199,20 @@
       "console": []
     },
     {
-      "id": "ABMl",
-      "code_hash": null,
-      "outputs": [],
+      "id": "qnkX",
+      "code_hash": "9de5f76318e2794833ebce82dc320f2f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I verified the agent\u2019s calculations by manually working through Apple and Tesla using a calculator and pen and paper. For each stock, I calculated its current value, target dollar amount, whole-share target, required trade, final value, and final portfolio weight. My calculations showed that Apple required buying 39 shares and Tesla required selling 79 shares, matching the results in Section 5. Checking both a purchase and a sale helped me verify that the code calculated the trade quantities and directions correctly.</span></span>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "TqIu",
       "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
       "outputs": [
         {
@@ -258,6 +223,84 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "suub",
+      "code_hash": "5c00d9ccb83385bf76d6149560356385",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"going-2-steps-further\"><em>GOING \"2\" STEPS FURTHER.</em></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wYhy",
+      "code_hash": "c771bbfc3c95a4c0394b36c5823b7e83",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"a-use-todays-oct-9-2026-prices-from-yfinance-in-place-of-the-listed-ones\"><em>A. Use today's (Oct 9, 2026) prices from yfinance in place of the listed ones.</em></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LDFv",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Ydoo",
+      "code_hash": "d21dede335f8c69a9047c3e85486ff0d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">For this extension, I used an updated stock-price snapshot while keeping the original share counts, $5,000 cash balance, and target allocations unchanged. I assumed there were no trading fees.</span>\n<span class=\"paragraph\">The calculation method remains the same as in Sections 4 and 5: calculate the total portfolio value, determine the whole-share targets, calculate the required trades, and report the remaining cash and gaps from the targets. Only the stock prices change, which produces different results.</span>\n<span class=\"paragraph\">I kept Sections 3\u20136 unchanged to preserve the original assignment results and used the updated prices separately in Section 8 for comparison.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nORw",
+      "code_hash": "e6eabe1f35251976996b8460711e19f3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"b-importing-netflix-stock-price-by-importing-a-yfinance-library\"><em>B. Importing Netflix stock price by importing a yfinance library</em></h1>\n<span class=\"paragraph\">This code uses the yfinance library to retrieve Netflix\u2019s recent stock-price history and display its latest available daily closing price and date. It fetches the data automatically rather than using a manually entered price.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CqiF",
+      "code_hash": "263724878c91a2ec1e392e5716a26fed",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Price successfully fetched using yfinance.\nStock: Netflix (NFLX)\nLatest available closing price: $70.30\nPrice date: 2026-10-09\n",
+          "mimetype": "text/plain"
+        }
+      ]
     }
   ]
 }

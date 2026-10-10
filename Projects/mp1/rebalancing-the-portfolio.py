@@ -398,5 +398,82 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # *GOING "2" STEPS FURTHER.*#
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # *A. Use today's (Oct 9, 2026) prices from yfinance in place of the listed ones.*#
+    """)
+    return
+
+
+@app.cell
+def _():
+    updated_holdings = [
+        ("AAPL", 100, 336.64),
+        ("MSFT", 50, 535.07),
+        ("GOOG", 80, 347.86),
+        ("AMZN", 200, 262.43),
+        ("NVDA", 20, 229.28),
+        ("TSLA", 150, 382.70),
+    ]
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    For this extension, I used an updated stock-price snapshot while keeping the original share counts, $5,000 cash balance, and target allocations unchanged. I assumed there were no trading fees.
+
+    The calculation method remains the same as in Sections 4 and 5: calculate the total portfolio value, determine the whole-share targets, calculate the required trades, and report the remaining cash and gaps from the targets. Only the stock prices change, which produces different results.
+
+    I kept Sections 3–6 unchanged to preserve the original assignment results and used the updated prices separately in Section 8 for comparison.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # *B. Importing Netflix stock price by importing a yfinance library*#
+
+
+    This code uses the yfinance library to retrieve Netflix’s recent stock-price history and display its latest available daily closing price and date. It fetches the data automatically rather than using a manually entered price.
+    """)
+    return
+
+
+@app.cell
+def _():
+    # Import the library used to fetch prices.
+    import yfinance as _yf_test
+
+    # Fetch recent price history for Netflix.
+    _netflix_history = _yf_test.Ticker("NFLX").history(
+        period="5d",
+        auto_adjust=False
+    )
+
+    # Check whether any prices were returned.
+    if _netflix_history.empty:
+        print("No price was returned. The download did not succeed.")
+    else:
+        _netflix_price = float(_netflix_history["Close"].iloc[-1])
+        _netflix_date = _netflix_history.index[-1].strftime("%Y-%m-%d")
+
+        print("Price successfully fetched using yfinance.")
+        print("Stock: Netflix (NFLX)")
+        print(f"Latest available closing price: ${_netflix_price:,.2f}")
+        print(f"Price date: {_netflix_date}")
+    return
+
+
 if __name__ == "__main__":
     app.run()
