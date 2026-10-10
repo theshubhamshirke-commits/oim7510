@@ -111,8 +111,15 @@
     },
     {
       "id": "PKri",
-      "code_hash": "54436c443c60319e53020cf945095f3d",
-      "outputs": [],
+      "code_hash": "f3e6b82fe642f300292fc021e6f6f068",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -130,9 +137,23 @@
     },
     {
       "id": "SFPL",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
+      "code_hash": "ea412cca2f58b11719b5fcfa700422f0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Total portfolio value: $121,302.70\n\nAAPL: Current = 14.34%, Target = 20.00%\nMSFT: Current = 13.17%, Target = 20.00%\nGOOG: Current = 8.66%, Target = 15.00%\nAMZN: Current = 21.32%, Target = 15.00%\nNVDA: Current = 6.76%, Target = 15.00%\nTSLA: Current = 31.62%, Target = 15.00%\nCash allocation: 4.12%\n\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "BYtC",
@@ -149,9 +170,23 @@
     },
     {
       "id": "RGSE",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
+      "code_hash": "65a331c1eb342a3b58981ef981f83a3d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Ticker    Shares now  Target shares    Buy/Sell   Value after ($)   Weight after    Gap (pp)\nAAPL             100            139         +39         24,176.27       19.9305%     -0.0695\nMSFT              50             75         +25         23,964.75       19.7562%     -0.2438\nGOOG              80            138         +58         18,127.68       14.9442%     -0.0558\nAMZN             200            140         -60         18,106.20       14.9265%     -0.0735\nNVDA              20             44         +24         18,047.48       14.8781%     -0.1219\nTSLA             150             71         -79         18,154.70       14.9664%     -0.0336\n\nCash remaining: $725.62\nCash as a share of the portfolio: 0.5982%\n\nBuy/Sell: positive means buy; negative means sell; zero means hold.\nGap (pp): difference from the target in percentage points.\nA negative gap means below target; a positive gap means above target.\n\nThe largest absolute gap from a target is 0.2438 percentage points.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Kclp",
@@ -173,6 +208,26 @@
       "console": []
     },
     {
+      "id": "FeTR",
+      "code_hash": "d8a388cc1a76f756add98bcc3d4d1b35",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Original portfolio value: $121,302.70\nFinal stock value:        $120,577.08\nRemaining cash:           $725.62\nFinal portfolio value:    $121,302.70\nDifference:              $0.00\nCheck passed: the portfolio value is unchanged.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "Hstk",
       "code_hash": "4fa513d08c761dfe89641eaef1357bc2",
       "outputs": [
@@ -183,6 +238,12 @@
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "ABMl",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {

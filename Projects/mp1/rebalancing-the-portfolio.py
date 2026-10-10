@@ -118,8 +118,30 @@ def _(mo):
 
 @app.cell
 def _():
-    # Your inputs.
-    return
+    # # Each entry contains: stock ticker, shares owned, price per share.
+    holdings = [
+        ("AAPL", 100, 173.93),
+        ("MSFT", 50, 319.53),
+        ("GOOG", 80, 131.36),
+        ("AMZN", 200, 129.33),
+        ("NVDA", 20, 410.17),
+        ("TSLA", 150, 255.70),
+    ]
+
+    # Cash currently available in the account.
+    cash = 5000.00
+
+    # Desired allocation for each stock.
+    # 0.20 means 20%, and 0.15 means 15%.
+    target_weights = {
+        "AAPL": 0.20,
+        "MSFT": 0.20,
+        "GOOG": 0.15,
+        "AMZN": 0.15,
+        "NVDA": 0.15,
+        "TSLA": 0.15,
+    }
+    return cash, holdings, target_weights
 
 
 @app.cell(hide_code=True)
@@ -133,8 +155,83 @@ def _(mo):
 
 
 @app.cell
-def _():
-    return
+def _(cash, holdings, target_weights):
+    # STEP 1: Calculate the total portfolio value.
+
+    total_portfolio_value = cash
+
+    for ticker, shares, price in holdings:
+        current_value = shares * price
+        total_portfolio_value = total_portfolio_value + current_value
+
+    total_portfolio_value = round(total_portfolio_value, 2)
+
+    print(f"Total portfolio value: ${total_portfolio_value:,.2f}")
+    print()
+
+
+    # STEP 2: Compare current allocations with target allocations.
+
+    for ticker, shares, price in holdings:
+        current_stock_value = shares * price
+        current_percentage = (current_stock_value / total_portfolio_value) * 100
+        target_percentage = target_weights[ticker] * 100
+
+        print(
+            f"{ticker}: Current = {current_percentage:.2f}%, "
+            f"Target = {target_percentage:.2f}%"
+        )
+
+    cash_percentage = (cash / total_portfolio_value) * 100
+
+    print(f"Cash allocation: {cash_percentage:.2f}%")
+    print()
+
+
+    # STEP 3: Calculate trades and remaining cash.
+
+    remaining_cash = cash
+    rebalance_results = []
+
+    for ticker, shares, price in holdings:
+        # Calculate the target dollar amount for this stock.
+        target_value = total_portfolio_value * target_weights[ticker]
+
+        # Divide by the price and round down to whole shares.
+        target_shares = int(target_value // price)
+
+        # Positive means buy; negative means sell; zero means hold.
+        shares_to_trade = target_shares - shares
+
+        # Subtract purchases from cash and add sale proceeds.
+        trade_value = round(shares_to_trade * price, 2)
+        remaining_cash = round(remaining_cash - trade_value, 2)
+
+        # Calculate the stock's value after rebalancing.
+        value_after = round(target_shares * price, 2)
+
+        # Calculate its final allocation, including cash in the total.
+        percentage_after = (value_after / total_portfolio_value) * 100
+
+        # Calculate the difference from the target in percentage points.
+        target_percentage = target_weights[ticker] * 100
+        gap_percentage_points = percentage_after - target_percentage
+
+        # Store the results for the table in Section 5.
+        rebalance_results.append(
+            (
+                ticker,
+                shares,
+                target_shares,
+                shares_to_trade,
+                value_after,
+                percentage_after,
+                gap_percentage_points,
+            )
+        )
+
+    #print(f"Cash remaining after all trades: ${remaining_cash:,.2f}")
+    return rebalance_results, remaining_cash, total_portfolio_value
 
 
 @app.cell(hide_code=True)
@@ -148,7 +245,69 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(rebalance_results, remaining_cash, total_portfolio_value):
+    # Check that the remaining cash is not negative.
+    if remaining_cash < 0:
+        raise ValueError("The trades would leave a negative cash balance.")
+
+    # Print the table headings.
+    print(
+        f"{'Ticker':<8}"
+        f"{'Shares now':>12}"
+        f"{'Target shares':>15}"
+        f"{'Buy/Sell':>12}"
+        f"{'Value after ($)':>18}"
+        f"{'Weight after':>15}"
+        f"{'Gap (pp)':>12}"
+    )
+
+    # Track the largest absolute gap from a target.
+    _largest_gap = 0
+
+    # Print one row for each stock.
+    for _row in rebalance_results:
+        (
+            _ticker,
+            _shares_now,
+            _target_shares,
+            _trade,
+            _value_after,
+            _percentage_after,
+            _gap,
+        ) = _row
+
+        print(
+            f"{_ticker:<8}"
+            f"{_shares_now:>12}"
+            f"{_target_shares:>15}"
+            f"{_trade:>+12}"
+            f"{_value_after:>18,.2f}"
+            f"{_percentage_after:>14.4f}%"
+            f"{_gap:>+12.4f}"
+        )
+
+        _largest_gap = max(_largest_gap, abs(_gap))
+
+    # Display the remaining cash.
+    print()
+    print(f"Cash remaining: ${remaining_cash:,.2f}")
+    print(
+        f"Cash as a share of the portfolio: "
+        f"{remaining_cash / total_portfolio_value:.4%}"
+    )
+
+    # Explain how to read the table.
+    print()
+    print("Buy/Sell: positive means buy; negative means sell; zero means hold.")
+    print("Gap (pp): difference from the target in percentage points.")
+    print("A negative gap means below target; a positive gap means above target.")
+
+    # Summarize the distance from the targets.
+    print()
+    print(
+        f"The largest absolute gap from a target is "
+        f"{_largest_gap:.4f} percentage points."
+    )
     return
 
 
@@ -162,8 +321,50 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    I checked whether the total portfolio value before rebalancing equals the value after rebalancing. To calculate the final value independently, I multiplied each final share count by its original stock price and added the remaining cash. The final stocks are worth $120,577.08, and the remaining cash is $725.62, giving a total of $121,302.70. This matches the original portfolio value, so the difference is $0.00.
+    """)
+    return
+
+
 @app.cell
-def _():
+def _(holdings, rebalance_results, remaining_cash, total_portfolio_value):
+    # Independently calculate the final stock values using
+    # the final share counts and the prices from the inputs.
+    _checked_stock_value = 0
+
+    for _holding in holdings:
+        _ticker, _original_shares, _price = _holding
+
+        for _result in rebalance_results:
+            if _result[0] == _ticker:
+                _final_shares = _result[2]
+                _checked_stock_value += _final_shares * _price
+
+    _checked_stock_value = round(_checked_stock_value, 2)
+
+    # Add the remaining cash to get the final portfolio value.
+    _checked_portfolio_value = round(
+        _checked_stock_value + remaining_cash, 2
+    )
+
+    # Compare the final value with the original value.
+    _difference = round(
+        _checked_portfolio_value - total_portfolio_value, 2
+    )
+
+    print(f"Original portfolio value: ${total_portfolio_value:,.2f}")
+    print(f"Final stock value:        ${_checked_stock_value:,.2f}")
+    print(f"Remaining cash:           ${remaining_cash:,.2f}")
+    print(f"Final portfolio value:    ${_checked_portfolio_value:,.2f}")
+    print(f"Difference:              ${_difference:,.2f}")
+
+    if _difference == 0:
+        print("Check passed: the portfolio value is unchanged.")
+    else:
+        print("Check failed: review the calculations.")
     return
 
 
@@ -175,6 +376,14 @@ def _(mo):
     *Pick one piece of AI output you did not accept as-is. What did it give you, what did you change, and how did you know? Point to the commit or the cell.*
 
     *If the agent got it right the first time: what did you do to verify that?*
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    I verified the agent’s calculations by manually working through Apple and Tesla using a calculator and pen and paper. For each stock, I calculated its current value, target dollar amount, whole-share target, required trade, final value, and final portfolio weight. My calculations showed that Apple required buying 39 shares and Tesla required selling 79 shares, matching the results in Section 5. Checking both a purchase and a sale helped me verify that the code calculated the trade quantities and directions correctly.
     """)
     return
 
