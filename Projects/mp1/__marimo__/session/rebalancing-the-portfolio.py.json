@@ -1,0 +1,202 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": "da873d5d09e69dbc37de3cbfd95dec06"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "dd5acf47b1437d7965080e8dacdd3c01",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"mini-project-1\">Mini Project 1</h1>\n<span class=\"paragraph\">Your choice of option, what each one asks for, the due date and how it is graded are on the Mini Project 1 page of the course site, linked from the calendar. This notebook is the shape to build it in. Keep the headings, and replace each line in italics with your own.</span>\n<span class=\"paragraph\">Save it in your course repository as <code>projects/mp1/&lt;your-tool&gt;.py</code>, named for what it does, such as <code>loan-schedule.py</code>, and open it with <code>uv run marimo edit</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "341b470af643068ae6fa175257567582",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-the-question\">1. The Question</h2>\n<span class=\"paragraph\"><em>Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jklA",
+      "code_hash": "6d3036d59330a7db4a39198a694c4d92",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">As the title says, Rebalancing the portfolio, this particular tool will help a financial advisor/ people handing their own portfolio to balance different aspects of their portfolio ensuring that the overall allocation aligns with the desired risk tolerance and investment goals. It also calculates how many shares of each stock to buy or sell and how much cash will remain after those trades. </span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "f5e3e0e704045272fd881089e5d00c3d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-my-plan-before-ai\">2. My Plan Before AI</h2>\n<span class=\"paragraph\"><em>Before you ask your agent anything, write how you would solve it: the steps, in order, in plain words, in five lines or more. Then answer these two questions:</em></span>\n<ul>\n<li><em>What does your loop carry from one step to the next, the way a running total carries its sum?</em></li>\n<li><em>Which check will you use in section 6, and which two numbers should agree?</em></li>\n</ul>\n<span class=\"paragraph\"><em>Commit this notebook with the message <code>mp1: plan before AI</code>.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YwLw",
+      "code_hash": "6cebd3c4f93733639faf21063deba723",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">So, for this particular tool, I would carry the following steps:</span>\n<ol>\n<li>Start by calculating the current value of each stock. For ex: AAPL: 100 (shares) * 173.93 (current price). So, for AAPL, the current value = 100 *173.93 = $17,393.</li>\n<li>Step 1 will repeated for other stocks as well.</li>\n<li>After the current value of all 6 stocks in known, I will add them all up plus add the $5000 cash available, which wil give me the total portfolio value (TPV).</li>\n<li>Now, once the  TPV is known, I will again calculate the percentage allocation of each stock in the portfolio by dividing the current value of each stock by the TPV, and then multiplying by 100. For ex: AAPL allocation % = (17,393 / TPV) * 100.</li>\n<li>This will be repeated for all 6 stocks, plus the cash position, so that the sum of all allocation percentages equals 100%.</li>\n<li>Once I have the percentage allocation of each stock, I will compare it against the target allocation to see which stocks are overweight or underweight relative to the desired portfolio mix.</li>\n<li>For each stock, I will multiply the total portfolio value by its target allocation to calculate the dollar amount that should be invested in it.</li>\n<li>I will divide this target dollar amount by the stock\u2019s price and round down to a whole number, since the brokerage only allows whole shares.</li>\n<li>I will subtract the current number of shares from the target number of shares. A positive result means buy, a negative result means sell, and zero means hold.</li>\n<li>I will calculate the remaining cash by adding the money received from selling shares and subtracting the money spent on buying shares.</li>\n<li>I will calculate each stock\u2019s value and percentage allocation after the trades, including the remaining cash in the total portfolio value.</li>\n<li>I will compare the final allocations with the targets in percentage points and decide whether the differences are small enough.</li>\n<li>Finally, I will check that the remaining cash is not negative and that the total value of the stocks plus cash is the same before and after rebalancing, since there are no trading fees.</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zrIG",
+      "code_hash": "50c290db1889e00989267f1e72570a2f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">What does your loop carry from one step to the next, the way a running total carries its sum?</span>\n<span class=\"paragraph\">When calculating the total portfolio value (TPV), my loop carries a running total and adds each stock\u2019s value to it. When calculating the trades, it carries the remaining cash balance, adding money from sales and subtracting money spent on purchases.</span>\n<span class=\"paragraph\">Which check will you use in section 6, and which two numbers should agree?</span>\n<span class=\"paragraph\">I will independently calculate the value of the final stock holdings and add the remaining cash. This total should equal the original portfolio value, including the starting cash, because the trades happen at the same prices with no fees.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "89874429ffcd1ba52cfa091ae5bcd456",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-inputs\">3. Inputs</h2>\n<span class=\"paragraph\">Every number the project starts from goes in the cell below, and nowhere else, so that changing one input changes every result after it.</span>\n<span class=\"paragraph\">Copy in the default inputs for your option from the Mini Project 1 page. If you chose D, your own option, type your data in here, or ask your agent to generate it with <code>faker</code>. The required part reads no file.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "54436c443c60319e53020cf945095f3d",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "71d32bd63e1b86444a83f18329c3c3f8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-the-work\">4. The Work</h2>\n<span class=\"paragraph\">Add as many cells as you need. Try each step yourself before you ask your agent, and commit as you go.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-the-answer\">5. The Answer</h2>\n<span class=\"paragraph\"><em>A table of your results in the cell below, printed with <code>print</code> and f-strings, then one sentence here that answers the question in section 1, with the number in it.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-how-i-know-these-numbers-are-right\">6. How I Know These Numbers Are Right</h2>\n<span class=\"paragraph\"><em>At least one check that reaches a result a second, independent way. Name what you compared and what came out.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "4fa513d08c761dfe89641eaef1357bc2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"7-working-with-the-agent\">7. Working With the Agent</h2>\n<span class=\"paragraph\"><em>Pick one piece of AI output you did not accept as-is. What did it give you, what did you change, and how did you know? Point to the commit or the cell.</em></span>\n<span class=\"paragraph\"><em>If the agent got it right the first time: what did you do to verify that?</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
