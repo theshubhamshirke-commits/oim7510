@@ -189,6 +189,12 @@
       ]
     },
     {
+      "id": "gufl",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
       "id": "nWHF",
       "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
       "outputs": [
@@ -275,25 +281,58 @@
     },
     {
       "id": "Vxnm",
-      "code_hash": "5c00d9ccb83385bf76d6149560356385",
+      "code_hash": "b653d1c01ede54e57bf2dcee02b29d10",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"going-2-steps-further\"><em>GOING \"2\" STEPS FURTHER.</em></h1></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"going-3-steps-further\"><em>GOING \"3\" STEPS FURTHER.</em></h1></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "DnEU",
-      "code_hash": "c771bbfc3c95a4c0394b36c5823b7e83",
+      "id": "dPJz",
+      "code_hash": "1c29d82993e00a0f6847159f5f23097c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"a-use-todays-oct-9-2026-prices-from-yfinance-in-place-of-the-listed-ones\"><em>A. Use today's (Oct 9, 2026) prices from yfinance in place of the listed ones.</em></h1></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"a-rebalance-only-the-holdings-that-have-drifted-more-than-five-percentage-points-from-their-target\"><em>A. Rebalance only the holdings that have drifted more than five percentage points from their target.</em></h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vnds",
+      "code_hash": "5517ef01e69973cb3ce015caa2544114",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "REBALANCE ONLY WHEN THE STARTING GAP EXCEEDS 5 POINTS\n\nTicker    Start gap (pp)   Buy/Sell  Final shares     Value ($)   Final (%)   End gap (pp)\nAAPL             -5.6615        +39           139     24,176.27     19.9305        -0.0695\nMSFT             -6.8292        +25            75     23,964.75     19.7562        -0.2438\nGOOG             -6.3367        +58           138     18,127.68     14.9442        -0.0558\nAMZN             +6.3235        -60           140     18,106.20     14.9265        -0.0735\nNVDA             -8.2372        +24            44     18,047.48     14.8781        -0.1219\nTSLA            +16.6192        -79            71     18,154.70     14.9664        -0.0336\n\nStocks traded: 6 out of 6\nRemaining cash: $725.62\nLargest final gap: 0.2438 percentage points.\nPositive trades mean buy; negative trades mean sell.\nNegative gaps mean below target; positive gaps mean above target.\n\nPortfolio value before: $121,302.70\nPortfolio value after:  $121,302.70\nCheck passed: the portfolio value is unchanged.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "775f03213456e4976af01455afcc7ce4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"b-use-todays-oct-9-2026-prices-from-yfinance-in-place-of-the-listed-ones\"><em>B. Use today's (Oct 9, 2026) prices from yfinance in place of the listed ones.</em></h1></span>"
           }
         }
       ],
@@ -320,12 +359,12 @@
     },
     {
       "id": "Pvdt",
-      "code_hash": "06dc53d4e270b37ae914999406b328a4",
+      "code_hash": "7b38124714743c2368fab03eb979d0a3",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"b-importing-netflix-stock-price-by-importing-a-yfinance-library\"><em>B. Importing Netflix stock price by importing a yfinance library</em></h1>\n<span class=\"paragraph\">This code uses the yfinance library to retrieve Netflix\u2019s recent stock-price history and display its latest available daily closing price and date. <strong><u>It fetches the data automatically rather than using a manually entered price.</strong></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"c-importing-netflix-stock-price-by-importing-a-yfinance-library\"><em>C. Importing Netflix stock price by importing a yfinance library</em></h1>\n<span class=\"paragraph\">This code uses the yfinance library to retrieve Netflix\u2019s recent stock-price history and display its latest available daily closing price and date. <strong><u>It fetches the data automatically rather than using a manually entered price.</strong></span></span>"
           }
         }
       ],

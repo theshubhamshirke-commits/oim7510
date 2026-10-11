@@ -313,6 +313,14 @@ def _(rebalance_results, remaining_cash, total_portfolio_value):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    The advisor should buy 39 Apple, 25 Microsoft, 58 Google, and 24 Nvidia shares and sell 60 Amazon and 79 Tesla shares, leaving $725.62 in cash; I consider the resulting allocations close enough because the largest gap from a target is only 0.2438 percentage points.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 6. How I Know These Numbers Are Right
 
     *At least one check that reaches a result a second, independent way. Name what you compared and what came out.*
@@ -402,7 +410,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # *GOING "2" STEPS FURTHER.*#
+    # *GOING "3" STEPS FURTHER.*#
     """)
     return
 
@@ -410,7 +418,148 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # *A. Use today's (Oct 9, 2026) prices from yfinance in place of the listed ones.*#
+    # *A. Rebalance only the holdings that have drifted more than five percentage points from their target.*#
+    """)
+    return
+
+
+@app.cell
+def _(cash, holdings, target_weights):
+    # Rebalance only stocks that are MORE THAN five percentage
+    # points away from their target allocation.
+    # Use the original holdings and assume no trading fees.
+
+    _drift_threshold_pp = 5.0
+
+    # Calculate the original portfolio value, including cash.
+    _starting_total = cash
+
+    for _ticker, _shares, _price in holdings:
+        _starting_total += round(_shares * _price, 2)
+
+    _starting_total = round(_starting_total, 2)
+
+    _cash_after = cash
+    _results = []
+    _trades_made = 0
+
+    # Check each stock's allocation BEFORE any trades.
+    for _ticker, _shares, _price in holdings:
+        _current_value = _shares * _price
+        _current_weight = (_current_value / _starting_total) * 100
+        _target_weight = target_weights[_ticker] * 100
+
+        _starting_gap = _current_weight - _target_weight
+
+        if abs(_starting_gap) > _drift_threshold_pp:
+            # Rebalance this stock to its whole-share target.
+            _target_dollars = _starting_total * target_weights[_ticker]
+            _final_shares = int(_target_dollars // _price)
+            _trade = _final_shares - _shares
+        else:
+            # Leave this stock unchanged.
+            _final_shares = _shares
+            _trade = 0
+
+        if _trade != 0:
+            _trades_made += 1
+
+        # Purchases reduce cash; sales increase it.
+        _trade_value = round(_trade * _price, 2)
+        _cash_after = round(_cash_after - _trade_value, 2)
+
+        _final_value = round(_final_shares * _price, 2)
+        _final_weight = (_final_value / _starting_total) * 100
+        _final_gap = _final_weight - _target_weight
+
+        _results.append(
+            (
+                _ticker,
+                _starting_gap,
+                _trade,
+                _final_shares,
+                _final_value,
+                _final_weight,
+                _final_gap,
+            )
+        )
+
+    # Selective rebalancing may not always have enough cash.
+    if _cash_after < 0:
+        print("The proposed trades would leave negative cash.")
+        print("Purchases must be reduced before these trades can be made.")
+
+    else:
+        print("REBALANCE ONLY WHEN THE STARTING GAP EXCEEDS 5 POINTS")
+        print()
+
+        print(
+            f"{'Ticker':<8}"
+            f"{'Start gap (pp)':>16}"
+            f"{'Buy/Sell':>11}"
+            f"{'Final shares':>14}"
+            f"{'Value ($)':>14}"
+            f"{'Final (%)':>12}"
+            f"{'End gap (pp)':>15}"
+        )
+
+        _largest_gap = 0
+
+        for _row in _results:
+            (
+                _ticker,
+                _starting_gap,
+                _trade,
+                _final_shares,
+                _final_value,
+                _final_weight,
+                _final_gap,
+            ) = _row
+
+            print(
+                f"{_ticker:<8}"
+                f"{_starting_gap:>+16.4f}"
+                f"{_trade:>+11}"
+                f"{_final_shares:>14}"
+                f"{_final_value:>14,.2f}"
+                f"{_final_weight:>12.4f}"
+                f"{_final_gap:>+15.4f}"
+            )
+
+            _largest_gap = max(_largest_gap, abs(_final_gap))
+
+        print()
+        print(f"Stocks traded: {_trades_made} out of {len(holdings)}")
+        print(f"Remaining cash: ${_cash_after:,.2f}")
+        print(f"Largest final gap: {_largest_gap:.4f} percentage points.")
+        print("Positive trades mean buy; negative trades mean sell.")
+        print("Negative gaps mean below target; positive gaps mean above target.")
+
+        # Independently value the final shares at the original prices.
+        _checked_stock_value = 0
+
+        for _ticker, _original_shares, _price in holdings:
+            for _row in _results:
+                if _row[0] == _ticker:
+                    _checked_stock_value += _row[3] * _price
+
+        _checked_total = round(_checked_stock_value + _cash_after, 2)
+
+        print()
+        print(f"Portfolio value before: ${_starting_total:,.2f}")
+        print(f"Portfolio value after:  ${_checked_total:,.2f}")
+
+        if _checked_total == _starting_total:
+            print("Check passed: the portfolio value is unchanged.")
+        else:
+            print("Check failed: review the calculations.")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # *B. Use today's (Oct 9, 2026) prices from yfinance in place of the listed ones.*#
     """)
     return
 
@@ -443,7 +592,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # *B. Importing Netflix stock price by importing a yfinance library*#
+    # *C. Importing Netflix stock price by importing a yfinance library*#
 
 
     This code uses the yfinance library to retrieve Netflix’s recent stock-price history and display its latest available daily closing price and date. **<u>It fetches the data automatically rather than using a manually entered price.**
