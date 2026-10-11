@@ -559,6 +559,16 @@ def _(cash, holdings, target_weights):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    I extended the tool to rebalance only stocks whose starting allocations differ from their targets by more than five percentage points. This is implemented in the Section 8A code cell above.
+
+    With the original inputs, all six stocks exceeded the threshold, so all six were rebalanced. The results matched the main task: $725.62 remained in cash, and the largest final gap was 0.2438 percentage points. The portfolio-value check also passed. I found that this rule did not reduce the number of trades for this particular portfolio.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     # *B. Use today's (Oct 9, 2026) prices from yfinance in place of the listed ones.*#
     """)
     return
