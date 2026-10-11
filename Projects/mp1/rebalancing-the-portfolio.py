@@ -382,7 +382,9 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    I verified the agent’s calculations by manually working through Apple and Tesla using a calculator and pen and paper. For each stock, I calculated its current value, target dollar amount, whole-share target, required trade, final value, and final portfolio weight. My calculations showed that Apple required buying 39 shares and Tesla required selling 79 shares, matching the results in Section 5. Checking both a purchase and a sale helped me verify that the code calculated the trade quantities and directions correctly.
+    I verified the agent’s calculations by manually working through Apple and Tesla using a calculator and pen and paper. For each stock, I calculated its current value, target dollar amount, whole-share target, required trade, final value, and final portfolio weight.
+
+    Specifically, I checked the code under “Calculate trades and remaining cash” in Section 4, particularly the lines target_shares = int(target_value // price) and shares_to_trade = target_shares - shares. My manual calculations gave a target of 139 Apple shares, requiring 39 shares to be bought, and 71 Tesla shares, requiring 79 shares to be sold. These matched the results printed by the Section 5 table code cell. Checking both a purchase and a sale helped me verify the trade quantities and directions.
     """)
     return
 
