@@ -45,7 +45,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    As the title says, Rebalancing the portfolio, this particular tool will help a financial advisor/ people handing their own portfolio to balance different aspects of their portfolio ensuring that the overall allocation aligns with the desired risk tolerance and investment goals. It also calculates how many shares of each stock to buy or sell and how much cash will remain after those trades.
+    As the title says, Rebalancing the portfolio, this particular tool will help a financial advisor/ people handing their own portfolio to balance different aspects of their portfolio ensuring that the overall allocation aligns with the desired risk tolerance and investment goals. It also calculates how many shares of each stock to buy or sell and how much cash will remain after those trades, which helps the financial advisor take clear actions on the portfolio.
     """)
     return
 
@@ -76,11 +76,11 @@ def _(mo):
     4. Now, once the  TPV is known, I will again calculate the percentage allocation of each stock in the portfolio by dividing the current value of each stock by the TPV, and then multiplying by 100. For ex: AAPL allocation % = (17,393 / TPV) * 100.
     5. This will be repeated for all 6 stocks, plus the cash position, so that the sum of all allocation percentages equals 100%.
     6. Once I have the percentage allocation of each stock, I will compare it against the target allocation to see which stocks are overweight or underweight relative to the desired portfolio mix.
-    7. For each stock, I will multiply the total portfolio value by its target allocation to calculate the dollar amount that should be invested in it.
+    7. For each stock, I will multiply the TPV by its target allocation to calculate the dollar amount that should be invested in it.
     8. I will divide this target dollar amount by the stock’s price and round down to a whole number, since the brokerage only allows whole shares.
     9. I will subtract the current number of shares from the target number of shares. A positive result means buy, a negative result means sell, and zero means hold.
     10. I will calculate the remaining cash by adding the money received from selling shares and subtracting the money spent on buying shares.
-    11. I will calculate each stock’s value and percentage allocation after the trades, including the remaining cash in the total portfolio value.
+    11. I will calculate each stock’s value and percentage allocation after the trades, including the remaining cash in the TPV.
     12. I will compare the final allocations with the targets in percentage points and decide whether the differences are small enough.
     13. Finally, I will check that the remaining cash is not negative and that the total value of the stocks plus cash is the same before and after rebalancing, since there are no trading fees.
     """)
@@ -90,14 +90,14 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    What does your loop carry from one step to the next, the way a running total carries its sum?
+    #What does your loop carry from one step to the next, the way a running total carries its sum?#
 
     When calculating the total portfolio value (TPV), my loop carries a running total and adds each stock’s value to it. When calculating the trades, it carries the remaining cash balance, adding money from sales and subtracting money spent on purchases.
 
 
 
 
-    Which check will you use in section 6, and which two numbers should agree?
+    #Which check will you use in section 6, and which two numbers should agree?#
 
     I will independently calculate the value of the final stock holdings and add the remaining cash. This total should equal the original portfolio value, including the starting cash, because the trades happen at the same prices with no fees.
     """)
@@ -156,7 +156,7 @@ def _(mo):
 
 @app.cell
 def _(cash, holdings, target_weights):
-    # STEP 1: Calculate the total portfolio value.
+    #Calculate the total portfolio value
 
     total_portfolio_value = cash
 
@@ -170,7 +170,7 @@ def _(cash, holdings, target_weights):
     print()
 
 
-    # STEP 2: Compare current allocations with target allocations.
+    #Compare current allocations with target allocations
 
     for ticker, shares, price in holdings:
         current_stock_value = shares * price
@@ -188,7 +188,7 @@ def _(cash, holdings, target_weights):
     print()
 
 
-    # STEP 3: Calculate trades and remaining cash.
+    #Calculate trades and remaining cash
 
     remaining_cash = cash
     rebalance_results = []
@@ -230,7 +230,6 @@ def _(cash, holdings, target_weights):
             )
         )
 
-    #print(f"Cash remaining after all trades: ${remaining_cash:,.2f}")
     return rebalance_results, remaining_cash, total_portfolio_value
 
 
@@ -445,7 +444,7 @@ def _(mo):
     # *B. Importing Netflix stock price by importing a yfinance library*#
 
 
-    This code uses the yfinance library to retrieve Netflix’s recent stock-price history and display its latest available daily closing price and date. It fetches the data automatically rather than using a manually entered price.
+    This code uses the yfinance library to retrieve Netflix’s recent stock-price history and display its latest available daily closing price and date. **<u>It fetches the data automatically rather than using a manually entered price.**
     """)
     return
 

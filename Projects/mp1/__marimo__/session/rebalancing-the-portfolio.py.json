@@ -46,12 +46,12 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "03e5374b04290add04c879a0dcca427e",
+      "code_hash": "2af767bdd08a406f03f71a4a16720bcd",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">As the title says, Rebalancing the portfolio, this particular tool will help a financial advisor/ people handing their own portfolio to balance different aspects of their portfolio ensuring that the overall allocation aligns with the desired risk tolerance and investment goals. It also calculates how many shares of each stock to buy or sell and how much cash will remain after those trades.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">As the title says, Rebalancing the portfolio, this particular tool will help a financial advisor/ people handing their own portfolio to balance different aspects of their portfolio ensuring that the overall allocation aligns with the desired risk tolerance and investment goals. It also calculates how many shares of each stock to buy or sell and how much cash will remain after those trades, which helps the financial advisor take clear actions on the portfolio.</span></span>"
           }
         }
       ],
@@ -72,12 +72,12 @@
     },
     {
       "id": "PKri",
-      "code_hash": "6cebd3c4f93733639faf21063deba723",
+      "code_hash": "56cf35b2773150c9bdb12a0ac6aa5d21",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">So, for this particular tool, I would carry the following steps:</span>\n<ol>\n<li>Start by calculating the current value of each stock. For ex: AAPL: 100 (shares) * 173.93 (current price). So, for AAPL, the current value = 100 *173.93 = $17,393.</li>\n<li>Step 1 will repeated for other stocks as well.</li>\n<li>After the current value of all 6 stocks in known, I will add them all up plus add the $5000 cash available, which wil give me the total portfolio value (TPV).</li>\n<li>Now, once the  TPV is known, I will again calculate the percentage allocation of each stock in the portfolio by dividing the current value of each stock by the TPV, and then multiplying by 100. For ex: AAPL allocation % = (17,393 / TPV) * 100.</li>\n<li>This will be repeated for all 6 stocks, plus the cash position, so that the sum of all allocation percentages equals 100%.</li>\n<li>Once I have the percentage allocation of each stock, I will compare it against the target allocation to see which stocks are overweight or underweight relative to the desired portfolio mix.</li>\n<li>For each stock, I will multiply the total portfolio value by its target allocation to calculate the dollar amount that should be invested in it.</li>\n<li>I will divide this target dollar amount by the stock\u2019s price and round down to a whole number, since the brokerage only allows whole shares.</li>\n<li>I will subtract the current number of shares from the target number of shares. A positive result means buy, a negative result means sell, and zero means hold.</li>\n<li>I will calculate the remaining cash by adding the money received from selling shares and subtracting the money spent on buying shares.</li>\n<li>I will calculate each stock\u2019s value and percentage allocation after the trades, including the remaining cash in the total portfolio value.</li>\n<li>I will compare the final allocations with the targets in percentage points and decide whether the differences are small enough.</li>\n<li>Finally, I will check that the remaining cash is not negative and that the total value of the stocks plus cash is the same before and after rebalancing, since there are no trading fees.</li>\n</ol></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">So, for this particular tool, I would carry the following steps:</span>\n<ol>\n<li>Start by calculating the current value of each stock. For ex: AAPL: 100 (shares) * 173.93 (current price). So, for AAPL, the current value = 100 *173.93 = $17,393.</li>\n<li>Step 1 will repeated for other stocks as well.</li>\n<li>After the current value of all 6 stocks in known, I will add them all up plus add the $5000 cash available, which wil give me the total portfolio value (TPV).</li>\n<li>Now, once the  TPV is known, I will again calculate the percentage allocation of each stock in the portfolio by dividing the current value of each stock by the TPV, and then multiplying by 100. For ex: AAPL allocation % = (17,393 / TPV) * 100.</li>\n<li>This will be repeated for all 6 stocks, plus the cash position, so that the sum of all allocation percentages equals 100%.</li>\n<li>Once I have the percentage allocation of each stock, I will compare it against the target allocation to see which stocks are overweight or underweight relative to the desired portfolio mix.</li>\n<li>For each stock, I will multiply the TPV by its target allocation to calculate the dollar amount that should be invested in it.</li>\n<li>I will divide this target dollar amount by the stock\u2019s price and round down to a whole number, since the brokerage only allows whole shares.</li>\n<li>I will subtract the current number of shares from the target number of shares. A positive result means buy, a negative result means sell, and zero means hold.</li>\n<li>I will calculate the remaining cash by adding the money received from selling shares and subtracting the money spent on buying shares.</li>\n<li>I will calculate each stock\u2019s value and percentage allocation after the trades, including the remaining cash in the TPV.</li>\n<li>I will compare the final allocations with the targets in percentage points and decide whether the differences are small enough.</li>\n<li>Finally, I will check that the remaining cash is not negative and that the total value of the stocks plus cash is the same before and after rebalancing, since there are no trading fees.</li>\n</ol></span>"
           }
         }
       ],
@@ -85,12 +85,12 @@
     },
     {
       "id": "Xref",
-      "code_hash": "50c290db1889e00989267f1e72570a2f",
+      "code_hash": "f1af0c3a1e15c7eaee4614e1bd74c1c3",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">What does your loop carry from one step to the next, the way a running total carries its sum?</span>\n<span class=\"paragraph\">When calculating the total portfolio value (TPV), my loop carries a running total and adds each stock\u2019s value to it. When calculating the trades, it carries the remaining cash balance, adding money from sales and subtracting money spent on purchases.</span>\n<span class=\"paragraph\">Which check will you use in section 6, and which two numbers should agree?</span>\n<span class=\"paragraph\">I will independently calculate the value of the final stock holdings and add the remaining cash. This total should equal the original portfolio value, including the starting cash, because the trades happen at the same prices with no fees.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"what-does-your-loop-carry-from-one-step-to-the-next-the-way-a-running-total-carries-its-sum\">What does your loop carry from one step to the next, the way a running total carries its sum?</h1>\n<span class=\"paragraph\">When calculating the total portfolio value (TPV), my loop carries a running total and adds each stock\u2019s value to it. When calculating the trades, it carries the remaining cash balance, adding money from sales and subtracting money spent on purchases.</span>\n<h1 id=\"which-check-will-you-use-in-section-6-and-which-two-numbers-should-agree\">Which check will you use in section 6, and which two numbers should agree?</h1>\n<span class=\"paragraph\">I will independently calculate the value of the final stock holdings and add the remaining cash. This total should equal the original portfolio value, including the starting cash, because the trades happen at the same prices with no fees.</span></span>"
           }
         }
       ],
@@ -112,7 +112,14 @@
     {
       "id": "BYtC",
       "code_hash": "f3e6b82fe642f300292fc021e6f6f068",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -130,9 +137,23 @@
     },
     {
       "id": "Kclp",
-      "code_hash": "ea412cca2f58b11719b5fcfa700422f0",
-      "outputs": [],
-      "console": []
+      "code_hash": "c7872050ac26e73583201afffd02190b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Total portfolio value: $121,302.70\n\nAAPL: Current = 14.34%, Target = 20.00%\nMSFT: Current = 13.17%, Target = 20.00%\nGOOG: Current = 8.66%, Target = 15.00%\nAMZN: Current = 21.32%, Target = 15.00%\nNVDA: Current = 6.76%, Target = 15.00%\nTSLA: Current = 31.62%, Target = 15.00%\nCash allocation: 4.12%\n\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "emfo",
@@ -150,8 +171,22 @@
     {
       "id": "Hstk",
       "code_hash": "65a331c1eb342a3b58981ef981f83a3d",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Ticker    Shares now  Target shares    Buy/Sell   Value after ($)   Weight after    Gap (pp)\nAAPL             100            139         +39         24,176.27       19.9305%     -0.0695\nMSFT              50             75         +25         23,964.75       19.7562%     -0.2438\nGOOG              80            138         +58         18,127.68       14.9442%     -0.0558\nAMZN             200            140         -60         18,106.20       14.9265%     -0.0735\nNVDA              20             44         +24         18,047.48       14.8781%     -0.1219\nTSLA             150             71         -79         18,154.70       14.9664%     -0.0336\n\nCash remaining: $725.62\nCash as a share of the portfolio: 0.5982%\n\nBuy/Sell: positive means buy; negative means sell; zero means hold.\nGap (pp): difference from the target in percentage points.\nA negative gap means below target; a positive gap means above target.\n\nThe largest absolute gap from a target is 0.2438 percentage points.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "nWHF",
@@ -182,8 +217,22 @@
     {
       "id": "ZHCJ",
       "code_hash": "d8a388cc1a76f756add98bcc3d4d1b35",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Original portfolio value: $121,302.70\nFinal stock value:        $120,577.08\nRemaining cash:           $725.62\nFinal portfolio value:    $121,302.70\nDifference:              $0.00\nCheck passed: the portfolio value is unchanged.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "ROlb",
@@ -225,7 +274,7 @@
       "console": []
     },
     {
-      "id": "suub",
+      "id": "Vxnm",
       "code_hash": "5c00d9ccb83385bf76d6149560356385",
       "outputs": [
         {
@@ -238,7 +287,7 @@
       "console": []
     },
     {
-      "id": "wYhy",
+      "id": "DnEU",
       "code_hash": "c771bbfc3c95a4c0394b36c5823b7e83",
       "outputs": [
         {
@@ -251,13 +300,13 @@
       "console": []
     },
     {
-      "id": "LDFv",
-      "code_hash": null,
+      "id": "ulZA",
+      "code_hash": "b9bfc2a69d69383482ac746aeb7b4083",
       "outputs": [],
       "console": []
     },
     {
-      "id": "Ydoo",
+      "id": "ecfG",
       "code_hash": "d21dede335f8c69a9047c3e85486ff0d",
       "outputs": [
         {
@@ -270,20 +319,20 @@
       "console": []
     },
     {
-      "id": "nORw",
-      "code_hash": "e6eabe1f35251976996b8460711e19f3",
+      "id": "Pvdt",
+      "code_hash": "06dc53d4e270b37ae914999406b328a4",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"b-importing-netflix-stock-price-by-importing-a-yfinance-library\"><em>B. Importing Netflix stock price by importing a yfinance library</em></h1>\n<span class=\"paragraph\">This code uses the yfinance library to retrieve Netflix\u2019s recent stock-price history and display its latest available daily closing price and date. It fetches the data automatically rather than using a manually entered price.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"b-importing-netflix-stock-price-by-importing-a-yfinance-library\"><em>B. Importing Netflix stock price by importing a yfinance library</em></h1>\n<span class=\"paragraph\">This code uses the yfinance library to retrieve Netflix\u2019s recent stock-price history and display its latest available daily closing price and date. <strong><u>It fetches the data automatically rather than using a manually entered price.</strong></span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "CqiF",
+      "id": "ZBYS",
       "code_hash": "263724878c91a2ec1e392e5716a26fed",
       "outputs": [
         {
