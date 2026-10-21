@@ -215,7 +215,6 @@ def find_largest(portfolio, n):
 @app.cell
 def _(holdings):
     find_largest(holdings, 3)
-
     return
 
 
@@ -997,7 +996,7 @@ def _(mo):
        ```python
        board_reply = requests.post(
            "https://oim.zhili.dev/message",
-           headers={"x-token": "<your-github-username>"},
+           headers={"x-token": "theshubhamshirke"},
            json={"message": f"{town_name}: ${town_bill:,}"},
            timeout=10,
        )
@@ -1018,6 +1017,18 @@ def _(mo):
     mo.md(r"""
     > **Advanced · G · Take it down.** `requests.delete` on the same address, with the same header, removes your line. Run it twice and compare the two replies.
     """)
+    return
+
+
+@app.cell
+def _(requests):
+    board_reply = requests.post(
+           "https://oim.zhili.dev/message",
+           headers={"x-token": "theshubhamshirke"},
+           json={"message": "Hii from Shubham"},
+           timeout=10,
+       )
+    board_reply.status_code, board_reply.json()
     return
 
 
