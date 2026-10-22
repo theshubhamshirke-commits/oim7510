@@ -12,7 +12,7 @@
 
 import marimo
 
-__generated_with = "0.25.1"
+__generated_with = "0.24.2"
 app = marimo.App(width="medium", sql_output="polars")
 
 
@@ -199,6 +199,64 @@ def _(mo):
     return
 
 
+@app.cell
+def _(towns_from_file):
+    million_dollar_count = 0
+    county_counts = {}
+    for _town in towns_from_file:
+        _value = int(_town["average_single_family_value_dollars"])
+        if _value >= 1_000_000:
+            million_dollar_count += 1
+            _county = _town["county"]
+            if _county in county_counts:
+                county_counts[_county] += 1
+            else:
+                county_counts[_county] = 1
+
+    top_county = None
+    top_county_count = 0
+    for _county in county_counts:
+        if county_counts[_county] > top_county_count:
+            top_county = _county
+            top_county_count = county_counts[_county]
+
+    million_dollar_count, top_county, top_county_count
+    return
+
+
+@app.cell
+def _(towns_from_file):
+    smallest_town = towns_from_file[0]
+    largest_town = towns_from_file[0]
+    for _town in towns_from_file:
+        _population = int(_town["population"])
+        if _population < int(smallest_town["population"]):
+            smallest_town = _town
+        if _population > int(largest_town["population"]):
+            largest_town = _town
+
+    smallest_town["name"], smallest_town["population"], largest_town["name"], largest_town["population"]
+    return
+
+
+@app.cell
+def _(towns_from_file):
+    # Going further: the town with the most expensive average home, in each county
+    most_expensive_by_county = {}
+    for _town in towns_from_file:
+        _county = _town["county"]
+        _value = int(_town["average_single_family_value_dollars"])
+        if _county not in most_expensive_by_county:
+            most_expensive_by_county[_county] = _town
+        elif _value > int(most_expensive_by_county[_county]["average_single_family_value_dollars"]):
+            most_expensive_by_county[_county] = _town
+
+    for _county in most_expensive_by_county:
+        _town = most_expensive_by_county[_county]
+        print(_county, "-", _town["name"], "-", _town["average_single_family_value_dollars"])
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -261,7 +319,7 @@ def _(mo):
 @app.cell
 def _(pl, town_table):
     (
-        town_table.filter(pl.col("average_single_family_value_dollars") >= 1_000_000)
+        town_table.filter(pl.col("average_single_family_value_dollars") >= 2_000_000)
         .group_by("county")
         .agg(pl.len().alias("towns"))
         .sort("towns", descending=True)
@@ -319,6 +377,38 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ma_counties, pl, town_table):
+    town_counts_from_file = town_table.group_by("county").agg(pl.len().alias("towns")).sort("county")
+    town_counts_from_server = pl.DataFrame(ma_counties).select("name", "towns").rename({"name": "county"}).sort("county")
+
+    town_counts_from_file, town_counts_from_server
+    return
+
+
+@app.cell
+def _(pl, town_table):
+    (
+        town_table.filter(pl.col("population") > 50_000)
+        .sort("average_single_family_bill_dollars", descending=True)
+        .head(5)
+    )
+    return
+
+
+@app.cell
+def _(pl, town_table):
+    # Going further: among small towns (under 5,000 people), which county has the
+    # highest average income per capita?
+    (
+        town_table.filter(pl.col("population") < 5_000)
+        .group_by("county")
+        .agg(pl.col("income_per_capita_dollars").mean().alias("avg_income_per_capita"))
+        .sort("avg_income_per_capita", descending=True)
+    )
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -337,12 +427,12 @@ def _(mo, town_table):
         f"""
         SELECT county, COUNT(*) AS towns
         FROM town_table
-        WHERE average_single_family_value_dollars >= 1000000
+        WHERE average_single_family_value_dollars >= 2000000
         GROUP BY county
         ORDER BY towns DESC
         """
     )
-    return (towns_over_threshold,)
+    return
 
 
 @app.cell(hide_code=True)
@@ -362,6 +452,43 @@ def _(mo):
 
     **Going further.** Write a SQL query of your own on `town_table`, and check its answer in polars.
     """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    **Prediction.** Raising the bar from $1,000,000 to $2,000,000 is a *stricter* filter: every town that still qualifies at $2,000,000 also qualified at $1,000,000, but not the other way around. So no county's count can go up, only stay the same or go down. It will go down for any county whose million-dollar towns were valued between $1,000,000 and $2,000,000; it stays the same only if a county's million-dollar towns were already above $2,000,000 (or if it had none to begin with).
+    """)
+    return
+
+
+@app.cell
+def _(mo, town_table):
+    _df = mo.sql(
+        f"""
+        SELECT county, COUNT(*) AS towns
+        FROM town_table
+        WHERE average_single_family_value_dollars >= 2000000
+        GROUP BY county
+        ORDER BY towns DESC
+        """
+    )
+    return
+
+
+@app.cell
+def _(mo, town_table):
+    # Going further: counties where the average town has more than 10,000 people
+    county_avg_population = mo.sql(
+        f"""
+        SELECT county, AVG(population) AS avg_population
+        FROM town_table
+        GROUP BY county
+        HAVING AVG(population) > 10000
+        ORDER BY avg_population DESC
+        """
+    )
     return
 
 
@@ -415,6 +542,40 @@ def _(mo):
 
     **Going further.** Color the bars or dots by a column with `color=`, and explain what the colors add.
     """)
+    return
+
+
+@app.cell
+def _(alt, mo, town_table):
+    town_income_vs_bill_chart = mo.ui.altair_chart(
+        alt.Chart(town_table)
+        .mark_circle(opacity=0.6)
+        .encode(
+            x=alt.X("income_per_capita_dollars", title="Income per capita ($)"),
+            y=alt.Y("average_single_family_bill_dollars", title="Average single-family tax bill ($)"),
+            tooltip=["name", "county", "income_per_capita_dollars", "average_single_family_bill_dollars"],
+        )
+        .properties(title="Towns with higher income per capita tend to pay higher tax bills")
+    )
+    town_income_vs_bill_chart
+    return
+
+
+@app.cell
+def _(alt, mo, town_table):
+    # Going further: color each town by county
+    town_income_vs_bill_by_county_chart = mo.ui.altair_chart(
+        alt.Chart(town_table)
+        .mark_circle(opacity=0.7)
+        .encode(
+            x=alt.X("income_per_capita_dollars", title="Income per capita ($)"),
+            y=alt.Y("average_single_family_bill_dollars", title="Average single-family tax bill ($)"),
+            color=alt.Color("county", title="County"),
+            tooltip=["name", "county", "income_per_capita_dollars", "average_single_family_bill_dollars"],
+        )
+        .properties(title="Towns with higher income per capita tend to pay higher tax bills, by county")
+    )
+    town_income_vs_bill_by_county_chart
     return
 
 

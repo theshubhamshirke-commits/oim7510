@@ -466,7 +466,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    1.list
+    1. list
     2. set
     3. dictionary
     4. tuple
@@ -508,16 +508,33 @@ def _():
 
 @app.cell
 def _(holdings):
+    #Q2 
     total_cost = 0
-    #use the for loop to calculate the total_cost
-
-    for stock in holdings:
-        shares = stock[1]
-        prices = stock[2]
-        subtotal = shares * prices
-        total_cost +=subtotal
+    for _symbol, _shares, _price in holdings:
+        total_cost += _shares * _price
 
     total_cost
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    1. I'd rather work with the list of dictionaries, because holding["Shares"] tells me what the value is, while holding[1] makes me remember that position 1 means shares. The tuple only reads clearly once it's unpacked into named variables.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    For Q3, there is no output, as it was a communication with the agent.
+    """)
     return
 
 
@@ -589,7 +606,6 @@ def _(requests):
     )
     babson_reply = requests.get(babson_url, timeout=10)
     babson_reply.status_code
-
     return (babson_reply,)
 
 

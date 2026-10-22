@@ -248,6 +248,14 @@ def _(holdings):
     return
 
 
+@app.cell
+def _(mo):
+    mo.md(r"""
+    `result` holds `None`. `count_shares_print` has no `return`, so calling it gives back nothing, even though it printed `600` on its way out. `print` only displays a value; it does not hand it back to the line that called the function. The next cell cannot do anything with `result`, since there is no number in it to add, compare, or pass to another function—only the empty value `None`.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -379,8 +387,12 @@ def _(mo):
     return
 
 
-@app.cell
-def _(false):
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Example reply from `/ma/towns?county=Norfolk&per_page=50`:
+
+    ```json
     {
       "items": [
         {
@@ -398,439 +410,8 @@ def _(false):
           "average_single_family_value_dollars": 572492,
           "average_single_family_bill_dollars": 7643,
           "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "025",
-          "name": "Bellingham",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 16.4,
-          "founded_year": 1719,
-          "population": 17998,
-          "income_per_capita_dollars": 45801,
-          "equalized_value_dollars": 4076393600,
-          "equalized_value_per_capita_dollars": 226491,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 490174,
-          "average_single_family_bill_dollars": 6073,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "040",
-          "name": "Braintree",
-          "county": "Norfolk",
-          "type": "city",
-          "area_square_miles": 16.5,
-          "founded_year": 1640,
-          "population": 39134,
-          "income_per_capita_dollars": 52904,
-          "equalized_value_dollars": 10340377900,
-          "equalized_value_per_capita_dollars": 264230,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 726203,
-          "average_single_family_bill_dollars": 7306,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "046",
-          "name": "Brookline",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 6.8,
-          "founded_year": 1705,
-          "population": 63925,
-          "income_per_capita_dollars": 100201,
-          "equalized_value_dollars": 33768586100,
-          "equalized_value_per_capita_dollars": 528253,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 2562186,
-          "average_single_family_bill_dollars": 26237,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "050",
-          "name": "Canton",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 18.3,
-          "founded_year": 1797,
-          "population": 25163,
-          "income_per_capita_dollars": 73374,
-          "equalized_value_dollars": 8267137500,
-          "equalized_value_per_capita_dollars": 328543,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 868560,
-          "average_single_family_bill_dollars": 8468,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "065",
-          "name": "Cohasset",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 9.9,
-          "founded_year": 1770,
-          "population": 8532,
-          "income_per_capita_dollars": 154676,
-          "equalized_value_dollars": 4232219500,
-          "equalized_value_per_capita_dollars": 496041,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 1481437,
-          "average_single_family_bill_dollars": 16814,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "073",
-          "name": "Dedham",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 10.2,
-          "founded_year": 1636,
-          "population": 25485,
-          "income_per_capita_dollars": 72590,
-          "equalized_value_dollars": 7957982700,
-          "equalized_value_per_capita_dollars": 312261,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 810871,
-          "average_single_family_bill_dollars": 9974,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "078",
-          "name": "Dover",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 15.2,
-          "founded_year": 1784,
-          "population": 6057,
-          "income_per_capita_dollars": 264727,
-          "equalized_value_dollars": 3605308900,
-          "equalized_value_per_capita_dollars": 595230,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 1705816,
-          "average_single_family_bill_dollars": 19088,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "099",
-          "name": "Foxborough",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 21.5,
-          "founded_year": 1778,
-          "population": 18791,
-          "income_per_capita_dollars": 64808,
-          "equalized_value_dollars": 4537534100,
-          "equalized_value_per_capita_dollars": 241474,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 693572,
-          "average_single_family_bill_dollars": 9016,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "101",
-          "name": "Franklin",
-          "county": "Norfolk",
-          "type": "city",
-          "area_square_miles": 26.8,
-          "founded_year": 1778,
-          "population": 33742,
-          "income_per_capita_dollars": 64589,
-          "equalized_value_dollars": 8538330900,
-          "equalized_value_per_capita_dollars": 253048,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 731396,
-          "average_single_family_bill_dollars": 8353,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "133",
-          "name": "Holbrook",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 7,
-          "founded_year": 1872,
-          "population": 11475,
-          "income_per_capita_dollars": 40811,
-          "equalized_value_dollars": 2100152500,
-          "equalized_value_per_capita_dollars": 183020,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 534082,
-          "average_single_family_bill_dollars": 6468,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "175",
-          "name": "Medfield",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 14.9,
-          "founded_year": 1651,
-          "population": 13334,
-          "income_per_capita_dollars": 111805,
-          "equalized_value_dollars": 4104880400,
-          "equalized_value_per_capita_dollars": 307851,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 1028374,
-          "average_single_family_bill_dollars": 13904,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "177",
-          "name": "Medway",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 13,
-          "founded_year": 1713,
-          "population": 13836,
-          "income_per_capita_dollars": 69807,
-          "equalized_value_dollars": 3638444900,
-          "equalized_value_per_capita_dollars": 262969,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 698980,
-          "average_single_family_bill_dollars": 9786,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "187",
-          "name": "Millis",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 14.3,
-          "founded_year": 1885,
-          "population": 9338,
-          "income_per_capita_dollars": 61956,
-          "equalized_value_dollars": 2230073300,
-          "equalized_value_per_capita_dollars": 238817,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 668161,
-          "average_single_family_bill_dollars": 10230,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "189",
-          "name": "Milton",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 13,
-          "founded_year": 1662,
-          "population": 28811,
-          "income_per_capita_dollars": 107276,
-          "equalized_value_dollars": 9321873200,
-          "equalized_value_per_capita_dollars": 323553,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 1081191,
-          "average_single_family_bill_dollars": 12769,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "199",
-          "name": "Needham",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 12.8,
-          "founded_year": 1711,
-          "population": 32931,
-          "income_per_capita_dollars": 139002,
-          "equalized_value_dollars": 14275936100,
-          "equalized_value_per_capita_dollars": 433511,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 1541061,
-          "average_single_family_bill_dollars": 16690,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "208",
-          "name": "Norfolk",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 15,
-          "founded_year": 1870,
-          "population": 11962,
-          "income_per_capita_dollars": 73622,
-          "equalized_value_dollars": 2848134600,
-          "equalized_value_per_capita_dollars": 238099,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 788035,
-          "average_single_family_bill_dollars": 11718,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "220",
-          "name": "Norwood",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 10.6,
-          "founded_year": 1872,
-          "population": 31764,
-          "income_per_capita_dollars": 58355,
-          "equalized_value_dollars": 8244418000,
-          "equalized_value_per_capita_dollars": 259552,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 719477,
-          "average_single_family_bill_dollars": 7065,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "238",
-          "name": "Plainville",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 10.6,
-          "founded_year": 1905,
-          "population": 10067,
-          "income_per_capita_dollars": 51750,
-          "equalized_value_dollars": 2438980600,
-          "equalized_value_per_capita_dollars": 242275,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 616329,
-          "average_single_family_bill_dollars": 6958,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "243",
-          "name": "Quincy",
-          "county": "Norfolk",
-          "type": "city",
-          "area_square_miles": 16.9,
-          "founded_year": 1625,
-          "population": 103434,
-          "income_per_capita_dollars": 48421,
-          "equalized_value_dollars": 24356530000,
-          "equalized_value_per_capita_dollars": 235479,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 700324,
-          "average_single_family_bill_dollars": 8250,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "244",
-          "name": "Randolph",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 10.4,
-          "founded_year": 1793,
-          "population": 35114,
-          "income_per_capita_dollars": 34979,
-          "equalized_value_dollars": 6232525200,
-          "equalized_value_per_capita_dollars": 177494,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 546462,
-          "average_single_family_bill_dollars": 6328,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "266",
-          "name": "Sharon",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 24,
-          "founded_year": 1765,
-          "population": 18762,
-          "income_per_capita_dollars": 85745,
-          "equalized_value_dollars": 5308409500,
-          "equalized_value_per_capita_dollars": 282934,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 836893,
-          "average_single_family_bill_dollars": 14353,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "285",
-          "name": "Stoughton",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 16.8,
-          "founded_year": 1726,
-          "population": 29457,
-          "income_per_capita_dollars": 42818,
-          "equalized_value_dollars": 6283557300,
-          "equalized_value_per_capita_dollars": 213313,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 606054,
-          "average_single_family_bill_dollars": 7157,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "307",
-          "name": "Walpole",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 22,
-          "founded_year": 1724,
-          "population": 26391,
-          "income_per_capita_dollars": 73347,
-          "equalized_value_dollars": 7392062800,
-          "equalized_value_per_capita_dollars": 280098,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 831005,
-          "average_single_family_bill_dollars": 10346,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "317",
-          "name": "Wellesley",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 10.5,
-          "founded_year": 1881,
-          "population": 31242,
-          "income_per_capita_dollars": 212430,
-          "equalized_value_dollars": 18013343600,
-          "equalized_value_per_capita_dollars": 576575,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 2020758,
-          "average_single_family_bill_dollars": 20551,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "335",
-          "name": "Westwood",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 11,
-          "founded_year": 1897,
-          "population": 16533,
-          "income_per_capita_dollars": 127497,
-          "equalized_value_dollars": 7283384500,
-          "equalized_value_per_capita_dollars": 440536,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 1250705,
-          "average_single_family_bill_dollars": 16097,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "336",
-          "name": "Weymouth",
-          "county": "Norfolk",
-          "type": "city",
-          "area_square_miles": 17.7,
-          "founded_year": 1635,
-          "population": 60159,
-          "income_per_capita_dollars": 45212,
-          "equalized_value_dollars": 13414292900,
-          "equalized_value_per_capita_dollars": 222981,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 613486,
-          "average_single_family_bill_dollars": 6208,
-          "finances_fiscal_year": 2026
-        },
-        {
-          "dor_code": "350",
-          "name": "Wrentham",
-          "county": "Norfolk",
-          "type": "town",
-          "area_square_miles": 19.8,
-          "founded_year": 1673,
-          "population": 12516,
-          "income_per_capita_dollars": 73106,
-          "equalized_value_dollars": 3513910100,
-          "equalized_value_per_capita_dollars": 280753,
-          "data_fiscal_year": 2027,
-          "average_single_family_value_dollars": 711823,
-          "average_single_family_bill_dollars": 8307,
-          "finances_fiscal_year": 2026
         }
+        // ... 27 more towns ...
       ],
       "pagination": {
         "page": 1,
@@ -841,6 +422,8 @@ def _(false):
         "has_prev": false
       }
     }
+    ```
+    """)
     return
 
 
@@ -879,6 +462,38 @@ def _(mo):
 
     **Going further.** Write `town_history(name)`, which takes a town's name, makes both requests, and returns the history.
     """)
+    return
+
+
+@app.cell
+def _(requests):
+    wellesley_reply = requests.get(
+        "https://oim.zhili.dev/ma/towns",
+        params={"name": "Wellesley"},
+        timeout=10,
+    )
+    wellesley_towns = wellesley_reply.json()["items"]
+    wellesley_towns
+    return
+
+
+@app.cell
+def _(requests):
+    wellesley_history_reply = requests.get(
+        "https://oim.zhili.dev/ma/towns/317/history",
+        params={"from_year": 2026, "to_year": 2026},
+        timeout=10,
+    )
+    wellesley_history = wellesley_history_reply.json()
+    wellesley_history
+    return (wellesley_history,)
+
+
+@app.cell
+def _(wellesley_history):
+    wellesley_year = wellesley_history["years"][0]
+    computed_bill = wellesley_year["average_single_family_value_dollars"] * wellesley_year["residential_rate_per_thousand"] / 1000
+    computed_bill, wellesley_year["average_single_family_bill_dollars"]
     return
 
 
@@ -963,6 +578,44 @@ def _(mo):
     return
 
 
+@app.cell
+def _(get_page):
+    def get_all_towns():
+        all_towns = []
+        first_page = get_page(1)
+        for town in first_page["items"]:
+            all_towns.append(town)
+        pages = first_page["pagination"]["pages"]
+        for page in range(2, pages + 1):
+            next_page = get_page(page)
+            for town in next_page["items"]:
+                all_towns.append(town)
+        return all_towns
+
+    return (get_all_towns,)
+
+
+@app.cell
+def _(get_all_towns):
+    all_towns = get_all_towns()
+    len(all_towns), all_towns[0]["name"], all_towns[-1]["name"]
+    return (all_towns,)
+
+
+@app.cell
+def _(all_towns):
+    highest_town = all_towns[0]
+    lowest_town = all_towns[0]
+    for _town in all_towns:
+        if _town["average_single_family_bill_dollars"] > highest_town["average_single_family_bill_dollars"]:
+            highest_town = _town
+        if _town["average_single_family_bill_dollars"] < lowest_town["average_single_family_bill_dollars"]:
+            lowest_town = _town
+
+    (highest_town["name"], highest_town["average_single_family_bill_dollars"]), (lowest_town["name"], lowest_town["average_single_family_bill_dollars"])
+    return highest_town, lowest_town
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -1012,11 +665,23 @@ def _(mo):
     return
 
 
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    > **Advanced · G · Take it down.** `requests.delete` on the same address, with the same header, removes your line. Run it twice and compare the two replies.
-    """)
+@app.cell
+def _(requests):
+    newton_reply = requests.get(
+        "https://oim.zhili.dev/ma/towns",
+        params={"name": "Newton"},
+        timeout=10,
+    )
+    newton_towns = newton_reply.json()["items"]
+    newton_towns
+    return (newton_towns,)
+
+
+@app.cell
+def _(newton_towns):
+    town_name = newton_towns[0]["name"]
+    town_bill = newton_towns[0]["average_single_family_bill_dollars"]
+    town_name, town_bill
     return
 
 
@@ -1024,11 +689,52 @@ def _(mo):
 def _(requests):
     board_reply = requests.post(
            "https://oim.zhili.dev/message",
-           headers={"x-token": "theshubhamshirke"},
+           headers={"x-token": "theshubhamshirke-commits"},
            json={"message": "Hii from Shubham"},
            timeout=10,
        )
     board_reply.status_code, board_reply.json()
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    The server answered **401**, with `{"detail": "Missing x-token header"}`. Without the `x-token` header, the request has a message but no name to put next to it, so the server refuses it rather than writing an anonymous line.
+
+    It needs to know who sent a message for the same reason a check needs a signature: the board shows one line per student, and without a token the server cannot tell whose line to write, update, or later delete. The token is also what stops anyone from posting under someone else's name, or flooding the board anonymously.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Going further. Post something more useful than one town's bill: choose a question somebody would ask, answer it from live data, and post the answer, in 140 characters or fewer.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    #Question: "Which Massachusetts town pays the highest average single-family tax bill, and which pays the lowest?"
+    """)
+    return
+
+
+@app.cell
+def _(highest_town, lowest_town):
+    message = f"Highest MA bill: {highest_town['name']} ${highest_town['average_single_family_bill_dollars']:,}. Lowest: {lowest_town['name']} ${lowest_town['average_single_family_bill_dollars']:,}."
+    len(message), message
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    > **Advanced · G · Take it down.** `requests.delete` on the same address, with the same header, removes your line. Run it twice and compare the two replies.
+    """)
     return
 
 
