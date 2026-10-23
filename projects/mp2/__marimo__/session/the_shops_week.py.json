@@ -82,6 +82,111 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "QjZA",
+      "code_hash": "a90b166584765d4af0808c17a4f8e784",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 3: INPUTS</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mItf",
+      "code_hash": "38a1300c830c0973d6277f3522344a31",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pFRl",
+      "code_hash": "cd5154ddf1da79af5e8a4557098162d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 4: THE WORK</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AgDR",
+      "code_hash": "3b94d1a1c0d47a2ac9657333b9e85fd9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "siZo",
+      "code_hash": "011d1e9ef4e352fadd22b7cbe890c96b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Reporting period: 2026-10-16 to 2026-10-22\nOrders collected: 19\nRevenue excluding freight: $466,962.33\nOrders not shipped: 14\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "mfPx",
+      "code_hash": "886a07be140e7c1d8d58abc3ec7a178c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "FmQJ",
+      "code_hash": "be9b24e66f08060f571d9dd06432b615",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Saved 19 orders to projects\\mp2\\data\\orders_2026-10-16_to_2026-10-22.json\n",
+          "mimetype": "text/plain"
+        }
+      ]
     }
   ]
 }
