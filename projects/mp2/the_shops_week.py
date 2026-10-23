@@ -96,7 +96,7 @@ def _():
     from datetime import date, timedelta
     from pathlib import Path
 
-    days = 7
+    days = 14
     base_url = "https://oim.zhili.dev"
     report_end = date.today()
 
@@ -660,6 +660,26 @@ def _(mo):
     - Highest-ranked product: Manjimup Dried Apples
     - Units sold of the highest-ranked product: 363
     - Orders not shipped: 17
+
+
+    ### Results after the change
+
+    - Reporting period: October 10–23, 2026 (14 days)
+    - Number of orders: 38
+    - Total revenue excluding freight: $996,973.47
+    - Highest-ranked product: Geitost
+    - Units sold of the highest-ranked product: 662
+    - Orders not shipped: 23
+
+    ### Comparison with my prediction
+
+    The results matched my prediction. Changing the reporting period from 7 to 14 days increased the number of orders from 22 to 38, adding 16 orders. Revenue increased from $569,630.89 to $996,973.47, a difference of $427,342.58.
+
+    The product ranking also changed. Manjimup Dried Apples ranked first in the seven-day report with 363 units. In the fourteen-day report, Geitost ranked first with 662 units, while Manjimup Dried Apples moved to fifth place with 561 units.
+
+    The number of unshipped orders increased from 17 to 23 because the expanded period included six additional orders that had not shipped.
+
+    This comparison shows that changing one input updates the report automatically. The higher totals reflect the longer reporting period; they do not, by themselves, demonstrate that weekly
     """)
     return
 
