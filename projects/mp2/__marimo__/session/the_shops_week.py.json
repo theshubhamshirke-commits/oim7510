@@ -6,7 +6,7 @@
   },
   "cells": [
     {
-      "id": "gnKx",
+      "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
       "outputs": [
         {
@@ -19,7 +19,7 @@
       "console": []
     },
     {
-      "id": "Hbol",
+      "id": "MJUe",
       "code_hash": "a418aa8ef65fc0acf45d5bb750996fb3",
       "outputs": [
         {
@@ -32,21 +32,21 @@
       "console": []
     },
     {
-      "id": "MMfn",
-      "code_hash": "e2572e9fa956567c224aa63ff1fb89f4",
+      "id": "vblA",
+      "code_hash": "d60a8bdd3a762bca2af58805d6b66de3",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 1: The Question:</em></span>\n<span class=\"paragraph\"><em>Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</em></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 1: THE QUESTION</em></span>\n<span class=\"paragraph\"><em>Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</em></span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "OlHV",
-      "code_hash": "eb721987678bdf645dcb7761c52e9f8e",
+      "id": "bkHC",
+      "code_hash": "a4e8e325aab3263e6b3e1d5b08919704",
       "outputs": [
         {
           "type": "data",
@@ -58,7 +58,7 @@
       "console": []
     },
     {
-      "id": "ZQOB",
+      "id": "lEQa",
       "code_hash": "a2f71ee98286bda54bbbd902a0093f12",
       "outputs": [
         {
@@ -71,7 +71,7 @@
       "console": []
     },
     {
-      "id": "juxG",
+      "id": "PKri",
       "code_hash": "1b7d2a7ed448e59cbc8df57dfa524135",
       "outputs": [
         {
@@ -84,7 +84,7 @@
       "console": []
     },
     {
-      "id": "QjZA",
+      "id": "Xref",
       "code_hash": "a90b166584765d4af0808c17a4f8e784",
       "outputs": [
         {
@@ -97,8 +97,8 @@
       "console": []
     },
     {
-      "id": "mItf",
-      "code_hash": "38a1300c830c0973d6277f3522344a31",
+      "id": "SFPL",
+      "code_hash": "e9b1657822eff5b2f9a81f5a209f14e6",
       "outputs": [
         {
           "type": "data",
@@ -110,7 +110,7 @@
       "console": []
     },
     {
-      "id": "pFRl",
+      "id": "BYtC",
       "code_hash": "cd5154ddf1da79af5e8a4557098162d3",
       "outputs": [
         {
@@ -123,7 +123,7 @@
       "console": []
     },
     {
-      "id": "AgDR",
+      "id": "RGSE",
       "code_hash": "3b94d1a1c0d47a2ac9657333b9e85fd9",
       "outputs": [
         {
@@ -136,7 +136,7 @@
       "console": []
     },
     {
-      "id": "siZo",
+      "id": "Kclp",
       "code_hash": "011d1e9ef4e352fadd22b7cbe890c96b",
       "outputs": [
         {
@@ -150,13 +150,13 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Reporting period: 2026-10-16 to 2026-10-22\nOrders collected: 19\nRevenue excluding freight: $466,962.33\nOrders not shipped: 14\n",
+          "text": "Reporting period: 2026-10-17 to 2026-10-23\nOrders collected: 22\nRevenue excluding freight: $569,630.89\nOrders not shipped: 17\n",
           "mimetype": "text/plain"
         }
       ]
     },
     {
-      "id": "mfPx",
+      "id": "emfo",
       "code_hash": "886a07be140e7c1d8d58abc3ec7a178c",
       "outputs": [
         {
@@ -169,7 +169,7 @@
       "console": []
     },
     {
-      "id": "FmQJ",
+      "id": "Hstk",
       "code_hash": "be9b24e66f08060f571d9dd06432b615",
       "outputs": [
         {
@@ -183,10 +183,141 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Saved 19 orders to projects\\mp2\\data\\orders_2026-10-16_to_2026-10-22.json\n",
+          "text": "Saved 22 orders to projects\\mp2\\data\\orders_2026-10-17_to_2026-10-23.json\n",
           "mimetype": "text/plain"
         }
       ]
+    },
+    {
+      "id": "DhVR",
+      "code_hash": "1812c51e2822ae30d4541c7e14efa813",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 5: THE ANSWER</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "IIdA",
+      "code_hash": "84630af4f3dc303ad7b926832016c7bc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "NORTHWIND TRADERS \u2014 SALES REPORT\nReporting period: 2026-10-17 to 2026-10-23\nNumber of days: 7\n\nOVERALL RESULTS\n--------------------------------------------------\nNumber of orders: 22\nRevenue excluding freight: $569,630.89\nOrders not shipped: 17\n\nREVENUE BY DESTINATION COUNTRY\nCountry                              Revenue ($)\n------------------------------------------------\nVenezuela                             107,585.46\nBrazil                                 73,909.36\nArgentina                              63,980.22\nGermany                                63,921.14\nPortugal                               59,944.23\nFinland                                33,689.46\nCanada                                 32,345.21\nMexico                                 30,573.33\nAustria                                23,536.94\nDenmark                                17,484.25\nFrance                                 17,088.72\nItaly                                  16,334.13\nUK                                     13,221.05\nSpain                                  12,859.50\nUSA                                     2,743.65\nSwitzerland                               414.24\n\nTOP FIVE PRODUCTS BY UNITS SOLD\nProduct                                        Units sold\n---------------------------------------------------------\nManjimup Dried Apples                                 363\nGeitost                                               362\nNorthwoods Cranberry Sauce                            360\nRh\u00f6nbr\u00e4u Klosterbier                                  351\nEscargots de Bourgogne                                341\n\nORDERS FROM THIS PERIOD THAT HAVE NOT SHIPPED\nOrder ID    Order date    Customer                                           Total ($)\n--------------------------------------------------------------------------------------\n24635       2026-10-17    White Clover Markets                               32,345.21\n18357       2026-10-17    Lazy K Kountry Store                               17,484.25\n17651       2026-10-17    Hungry Coyote Import Store                         33,051.91\n18049       2026-10-18    White Clover Markets                               55,703.23\n12259       2026-10-19    Supr\u00eames d\u00e9lices                                   51,335.34\n17459       2026-10-19    IT                                                 33,689.46\n14445       2026-10-19    LINO-Delicateses                                    7,358.90\n23134       2026-10-20    Folies gourmandes                                  28,422.59\n24777       2026-10-20    Rancho grande                                      63,980.22\n22049       2026-10-21    Tradi\u00e7\u00e3o Hipermercados                              4,241.00\n15002       2026-10-21    White Clover Markets                               16,334.13\n24508       2026-10-21    Romero y tomillo                                   17,088.72\n12072       2026-10-21    Furia Bacalhau e Frutos do Mar                     14,557.40\n21646       2026-10-22    IT                                                  2,743.65\n22521       2026-10-23    La corne d'abondance                               30,869.23\n23377       2026-10-23    La maison d'Asie                                   12,859.50\n12554       2026-10-23    Que Del\u00edcia                                           414.24\n\nSUMMARY FOR THE MANAGER\nFrom 2026-10-17 to 2026-10-23, Northwind Traders received 22 orders worth $569,630.89 excluding freight across 16 destination country groups, with Manjimup Dried Apples ranked first by units sold at 363 units and 17 orders from this period still awaiting shipment.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "igjY",
+      "code_hash": "afe5ac9f1df5a3cb59dbe69f50660ef3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 6: HOW DO I KNOW THESE NUMBERS ARE RIGHT?</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "psQg",
+      "code_hash": "0fdcf66039245865f3876a2a85cb57f8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "CHECK 1: TOTAL REVENUE CALCULATED TWO WAYS\n-------------------------------------------------------\nRevenue from order totals: $569,630.89\nRevenue from product lines: $569,630.89\nPASS: Both calculations give the same total revenue.\n\nCHECK 2: RECALCULATE ONE ORDER\n-------------------------------------------------------\nOrder ID: 12554\n\nProduct ID     Price ($)    Quantity    Discount    Calculated ($)\n30                 25.89          16          0%            414.24\n\nOrder total reported by the API: $414.24\nOrder total calculated by me: $414.24\nPASS: The independently calculated order total matches.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "jVDw",
+      "code_hash": "f85f7c45be517f56c1c7fa21a6581458",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 7: WORKING WITH THE AGENT</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "FWnb",
+      "code_hash": "d634c4578ebaeb68aa2b865860b6ef2e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The AI helped me write the code to fetch orders, calculate the report, and save the data. However, its original code for Section 4C assigned the sorted list back to <code>unshipped_orders</code>, which was already defined in Section 4B. When I ran Cell 4C, marimo reported that the variable was already defined.</span>\n<span class=\"paragraph\">I reported the error to the AI. Following its explanation, I changed the name of the sorted list to <code>sorted_unshipped_orders</code> in Section 4C. This kept the original list in Section 4B and gave the sorted list a separate name. Section 5 then used the new name when displaying unshipped orders.</span>\n<span class=\"paragraph\">I verified the correction by rerunning Cell 4C, which completed without the duplicate-variable error. This taught me that marimo does not allow the same variable to be defined in two different cells. The relevant code is in Cells 4B and 4C.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CFnT",
+      "code_hash": "fff6d0eca3ddd5d0719a39f366f0bef0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 8: READING IT BACK</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xqIo",
+      "code_hash": "96444d87d7d0d93d720a92807e46b276",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"function-1-fetch_order_lines\">Function 1: fetch_order_lines</h3>\n<span class=\"paragraph\">This function takes two inputs: the API\u2019s base address and the ID of one order. It requests the details of that order and returns a list of its product lines. Each line contains information such as the product name, quantity, unit price, and discount.</span>\n<span class=\"paragraph\">One line I reviewed with the AI was:</span>\n<span class=\"paragraph\"><code>order_details = response.json()</code></span>\n<span class=\"paragraph\">This line converts the API\u2019s JSON response into a Python dictionary. The function can then access the product lines using <code>order_details[\"lines\"]</code>.</span>\n<h3 id=\"function-2-fetch_orders\">Function 2: fetch_orders</h3>\n<span class=\"paragraph\">This function takes three inputs: the API\u2019s base address, the start date, and the end date. It returns a list of all orders within that reporting period, including each order\u2019s product lines.</span>\n<span class=\"paragraph\">The function collects orders one page at a time. It checks for duplicate order IDs and compares the number collected with the total reported by the API. It then calls <code>fetch_order_lines</code> for each order to add its product details.</span>\n<span class=\"paragraph\">One line I reviewed with the AI was:</span>\n<span class=\"paragraph\"><code>more_pages = data[\"pagination\"][\"has_next\"]</code></span>\n<span class=\"paragraph\">This line reads whether another page of orders is available. If the value is <code>True</code>, the loop requests the next page. If it is <code>False</code>, the loop stops after processing the current page.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NgQg",
+      "code_hash": "cd2847259c923ec1df940e6ec32d8938",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"my-proposed-change-and-prediction\">My proposed change and prediction</h3>\n<span class=\"paragraph\">I will change <code>days</code> from 7 to 14 while keeping the same reporting end date.</span>\n<span class=\"paragraph\">I expect the number of orders to increase or remain unchanged because the longer period includes all the original orders plus any orders from the additional seven days. Assuming the additional orders have non-negative totals, revenue should also increase or remain unchanged.</span>\n<span class=\"paragraph\">The top-five product ranking may change because products that sold strongly during the additional week could move higher in the ranking.</span>\n<h3 id=\"results-before-the-change\">Results before the change</h3>\n<ul>\n<li>Reporting period: October 17\u201323, 2026 (7 days)</li>\n<li>Number of orders: 22</li>\n<li>Total revenue excluding freight: $569,630.89</li>\n<li>Highest-ranked product: Manjimup Dried Apples</li>\n<li>Units sold of the highest-ranked product: 363</li>\n<li>Orders not shipped: 17</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
     }
   ]
 }
