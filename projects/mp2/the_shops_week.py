@@ -684,5 +684,147 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    *SECTION 9: GOING FURTHER*
+    """)
+    return
+
+
+@app.cell
+def _(days, orders, report_end, report_start, timedelta, total_revenue):
+    # Import the charting library only in Going Further.
+    import matplotlib.pyplot as plt
+
+    # Create an entry for every date, including days with no orders.
+    daily_revenue = {}
+
+    for _offset in range(days):
+        _day = report_start + timedelta(days=_offset)
+        _date_text = str(_day)
+
+        daily_revenue[_date_text] = 0
+
+
+    # Add each order's revenue to the appropriate date.
+    for _order in orders:
+        _order_day = _order["order_date"][:10]
+
+        daily_revenue[_order_day] = (
+            daily_revenue[_order_day]
+            + _order["order_total_dollars"]
+        )
+
+
+    # Prepare the dates and amounts for the chart.
+    chart_dates = []
+    chart_amounts = []
+
+    for _day in daily_revenue:
+        _amount = round(daily_revenue[_day], 2)
+
+        chart_dates.append(_day)
+        chart_amounts.append(_amount)
+
+
+    # Print the daily results.
+    print("DAILY REVENUE")
+    print(f"{'Date':<15}{'Revenue ($)':>18}")
+    print("-" * 33)
+
+    for _position in range(len(chart_dates)):
+        print(
+            f"{chart_dates[_position]:<15}"
+            f"{chart_amounts[_position]:>18,.2f}"
+        )
+
+
+    # Check that daily revenue adds up to the main report total.
+    daily_revenue_total = 0
+
+    for _amount in chart_amounts:
+        daily_revenue_total = daily_revenue_total + _amount
+
+    daily_revenue_total = round(daily_revenue_total, 2)
+
+    print()
+    print(f"Total from daily amounts: ${daily_revenue_total:,.2f}")
+    print(f"Total from Section 4: ${total_revenue:,.2f}")
+
+    if daily_revenue_total == total_revenue:
+        print("PASS: Daily revenue matches the main report total.")
+    else:
+        print("FAIL: The totals differ and need investigation.")
+
+
+    # Identify the highest-revenue day or days.
+    if len(orders) > 0:
+        highest_daily_revenue = max(chart_amounts)
+
+        print()
+        print(f"Highest daily revenue: ${highest_daily_revenue:,.2f}")
+        print("Date(s) with this revenue:")
+
+        for _position in range(len(chart_dates)):
+            if chart_amounts[_position] == highest_daily_revenue:
+                print(chart_dates[_position])
+    else:
+        print("There are no orders in this reporting period.")
+
+
+    # Create the daily revenue chart.
+    daily_figure, daily_axes = plt.subplots(figsize=(10, 5))
+
+    daily_axes.bar(chart_dates, chart_amounts, color="steelblue")
+
+    daily_axes.set_title(
+        f"Northwind Daily Revenue: {report_start} to {report_end}"
+    )
+    daily_axes.set_xlabel("Order date")
+    daily_axes.set_ylabel("Revenue excluding freight ($)")
+
+    daily_axes.tick_params(axis="x", labelrotation=45)
+
+    daily_figure.tight_layout()
+
+    # Display the chart in marimo.
+    daily_figure
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    For Section 9: Going Further, I created a daily revenue chart using the orders
+    already fetched by my tool. The chart covers October 10–23, 2026,
+    and includes every date, including October 13, when no orders
+    were recorded.
+
+    The highest daily revenue was $148,089.77 on October 12, 2026.
+
+    I verified the chart's underlying data by adding the daily revenue
+    amounts and comparing the result with the main report total.
+    Both totals were $996,973.47, so the check passed.
+
+    This chart helps the operations manager see how sales were
+    distributed across the reporting period and identify days with
+    particularly high or low revenue.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    *SECTION 10: TIME SPENT*
+
+
+
+    I spent approximately 5 hours working on this project outside class.
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()
