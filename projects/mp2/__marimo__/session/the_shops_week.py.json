@@ -1,0 +1,87 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "gnKx",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "a418aa8ef65fc0acf45d5bb750996fb3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"the-shops-week\">THE SHOP'S WEEK</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MMfn",
+      "code_hash": "e2572e9fa956567c224aa63ff1fb89f4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 1: The Question:</em></span>\n<span class=\"paragraph\"><em>Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OlHV",
+      "code_hash": "eb721987678bdf645dcb7761c52e9f8e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>Answer</em></span>\n<span class=\"paragraph\">Northwind Traders\u2019 operations manager needs a report showing how the business performed over the last seven days, including today. The report will show the number of orders, total revenue excluding freight, revenue by destination country, the five products with the most units sold, and orders from this period that have not shipped yet. This will help the manager understand sales activity and identify orders that need shipping follow-up.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZQOB",
+      "code_hash": "a2f71ee98286bda54bbbd902a0093f12",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>SECTION 2: MY PLAN BEFORE AI</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "juxG",
+      "code_hash": "1b7d2a7ed448e59cbc8df57dfa524135",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol>\n<li>I will keep the number of days as an input at the top of the notebook, starting with seven days.</li>\n<li>I will calculate the reporting period so that it includes today and the previous six days.</li>\n<li>I will request the orders placed during this period from the shop API.</li>\n<li>I will check the pagination information and request any remaining pages so that I collect every order in the period.</li>\n<li>For each order, I will request its details to get the products and quantities ordered.</li>\n<li>I will count the orders and add their order totals to calculate total revenue, excluding freight.</li>\n<li>I will use a dictionary to group order revenue by destination country.</li>\n<li>I will use another dictionary to add the quantities sold for each product, then rank the products and select the top five.</li>\n<li>I will identify orders that have not shipped by checking whether their shipped_date is empty.</li>\n<li>I will print the results in clearly labeled tables and generate a sentence summarizing the findings for the manager.</li>\n<li>I will save the fetched records in a JSON file inside projects/mp2/data/ and commit that file.</li>\n<li>I will check at least one result independently before accepting the report.</li>\n<li>For Going Further, I will group order revenue by date and create a chart showing daily revenue during the reporting period, including days with no orders. This will help the manager see which days generated the most revenue.</li>\n<li>I will verify that the daily revenue amounts add up to the total revenue in the main report. I will then describe what the chart shows, including the day or days with the highest revenue, in Section 9.</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
