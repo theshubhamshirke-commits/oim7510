@@ -22,7 +22,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 1: THE QUESTION*
+    ###*SECTION 1: THE QUESTION*
 
     *Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.*
     """)
@@ -42,7 +42,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 2: MY PLAN BEFORE AI*
+    ###*SECTION 2: MY PLAN BEFORE AI*
     """)
     return
 
@@ -84,7 +84,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 3: INPUTS*
+    ###*SECTION 3: INPUTS*
     """)
     return
 
@@ -96,18 +96,17 @@ def _():
     from datetime import date, timedelta
     from pathlib import Path
 
-    days = 14
+    days = 7 
     base_url = "https://oim.zhili.dev"
     report_end = date.today()
 
-
-    return Path, base_url, days, json, report_end, requests, timedelta
+    return Path, base_url, date, days, json, report_end, requests, timedelta
 
 
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 4: THE WORK*
+    ###*SECTION 4: THE WORK*
     """)
     return
 
@@ -341,7 +340,12 @@ def _(product_sales, revenue_by_country, unshipped_orders):
     )
    
   
-    return country_rows, sorted_unshipped_orders, top_products
+    return (
+        country_rows,
+        get_product_units,
+        sorted_unshipped_orders,
+        top_products,
+    )
 
 
 @app.cell
@@ -369,7 +373,7 @@ def _(Path, json, orders, report_end, report_start):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 5: THE ANSWER*
+    ###*SECTION 5: THE ANSWER*
     """)
     return
 
@@ -493,7 +497,7 @@ def _(
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 6: HOW DO I KNOW THESE NUMBERS ARE RIGHT?*
+    ###*SECTION 6: HOW DO I KNOW THESE NUMBERS ARE RIGHT?*
     """)
     return
 
@@ -588,7 +592,7 @@ def _(orders, total_revenue):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 7: WORKING WITH THE AGENT*
+    ###*SECTION 7: WORKING WITH THE AGENT*
     """)
     return
 
@@ -608,7 +612,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 8: READING IT BACK*
+    ###*SECTION 8: READING IT BACK*
     """)
     return
 
@@ -616,7 +620,15 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ### Function 1: fetch_order_lines
+    *SECTION 8A*
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    *Function 1: fetch_order_lines*
 
     This function takes two inputs: the API’s base address and the ID of one order. It requests the details of that order and returns a list of its product lines. Each line contains information such as the product name, quantity, unit price, and discount.
 
@@ -626,7 +638,7 @@ def _(mo):
 
     This line converts the API’s JSON response into a Python dictionary. The function can then access the product lines using `order_details["lines"]`.
 
-    ### Function 2: fetch_orders
+    *Function 2: fetch_orders*
 
     This function takes three inputs: the API’s base address, the start date, and the end date. It returns a list of all orders within that reporting period, including each order’s product lines.
 
@@ -644,50 +656,276 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ### My proposed change and prediction
-
-    I will change `days` from 7 to 14 while keeping the same reporting end date.
-
-    I expect the number of orders to increase or remain unchanged because the longer period includes all the original orders plus any orders from the additional seven days. Assuming the additional orders have non-negative totals, revenue should also increase or remain unchanged.
-
-    The top-five product ranking may change because products that sold strongly during the additional week could move higher in the ranking.
-
-    ### Results before the change
-
-    - Reporting period: October 17–23, 2026 (7 days)
-    - Number of orders: 22
-    - Total revenue excluding freight: $569,630.89
-    - Highest-ranked product: Manjimup Dried Apples
-    - Units sold of the highest-ranked product: 363
-    - Orders not shipped: 17
-
-
-    ### Results after the change
-
-    - Reporting period: October 10–23, 2026 (14 days)
-    - Number of orders: 38
-    - Total revenue excluding freight: $996,973.47
-    - Highest-ranked product: Geitost
-    - Units sold of the highest-ranked product: 662
-    - Orders not shipped: 23
-
-    ### Comparison with my prediction
-
-    The results matched my prediction. Changing the reporting period from 7 to 14 days increased the number of orders from 22 to 38, adding 16 orders. Revenue increased from $569,630.89 to $996,973.47, a difference of $427,342.58.
-
-    The product ranking also changed. Manjimup Dried Apples ranked first in the seven-day report with 363 units. In the fourteen-day report, Geitost ranked first with 662 units, while Manjimup Dried Apples moved to fifth place with 561 units.
-
-    The number of unshipped orders increased from 17 to 23 because the expanded period included six additional orders that had not shipped.
-
-    This comparison shows that changing one input updates the report automatically. The higher totals reflect the longer reporting period; they do not, by themselves, demonstrate that weekly
+    *SECTION 8B*
     """)
+    return
+
+
+@app.cell
+def _(
+    Path,
+    base_url,
+    date,
+    days,
+    fetch_orders,
+    get_product_units,
+    json,
+    report_end,
+    timedelta,
+):
+    # SECTION 8B: LIVE COMPARISON OF 7 DAYS VERSUS 14 DAYS
+    # This does not change the days input or the main report's orders.
+
+
+    # Summarize orders within a selected date range.
+    def summarize_readback(order_records, start_date, end_date):
+        summary = {
+            "order_count": 0,
+            "revenue": 0,
+            "unshipped": 0,
+            "products": []
+        }
+
+        product_totals = {}
+
+        for order in order_records:
+            order_day = date.fromisoformat(order["order_date"][:10])
+
+            if start_date <= order_day <= end_date:
+                summary["order_count"] += 1
+                summary["revenue"] += order["order_total_dollars"]
+
+                if order["shipped_date"] is None:
+                    summary["unshipped"] += 1
+
+                for line in order["lines"]:
+                    product_id = line["product_id"]
+
+                    if product_id not in product_totals:
+                        product_totals[product_id] = {
+                            "product_id": product_id,
+                            "product_name": line["product_name"],
+                            "units": 0
+                        }
+
+                    product_totals[product_id]["units"] += line["quantity"]
+
+        for product_id in product_totals:
+            summary["products"].append(product_totals[product_id])
+
+        # Use the sorting function already defined in Section 4C.
+        summary["products"] = sorted(
+            summary["products"],
+            key=get_product_units,
+            reverse=True
+        )
+
+        summary["revenue"] = round(summary["revenue"], 2)
+
+        return summary
+
+
+    # Print the results for one period.
+    def print_readback_results(title, start_date, end_date, summary):
+        print(title)
+        print(f"Reporting period: {start_date} to {end_date}")
+        print(f"Number of orders: {summary['order_count']}")
+
+        print(
+            f"Total revenue excluding freight: "
+            f"${summary['revenue']:,.2f}"
+        )
+
+        if len(summary["products"]) > 0:
+            leading_product = summary["products"][0]
+
+            print(
+                f"Highest-ranked product: "
+                f"{leading_product['product_name']}"
+            )
+
+            print(
+                f"Units sold of the highest-ranked product: "
+                f"{leading_product['units']}"
+            )
+        else:
+            print("Highest-ranked product: None — no product sales")
+            print("Units sold of the highest-ranked product: 0")
+
+        print(f"Orders not shipped: {summary['unshipped']}")
+        print()
+
+
+    # Calculate both periods using the main report's end date.
+    readback_start_7 = report_end - timedelta(days=6)
+    readback_start_14 = report_end - timedelta(days=13)
+
+
+    # Fetch fourteen days specifically for this comparison.
+    readback_orders = fetch_orders(
+        base_url,
+        readback_start_14,
+        report_end
+    )
+
+
+    # Save the additional data fetched for Section 8.
+    readback_folder = Path("projects/mp2/data")
+    readback_folder.mkdir(parents=True, exist_ok=True)
+
+    readback_file = readback_folder / (
+        f"readback_orders_{readback_start_14}_to_{report_end}.json"
+    )
+
+    with readback_file.open("w", encoding="utf-8") as _file:
+        json.dump(readback_orders, _file, indent=2, ensure_ascii=False)
+
+
+    # Calculate both summaries from the same fetched dataset.
+    readback_before = summarize_readback(
+        readback_orders,
+        readback_start_7,
+        report_end
+    )
+
+    readback_after = summarize_readback(
+        readback_orders,
+        readback_start_14,
+        report_end
+    )
+
+
+    # Display the results.
+    print("LIVE COMPARISON WHEN THE NOTEBOOK RUNS")
+    print(f"The main report's days input remains {days}.")
+    print()
+
+    print_readback_results(
+        "RESULTS FOR 7 DAYS",
+        readback_start_7,
+        report_end,
+        readback_before
+    )
+
+    print_readback_results(
+        "RESULTS FOR 14 DAYS",
+        readback_start_14,
+        report_end,
+        readback_after
+    )
+
+
+    # Calculate the differences between the periods.
+    readback_order_change = (
+        readback_after["order_count"] - readback_before["order_count"]
+    )
+
+    readback_revenue_change = round(
+        readback_after["revenue"] - readback_before["revenue"],
+        2
+    )
+
+    readback_unshipped_change = (
+        readback_after["unshipped"] - readback_before["unshipped"]
+    )
+
+
+    # Generate the comparison using the actual results.
+    print("COMPARISON WITH MY PREDICTION")
+    print()
+
+    if readback_order_change >= 0 and readback_revenue_change >= 0:
+        print(
+            "The results matched my prediction that the number of "
+            "orders and total revenue would increase or remain unchanged."
+        )
+    else:
+        print(
+            "The results did not fully match my prediction. "
+            "The differences need investigation."
+        )
+
+    print(
+        f"Expanding the period from 7 to 14 days changed the number "
+        f"of orders from {readback_before['order_count']} to "
+        f"{readback_after['order_count']}, a difference of "
+        f"{readback_order_change} orders."
+    )
+
+    print(
+        f"Revenue changed from ${readback_before['revenue']:,.2f} "
+        f"to ${readback_after['revenue']:,.2f}, a difference of "
+        f"${readback_revenue_change:,.2f}."
+    )
+
+    print()
+
+
+    # Compare the leading products.
+    if (
+        len(readback_before["products"]) > 0
+        and len(readback_after["products"]) > 0
+    ):
+        _leader_before = readback_before["products"][0]
+        _leader_after = readback_after["products"][0]
+
+        if _leader_before["product_id"] == _leader_after["product_id"]:
+            print("The highest-ranked product remained the same.")
+        else:
+            print("The highest-ranked product changed.")
+
+        print(
+            f"{_leader_before['product_name']} ranked first in the "
+            f"seven-day report with {_leader_before['units']} units."
+        )
+
+        print(
+            f"{_leader_after['product_name']} ranked first in the "
+            f"fourteen-day report with {_leader_after['units']} units."
+        )
+
+        # Find the original leading product's fourteen-day position.
+        for _position in range(len(readback_after["products"])):
+            _product = readback_after["products"][_position]
+
+            if _product["product_id"] == _leader_before["product_id"]:
+                print(
+                    f"The seven-day leader, {_product['product_name']}, "
+                    f"ranked {_position + 1} in the fourteen-day report "
+                    f"with {_product['units']} units."
+                )
+    else:
+        print(
+            "A leading-product comparison is unavailable because "
+            "at least one period has no product sales."
+        )
+
+    print()
+
+    print(
+        f"The number of unshipped orders changed from "
+        f"{readback_before['unshipped']} to "
+        f"{readback_after['unshipped']}; the additional seven days "
+        f"contained {readback_unshipped_change} unshipped orders."
+    )
+
+    print()
+
+    print(
+        "These differences reflect the longer reporting period; "
+        "they do not, by themselves, demonstrate that weekly "
+        "sales performance improved."
+    )
+
+    print()
+    print(f"Comparison data saved to: {readback_file}")
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *SECTION 9: GOING FURTHER*
+    ###*SECTION 9: GOING FURTHER*
     """)
     return
 
@@ -790,34 +1028,113 @@ def _(days, orders, report_end, report_start, timedelta, total_revenue):
 
     # Display the chart in marimo.
     daily_figure
+    return chart_amounts, chart_dates, daily_revenue_total
+
+
+@app.cell
+def _(
+    chart_amounts,
+    chart_dates,
+    daily_revenue_total,
+    days,
+    orders,
+    report_end,
+    report_start,
+    total_revenue,
+):
+    print(
+        "For Going Further, I created a daily revenue chart using "
+        "the orders already fetched by my tool."
+    )
+
+    print(
+        f"The chart covers {report_start} to {report_end} "
+        f"({days} days) and includes every date in that period."
+    )
+
+
+    # Find dates with no orders.
+    # Check order dates because zero revenue does not always mean no orders.
+    _s9_order_dates = []
+
+    for _order in orders:
+        _s9_order_day = _order["order_date"][:10]
+
+        if _s9_order_day not in _s9_order_dates:
+            _s9_order_dates.append(_s9_order_day)
+
+    _s9_dates_without_orders = []
+
+    for _day in chart_dates:
+        if _day not in _s9_order_dates:
+            _s9_dates_without_orders.append(_day)
+
+    if len(_s9_dates_without_orders) > 0:
+        print(
+            "No orders were recorded on: "
+            + ", ".join(_s9_dates_without_orders)
+            + "."
+        )
+    else:
+        print("Orders were recorded on every date in the reporting period.")
+
+    print()
+
+
+    # Describe the highest daily revenue, including ties.
+    if len(orders) > 0:
+        _s9_highest_revenue = max(chart_amounts)
+        _s9_highest_dates = []
+
+        for _position in range(len(chart_dates)):
+            if chart_amounts[_position] == _s9_highest_revenue:
+                _s9_highest_dates.append(chart_dates[_position])
+
+        print(
+            f"The highest daily revenue was ${_s9_highest_revenue:,.2f}, "
+            f"recorded on {', '.join(_s9_highest_dates)}."
+        )
+    else:
+        print(
+            "No orders were recorded during this period, "
+            "so there was no highest-revenue trading day."
+        )
+
+    print()
+
+
+    # Describe the validation using the actual totals.
+    print(
+        "I checked the chart's underlying data by adding the daily "
+        "revenue amounts and comparing the result with the main report total."
+    )
+
+    if daily_revenue_total == total_revenue:
+        print(
+            f"Both totals were ${total_revenue:,.2f}, "
+            "so the check passed."
+        )
+    else:
+        print(
+            f"The daily amounts totaled ${daily_revenue_total:,.2f}, "
+            f"while the main report totaled ${total_revenue:,.2f}. "
+            "The check failed, and the difference needs investigation."
+        )
+
+    print()
+
+    print(
+        "This chart helps the operations manager see how sales were "
+        "distributed across the reporting period and identify days "
+        "with particularly high or low revenue."
+    )
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    For Section 9: Going Further, I created a daily revenue chart using the orders
-    already fetched by my tool. The chart covers October 10–23, 2026,
-    and includes every date, including October 13, when no orders
-    were recorded.
-
-    The highest daily revenue was $148,089.77 on October 12, 2026.
-
-    I verified the chart's underlying data by adding the daily revenue
-    amounts and comparing the result with the main report total.
-    Both totals were $996,973.47, so the check passed.
-
-    This chart helps the operations manager see how sales were
-    distributed across the reporting period and identify days with
-    particularly high or low revenue.
-    """)
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    *SECTION 10: TIME SPENT*
+    ###*SECTION 10: TIME SPENT*
 
 
 
