@@ -142,20 +142,14 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='b17a1203-8767-7696-7f99-fc9dacbdabbd'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;counties&#92;&quot;:14,&#92;&quot;towns&#92;&quot;:351}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;counties&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='a9d3c323-96ba-8c05-0f4f-7ee2b9b27b80'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;counties&#92;&quot;:14,&#92;&quot;towns&#92;&quot;:351}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;counties&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "dngO",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "emfo",
+      "id": "Hstk",
       "code_hash": "e05678a755e50c6716f858730b78b84c",
       "outputs": [
         {
@@ -168,7 +162,7 @@
       "console": []
     },
     {
-      "id": "Hstk",
+      "id": "nWHF",
       "code_hash": "b0f36f16b7d5623c0deaf313ce8cb8e7",
       "outputs": [
         {
@@ -181,13 +175,13 @@
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "iLit",
       "code_hash": "31b661e637bceeb0e383d67fabd83f54",
       "outputs": [],
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "ZHCJ",
       "code_hash": "985ad6c044394d96f0dec49777b1136b",
       "outputs": [
         {
@@ -200,7 +194,7 @@
       "console": []
     },
     {
-      "id": "ZHCJ",
+      "id": "ROlb",
       "code_hash": "1a7c4018335d6cb069c0c7ca66b973af",
       "outputs": [
         {
@@ -213,13 +207,13 @@
       "console": []
     },
     {
-      "id": "ROlb",
+      "id": "qnkX",
       "code_hash": "e322948be7e2a30bd9bad072b58b2ae9",
       "outputs": [],
       "console": []
     },
     {
-      "id": "qnkX",
+      "id": "TqIu",
       "code_hash": "d7ab3bfb612d5a47767718c6ed30ad0e",
       "outputs": [
         {
@@ -232,7 +226,7 @@
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "Vxnm",
       "code_hash": "19905b2ac849960732f5993a6eb355d2",
       "outputs": [
         {
@@ -245,13 +239,13 @@
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "DnEU",
       "code_hash": "3c646d2de1df110536de16ea37161658",
       "outputs": [],
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "ulZA",
       "code_hash": "e6d98347e93a30a396d5dc513dd136ce",
       "outputs": [
         {
@@ -264,13 +258,13 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "ecfG",
       "code_hash": "cd2a7c8908f4b4d3a326b3d562608cd1",
       "outputs": [],
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "Pvdt",
       "code_hash": "a965a75acaf0ec53a54a78f3ebec6470",
       "outputs": [
         {
@@ -283,7 +277,7 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "ZBYS",
       "code_hash": "c64d616861c10560c7a19125454b29b2",
       "outputs": [
         {
@@ -296,13 +290,13 @@
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "aLJB",
       "code_hash": "26c29b84d27276e5089e7e93b9a706f9",
       "outputs": [],
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "nHfw",
       "code_hash": "dc5486f8a0542c682bf19aef50190e8a",
       "outputs": [
         {
@@ -315,7 +309,7 @@
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "xXTn",
       "code_hash": "9515b9e216d9b7f586517edd61034cda",
       "outputs": [
         {
@@ -328,13 +322,13 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "AjVT",
       "code_hash": "4bf85498e810420ebb569c0797c110e8",
       "outputs": [],
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "pHFh",
       "code_hash": "1754cc0a1be9c542861085cc24cb0bdb",
       "outputs": [
         {
@@ -347,7 +341,7 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "NCOB",
       "code_hash": "a29ff83358cedb190f2d82bd8c63e255",
       "outputs": [
         {
@@ -360,7 +354,7 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "aqbW",
       "code_hash": "81283c0067831d792da9437eb5bc36ee",
       "outputs": [
         {
