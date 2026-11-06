@@ -1,0 +1,26 @@
+person_id,first_name,last_name,work_email,title,start_date,manager_id
+1,Aarav,Shah,aarav.shah@babsonai.example.test,Co-founder,2025-11-01,
+2,Maya,Chen,maya.chen@babsonai.example.test,Co-founder,2025-11-01,
+3,Rohan,Patel,rohan.patel@babsonai.example.test,Team Lead,2025-11-01,1
+4,Sofia,Garcia,sofia.garcia@babsonai.example.test,Team Lead,2025-11-01,1
+5,Ethan,Brooks,ethan.brooks@babsonai.example.test,Team Lead,2025-11-01,2
+6,Anika,Rao,anika.rao@babsonai.example.test,Product Manager,2025-11-01,3
+7,Liam,Wilson,liam.wilson@babsonai.example.test,Product Manager,2025-11-08,4
+8,Zara,Khan,zara.khan@babsonai.example.test,AI Engineer,2025-11-04,3
+9,Noah,Kim,noah.kim@babsonai.example.test,Product Manager,2025-11-18,5
+10,Priya,Mehta,priya.mehta@babsonai.example.test,AI Engineer,2025-11-14,5
+11,Lucas,Reed,lucas.reed@babsonai.example.test,AI Engineer,2025-11-03,3
+12,Aisha,Ali,aisha.ali@babsonai.example.test,AI Engineer,2025-11-17,3
+13,Oliver,Park,oliver.park@babsonai.example.test,Product Manager,2025-11-18,3
+14,Nina,Das,nina.das@babsonai.example.test,AI Engineer,2025-11-18,5
+15,Mateo,Rivera,mateo.rivera@babsonai.example.test,Data Analyst,2025-11-15,3
+16,Leah,Morgan,leah.morgan@babsonai.example.test,Product Manager,2025-11-01,4
+17,Arjun,Nair,arjun.nair@babsonai.example.test,AI Engineer,2025-11-14,5
+18,Chloe,Bennett,chloe.bennett@babsonai.example.test,Data Analyst,2025-11-05,4
+19,Daniel,Wong,daniel.wong@babsonai.example.test,AI Engineer,2025-11-04,4
+20,Isha,Kapoor,isha.kapoor@babsonai.example.test,AI Engineer,2025-11-04,4
+21,Amir,Hassan,amir.hassan@babsonai.example.test,Data Analyst,2025-11-20,4
+22,Emma,Clarke,emma.clarke@babsonai.example.test,Data Analyst,2025-11-15,3
+23,Kabir,Joshi,kabir.joshi@babsonai.example.test,Product Manager,2025-11-13,3
+24,Grace,Turner,grace.turner@babsonai.example.test,AI Engineer,2025-11-10,5
+25,Omar,Said,omar.said@babsonai.example.test,Product Manager,2025-11-12,5

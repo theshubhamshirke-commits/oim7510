@@ -1,0 +1,13 @@
+project_id,project_name,client_name,category,budget,start_date,status
+1,Customer Support Copilot,Maple Retail,LLM app,12000.00,2025-11-01,active
+2,Invoice Data Pipeline,Harbor Services,data pipeline,18000.00,2025-11-01,active
+3,Internal Knowledge Search,,internal tool,20000.00,2025-11-01,active
+4,Retail FAQ Assistant,Cedar Market,LLM app,25000.00,2025-12-01,active
+5,Lead Scoring Pipeline,Oak Sales,data pipeline,22000.00,2026-01-01,active
+6,Document Review Assistant,Pine Consulting,LLM app,28000.00,2026-02-01,active
+7,Sales Analytics Pipeline,Birch Stores,data pipeline,24000.00,2026-03-01,active
+8,Meeting Notes Assistant,,internal tool,15000.00,2026-04-01,active
+9,Restaurant Booking Assistant,Elm Dining,LLM app,16000.00,2025-12-01,done
+10,Inventory Data Pipeline,Willow Supply,data pipeline,21000.00,2026-01-15,paused
+11,Customer Feedback Pilot,Aspen Goods,LLM app,8000.00,2026-10-01,active
+12,Employee Onboarding Tool,,internal tool,10000.00,2026-10-31,planned

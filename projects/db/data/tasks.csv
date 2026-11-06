@@ -1,0 +1,301 @@
+task_id,project_id,description,created_date,assigned_person_id,assigned_date,due_date,completed_date
+1,1,Review model responses (task 1),2025-11-01,9,2025-11-20,2025-12-09,
+2,1,Update the project documentation (task 2),2026-10-31,1,2026-10-31,2026-11-12,2026-10-31
+3,9,Check the dashboard results (task 3),2026-01-28,1,2026-01-29,2026-02-03,2026-01-31
+4,11,Review customer requirements (task 4),2026-10-02,10,2026-10-02,2026-10-08,
+5,9,Prepare evaluation examples (task 5),2026-01-30,6,2026-02-02,2026-02-13,2026-02-11
+6,10,Prepare evaluation examples (task 6),2026-06-11,18,2026-06-12,2026-07-02,
+7,2,Check the dashboard results (task 7),2025-12-20,6,2025-12-22,2026-01-09,2026-01-05
+8,1,Review customer requirements (task 8),2026-10-11,1,2026-10-11,2026-10-28,
+9,4,Review model responses (task 9),2026-03-09,15,2026-03-12,2026-03-21,2026-03-17
+10,4,Review model responses (task 10),2026-10-27,,,2026-11-03,
+11,9,Prepare evaluation examples (task 11),2025-12-26,10,2025-12-26,2026-01-02,2026-01-08
+12,3,Review customer requirements (task 12),2026-05-28,9,2026-05-31,2026-06-11,
+13,3,Review model responses (task 13),2026-05-14,1,2026-05-17,2026-05-30,
+14,5,Review customer requirements (task 14),2026-08-05,7,2026-08-08,2026-08-17,2026-08-12
+15,10,Review model responses (task 15),2026-07-22,17,2026-07-22,2026-08-06,2026-08-01
+16,9,Prepare evaluation examples (task 16),2026-04-15,14,2026-04-15,2026-05-06,2026-04-17
+17,2,Prepare evaluation examples (task 17),2026-09-01,1,2026-09-02,2026-09-19,2026-09-12
+18,10,Update the project documentation (task 18),2026-06-16,5,2026-06-16,2026-07-04,2026-06-26
+19,6,Check the dashboard results (task 19),2026-06-14,9,2026-06-16,2026-06-28,2026-06-19
+20,5,Review customer requirements (task 20),2026-10-01,,,2026-10-16,
+21,1,Test the data import (task 21),2026-06-23,5,2026-06-23,2026-06-30,2026-07-02
+22,3,Update the project documentation (task 22),2026-04-28,1,2026-04-29,2026-05-15,2026-05-07
+23,5,Prepare evaluation examples (task 23),2026-09-28,11,2026-09-30,2026-10-08,
+24,5,Check the dashboard results (task 24),2026-03-01,11,2026-03-02,2026-03-15,2026-03-06
+25,6,Review customer requirements (task 25),2026-05-16,8,2026-05-19,2026-06-01,
+26,2,Prepare evaluation examples (task 26),2026-09-21,6,2026-09-23,2026-09-29,2026-10-06
+27,11,Review customer requirements (task 27),2026-10-09,10,2026-10-12,2026-10-30,2026-10-14
+28,3,Test the data import (task 28),2026-08-07,1,2026-08-09,2026-08-18,2026-08-10
+29,6,Update the project documentation (task 29),2026-02-21,8,2026-02-22,2026-03-06,2026-02-28
+30,7,Prepare evaluation examples (task 30),2026-10-11,,,2026-10-20,
+31,3,Test the data import (task 31),2026-01-30,9,2026-01-30,2026-02-09,
+32,7,Review customer requirements (task 32),2026-09-22,17,2026-09-24,2026-10-04,
+33,7,Test the data import (task 33),2026-10-10,5,2026-10-13,2026-10-25,2026-10-21
+34,5,Review customer requirements (task 34),2026-04-27,13,2026-04-27,2026-05-08,2026-05-02
+35,5,Review customer requirements (task 35),2026-06-29,7,2026-07-02,2026-07-17,
+36,5,Test the data import (task 36),2026-04-02,7,2026-04-04,2026-04-10,2026-04-11
+37,6,Prepare evaluation examples (task 37),2026-09-12,18,2026-09-12,2026-09-29,
+38,5,Update the project documentation (task 38),2026-01-23,3,2026-01-23,2026-02-13,
+39,11,Test the data import (task 39),2026-10-24,10,2026-10-26,2026-11-13,2026-10-31
+40,6,Check the dashboard results (task 40),2026-10-14,,,2026-10-22,
+41,5,Update the project documentation (task 41),2026-09-17,9,2026-09-20,2026-10-05,2026-09-25
+42,3,Review model responses (task 42),2026-02-07,9,2026-02-10,2026-02-20,2026-02-15
+43,9,Update the project documentation (task 43),2025-12-01,6,2025-12-03,2025-12-14,2025-12-10
+44,10,Update the project documentation (task 44),2026-07-01,6,2026-07-04,2026-07-23,2026-07-08
+45,8,Update the project documentation (task 45),2026-10-21,20,2026-10-21,2026-11-04,2026-10-31
+46,6,Prepare evaluation examples (task 46),2026-03-20,9,2026-03-22,2026-04-03,
+47,1,Update the project documentation (task 47),2025-11-24,3,2025-11-27,2025-12-04,2025-12-08
+48,4,Review customer requirements (task 48),2026-06-15,9,2026-06-18,2026-06-30,2026-06-30
+49,2,Prepare evaluation examples (task 49),2026-06-06,3,2026-06-07,2026-06-28,2026-06-16
+50,2,Review model responses (task 50),2026-10-01,,,2026-10-10,
+51,11,Update the project documentation (task 51),2026-10-17,19,2026-10-19,2026-11-07,2026-10-31
+52,7,Review model responses (task 52),2026-09-29,2,2026-10-02,2026-10-12,
+53,8,Test the data import (task 53),2026-06-06,20,2026-06-08,2026-06-29,2026-06-12
+54,8,Review customer requirements (task 54),2026-04-20,15,2026-04-21,2026-05-04,2026-04-30
+55,3,Review customer requirements (task 55),2026-01-17,3,2026-01-20,2026-01-29,
+56,7,Review model responses (task 56),2026-06-13,16,2026-06-16,2026-07-04,2026-06-30
+57,7,Test the data import (task 57),2026-10-18,2,2026-10-18,2026-11-04,2026-10-24
+58,7,Review model responses (task 58),2026-10-05,3,2026-10-06,2026-10-26,2026-10-13
+59,1,Prepare evaluation examples (task 59),2026-05-19,21,2026-05-22,2026-06-01,
+60,11,Update the project documentation (task 60),2026-10-01,,,2026-10-18,
+61,10,Prepare evaluation examples (task 61),2026-07-03,5,2026-07-03,2026-07-21,2026-07-11
+62,1,Review model responses (task 62),2026-03-14,9,2026-03-16,2026-03-27,2026-03-22
+63,5,Review customer requirements (task 63),2026-08-04,9,2026-08-04,2026-08-24,2026-08-13
+64,6,Prepare evaluation examples (task 64),2026-05-26,5,2026-05-26,2026-05-31,
+65,1,Update the project documentation (task 65),2026-09-15,3,2026-09-16,2026-09-25,2026-09-18
+66,4,Check the dashboard results (task 66),2026-07-27,13,2026-07-29,2026-08-08,2026-08-10
+67,2,Update the project documentation (task 67),2026-01-23,10,2026-01-23,2026-01-28,
+68,11,Check the dashboard results (task 68),2026-10-30,2,2026-10-31,2026-11-11,2026-10-31
+69,4,Check the dashboard results (task 69),2026-01-22,13,2026-01-22,2026-01-28,2026-01-29
+70,6,Check the dashboard results (task 70),2026-09-06,,,2026-09-27,
+71,6,Check the dashboard results (task 71),2026-02-07,24,2026-02-10,2026-02-18,2026-02-16
+72,8,Check the dashboard results (task 72),2026-09-29,20,2026-10-02,2026-10-12,
+73,5,Update the project documentation (task 73),2026-10-03,3,2026-10-06,2026-10-24,
+74,5,Prepare evaluation examples (task 74),2026-06-15,13,2026-06-15,2026-06-28,
+75,8,Test the data import (task 75),2026-08-24,9,2026-08-27,2026-09-11,2026-09-10
+76,3,Check the dashboard results (task 76),2026-07-08,3,2026-07-10,2026-07-23,2026-07-20
+77,5,Review model responses (task 77),2026-10-12,11,2026-10-13,2026-10-20,2026-10-20
+78,9,Review customer requirements (task 78),2026-06-13,14,2026-06-16,2026-07-06,2026-06-24
+79,2,Test the data import (task 79),2026-03-31,3,2026-04-03,2026-04-15,2026-04-13
+80,8,Test the data import (task 80),2026-10-07,,,2026-10-28,
+81,7,Test the data import (task 81),2026-09-07,2,2026-09-09,2026-09-25,
+82,5,Update the project documentation (task 82),2026-05-09,13,2026-05-09,2026-05-20,2026-05-21
+83,3,Update the project documentation (task 83),2026-02-07,3,2026-02-10,2026-02-23,
+84,10,Test the data import (task 84),2026-03-28,5,2026-03-29,2026-04-12,2026-04-01
+85,1,Update the project documentation (task 85),2026-10-29,5,2026-10-30,2026-11-12,2026-10-31
+86,5,Review model responses (task 86),2026-03-06,3,2026-03-06,2026-03-11,2026-03-14
+87,8,Review model responses (task 87),2026-06-27,20,2026-06-27,2026-07-10,
+88,2,Review customer requirements (task 88),2025-12-04,6,2025-12-07,2025-12-14,2025-12-18
+89,3,Review customer requirements (task 89),2026-01-16,24,2026-01-18,2026-01-25,
+90,11,Update the project documentation (task 90),2026-10-25,,,2026-11-12,
+91,10,Test the data import (task 91),2026-08-05,17,2026-08-06,2026-08-27,2026-08-14
+92,10,Prepare evaluation examples (task 92),2026-05-04,6,2026-05-04,2026-05-12,
+93,11,Review customer requirements (task 93),2026-10-07,8,2026-10-07,2026-10-17,2026-10-16
+94,3,Test the data import (task 94),2025-11-02,9,2025-11-21,2025-12-11,2025-11-25
+95,5,Check the dashboard results (task 95),2026-08-21,11,2026-08-22,2026-09-04,
+96,10,Prepare evaluation examples (task 96),2026-07-03,12,2026-07-06,2026-07-14,2026-07-17
+97,5,Update the project documentation (task 97),2026-03-14,11,2026-03-14,2026-03-24,
+98,10,Review model responses (task 98),2026-03-29,18,2026-03-29,2026-04-17,2026-04-10
+99,5,Review model responses (task 99),2026-09-14,7,2026-09-17,2026-10-06,2026-09-18
+100,6,Review customer requirements (task 100),2026-10-10,,,2026-10-23,
+101,2,Prepare evaluation examples (task 101),2026-02-26,15,2026-02-26,2026-03-11,2026-03-11
+102,8,Review model responses (task 102),2026-08-11,17,2026-08-13,2026-08-23,
+103,11,Test the data import (task 103),2026-10-27,2,2026-10-27,2026-11-16,2026-10-31
+104,11,Check the dashboard results (task 104),2026-10-04,10,2026-10-06,2026-10-24,2026-10-11
+105,7,Test the data import (task 105),2026-09-25,2,2026-09-25,2026-10-14,2026-09-30
+106,2,Update the project documentation (task 106),2026-05-26,15,2026-05-26,2026-06-14,2026-05-30
+107,6,Test the data import (task 107),2026-10-14,24,2026-10-14,2026-10-25,2026-10-17
+108,8,Update the project documentation (task 108),2026-09-26,17,2026-09-26,2026-10-01,
+109,4,Review customer requirements (task 109),2026-02-20,13,2026-02-20,2026-03-10,2026-03-06
+110,8,Review model responses (task 110),2026-09-09,,,2026-09-18,
+111,5,Prepare evaluation examples (task 111),2026-09-18,9,2026-09-21,2026-10-11,
+112,8,Update the project documentation (task 112),2026-08-20,20,2026-08-23,2026-09-03,
+113,3,Update the project documentation (task 113),2025-12-06,14,2025-12-09,2025-12-24,
+114,5,Review model responses (task 114),2026-01-02,9,2026-01-04,2026-01-24,
+115,9,Test the data import (task 115),2026-04-03,6,2026-04-05,2026-04-22,2026-04-13
+116,4,Review model responses (task 116),2026-04-02,21,2026-04-05,2026-04-17,
+117,1,Check the dashboard results (task 117),2026-04-12,9,2026-04-15,2026-05-02,
+118,3,Test the data import (task 118),2026-07-12,1,2026-07-13,2026-08-03,
+119,2,Review model responses (task 119),2026-06-14,1,2026-06-17,2026-06-22,
+120,3,Test the data import (task 120),2026-09-06,,,2026-09-26,
+121,6,Check the dashboard results (task 121),2026-08-23,5,2026-08-25,2026-09-11,
+122,8,Prepare evaluation examples (task 122),2026-08-17,13,2026-08-17,2026-08-29,2026-08-22
+123,2,Review customer requirements (task 123),2026-06-11,1,2026-06-11,2026-06-30,2026-06-16
+124,1,Prepare evaluation examples (task 124),2026-04-16,1,2026-04-18,2026-05-04,2026-04-21
+125,9,Review customer requirements (task 125),2026-03-16,1,2026-03-17,2026-03-27,2026-03-20
+126,10,Prepare evaluation examples (task 126),2026-08-25,18,2026-08-26,2026-09-15,
+127,4,Review model responses (task 127),2026-07-25,13,2026-07-28,2026-08-10,2026-08-10
+128,5,Update the project documentation (task 128),2026-10-07,13,2026-10-07,2026-10-26,
+129,5,Review model responses (task 129),2026-08-06,9,2026-08-09,2026-08-23,2026-08-16
+130,2,Update the project documentation (task 130),2026-09-17,,,2026-10-04,
+131,6,Check the dashboard results (task 131),2026-07-02,8,2026-07-02,2026-07-19,2026-07-12
+132,1,Prepare evaluation examples (task 132),2026-09-07,9,2026-09-09,2026-09-21,2026-09-15
+133,11,Check the dashboard results (task 133),2026-10-07,19,2026-10-09,2026-10-18,2026-10-20
+134,1,Review customer requirements (task 134),2026-04-08,9,2026-04-08,2026-04-24,
+135,5,Test the data import (task 135),2026-06-17,3,2026-06-18,2026-06-29,2026-06-27
+136,9,Review model responses (task 136),2026-04-08,6,2026-04-09,2026-04-22,2026-04-23
+137,5,Check the dashboard results (task 137),2026-06-23,11,2026-06-26,2026-07-03,2026-06-30
+138,11,Review customer requirements (task 138),2026-10-13,19,2026-10-15,2026-10-22,
+139,5,Test the data import (task 139),2026-10-02,11,2026-10-05,2026-10-21,2026-10-16
+140,7,Review customer requirements (task 140),2026-10-24,,,2026-11-09,
+141,11,Prepare evaluation examples (task 141),2026-10-08,2,2026-10-08,2026-10-23,
+142,11,Review customer requirements (task 142),2026-10-03,2,2026-10-05,2026-10-23,2026-10-06
+143,5,Prepare evaluation examples (task 143),2026-09-10,11,2026-09-10,2026-09-22,
+144,7,Check the dashboard results (task 144),2026-06-25,16,2026-06-28,2026-07-07,
+145,2,Prepare evaluation examples (task 145),2026-07-09,15,2026-07-12,2026-07-25,2026-07-18
+146,8,Test the data import (task 146),2026-07-23,20,2026-07-25,2026-08-02,
+147,9,Prepare evaluation examples (task 147),2026-05-15,6,2026-05-15,2026-06-01,2026-05-20
+148,2,Prepare evaluation examples (task 148),2026-06-21,1,2026-06-22,2026-06-27,2026-06-28
+149,3,Prepare evaluation examples (task 149),2026-08-17,3,2026-08-17,2026-08-28,2026-08-31
+150,6,Update the project documentation (task 150),2026-10-21,,,2026-10-30,
+151,1,Review customer requirements (task 151),2026-03-22,3,2026-03-23,2026-04-05,
+152,11,Prepare evaluation examples (task 152),2026-10-28,12,2026-10-29,2026-11-03,2026-10-31
+153,10,Review model responses (task 153),2026-04-07,5,2026-04-08,2026-04-21,2026-04-20
+154,9,Test the data import (task 154),2025-12-30,10,2026-01-02,2026-01-21,2026-01-15
+155,9,Update the project documentation (task 155),2026-05-01,10,2026-05-04,2026-05-25,2026-05-08
+156,1,Review customer requirements (task 156),2026-10-04,5,2026-10-06,2026-10-25,2026-10-07
+157,8,Review model responses (task 157),2026-07-12,17,2026-07-12,2026-08-01,
+158,2,Check the dashboard results (task 158),2025-12-12,10,2025-12-13,2025-12-20,2025-12-23
+159,10,Update the project documentation (task 159),2026-06-04,6,2026-06-07,2026-06-28,2026-06-16
+160,7,Check the dashboard results (task 160),2026-09-08,,,2026-09-16,
+161,11,Review model responses (task 161),2026-10-29,19,2026-10-30,2026-11-17,2026-10-31
+162,6,Check the dashboard results (task 162),2026-09-21,24,2026-09-24,2026-10-02,2026-09-30
+163,5,Review customer requirements (task 163),2026-07-11,13,2026-07-14,2026-07-21,2026-07-16
+164,7,Update the project documentation (task 164),2026-03-25,16,2026-03-26,2026-04-01,2026-04-04
+165,6,Check the dashboard results (task 165),2026-04-04,24,2026-04-06,2026-04-24,
+166,1,Prepare evaluation examples (task 166),2026-03-28,5,2026-03-30,2026-04-15,2026-04-08
+167,3,Test the data import (task 167),2026-10-03,9,2026-10-04,2026-10-12,2026-10-13
+168,2,Update the project documentation (task 168),2026-03-23,15,2026-03-24,2026-04-11,
+169,10,Check the dashboard results (task 169),2026-07-06,17,2026-07-06,2026-07-19,2026-07-11
+170,5,Test the data import (task 170),2026-10-30,,,2026-11-14,
+171,1,Review customer requirements (task 171),2026-02-01,3,2026-02-04,2026-02-11,2026-02-15
+172,2,Test the data import (task 172),2026-07-30,3,2026-08-02,2026-08-20,2026-08-05
+173,5,Update the project documentation (task 173),2026-06-16,7,2026-06-16,2026-06-22,2026-06-29
+174,1,Update the project documentation (task 174),2026-10-12,1,2026-10-14,2026-11-02,2026-10-22
+175,8,Review customer requirements (task 175),2026-07-16,15,2026-07-17,2026-08-07,2026-07-24
+176,5,Review customer requirements (task 176),2026-10-31,3,2026-10-31,2026-11-06,2026-10-31
+177,1,Test the data import (task 177),2026-02-13,21,2026-02-14,2026-02-23,
+178,6,Update the project documentation (task 178),2026-04-03,5,2026-04-06,2026-04-24,2026-04-13
+179,4,Review customer requirements (task 179),2026-08-14,21,2026-08-16,2026-08-23,2026-08-28
+180,7,Review customer requirements (task 180),2026-09-03,,,2026-09-22,
+181,6,Review customer requirements (task 181),2026-09-08,18,2026-09-11,2026-09-29,2026-09-18
+182,6,Review customer requirements (task 182),2026-04-29,18,2026-05-02,2026-05-18,2026-05-16
+183,4,Test the data import (task 183),2026-07-12,21,2026-07-15,2026-08-05,2026-07-29
+184,6,Update the project documentation (task 184),2026-05-25,8,2026-05-26,2026-06-02,2026-05-28
+185,9,Review customer requirements (task 185),2026-01-19,6,2026-01-21,2026-01-30,2026-01-25
+186,3,Check the dashboard results (task 186),2026-03-12,3,2026-03-13,2026-03-22,
+187,2,Check the dashboard results (task 187),2026-01-30,6,2026-02-02,2026-02-21,2026-02-12
+188,11,Review model responses (task 188),2026-10-20,8,2026-10-22,2026-10-31,2026-10-30
+189,11,Review model responses (task 189),2026-10-10,8,2026-10-10,2026-10-26,2026-10-15
+190,8,Test the data import (task 190),2026-09-04,,,2026-09-10,
+191,5,Check the dashboard results (task 191),2026-02-09,11,2026-02-12,2026-03-03,2026-02-25
+192,1,Prepare evaluation examples (task 192),2026-06-19,5,2026-06-20,2026-07-05,2026-06-29
+193,1,Review customer requirements (task 193),2026-06-19,1,2026-06-21,2026-06-28,2026-06-24
+194,4,Review model responses (task 194),2026-07-13,9,2026-07-14,2026-07-30,2026-07-19
+195,7,Update the project documentation (task 195),2026-09-15,16,2026-09-15,2026-09-30,2026-09-17
+196,11,Check the dashboard results (task 196),2026-10-13,8,2026-10-15,2026-10-24,2026-10-25
+197,3,Test the data import (task 197),2026-04-29,14,2026-05-02,2026-05-11,2026-05-04
+198,9,Check the dashboard results (task 198),2026-03-07,6,2026-03-08,2026-03-29,2026-03-10
+199,11,Prepare evaluation examples (task 199),2026-10-14,19,2026-10-16,2026-10-21,2026-10-19
+200,6,Prepare evaluation examples (task 200),2026-10-21,,,2026-11-10,
+201,4,Review customer requirements (task 201),2026-02-09,15,2026-02-09,2026-02-23,
+202,9,Update the project documentation (task 202),2026-06-16,1,2026-06-16,2026-07-01,2026-06-29
+203,3,Update the project documentation (task 203),2026-09-02,9,2026-09-03,2026-09-13,2026-09-15
+204,3,Review model responses (task 204),2026-06-13,1,2026-06-16,2026-07-02,2026-06-20
+205,10,Review model responses (task 205),2026-03-28,18,2026-03-29,2026-04-10,2026-04-11
+206,4,Review model responses (task 206),2026-06-07,21,2026-06-10,2026-06-29,
+207,9,Update the project documentation (task 207),2026-04-15,15,2026-04-16,2026-04-27,2026-04-29
+208,3,Check the dashboard results (task 208),2026-03-09,1,2026-03-12,2026-03-28,2026-03-14
+209,9,Review model responses (task 209),2026-01-01,6,2026-01-01,2026-01-11,2026-01-06
+210,11,Review customer requirements (task 210),2026-10-05,,,2026-10-23,
+211,4,Test the data import (task 211),2026-07-19,13,2026-07-19,2026-08-06,2026-07-28
+212,4,Check the dashboard results (task 212),2026-06-16,6,2026-06-18,2026-06-30,2026-06-20
+213,11,Review model responses (task 213),2026-10-11,10,2026-10-12,2026-10-18,2026-10-26
+214,3,Review customer requirements (task 214),2026-10-28,9,2026-10-31,2026-11-05,
+215,5,Prepare evaluation examples (task 215),2026-04-21,13,2026-04-24,2026-05-02,
+216,5,Review model responses (task 216),2026-03-04,11,2026-03-05,2026-03-23,2026-03-15
+217,2,Prepare evaluation examples (task 217),2025-12-27,6,2025-12-27,2026-01-17,2026-01-08
+218,5,Check the dashboard results (task 218),2026-08-08,11,2026-08-10,2026-08-22,2026-08-13
+219,11,Update the project documentation (task 219),2026-10-03,19,2026-10-05,2026-10-12,
+220,11,Update the project documentation (task 220),2026-10-26,,,2026-11-16,
+221,1,Test the data import (task 221),2026-05-19,9,2026-05-19,2026-06-05,
+222,1,Check the dashboard results (task 222),2026-05-02,1,2026-05-04,2026-05-16,
+223,2,Check the dashboard results (task 223),2026-08-25,10,2026-08-26,2026-09-01,2026-09-01
+224,3,Review customer requirements (task 224),2026-10-17,9,2026-10-20,2026-10-30,
+225,8,Review customer requirements (task 225),2026-04-10,15,2026-04-11,2026-04-17,
+226,6,Check the dashboard results (task 226),2026-07-09,18,2026-07-12,2026-08-01,2026-07-25
+227,4,Test the data import (task 227),2026-04-26,13,2026-04-26,2026-05-11,2026-05-09
+228,7,Review model responses (task 228),2026-10-14,3,2026-10-17,2026-11-03,2026-10-20
+229,8,Review customer requirements (task 229),2026-07-04,9,2026-07-06,2026-07-13,
+230,7,Update the project documentation (task 230),2026-10-10,,,2026-10-20,
+231,5,Review model responses (task 231),2026-06-14,11,2026-06-14,2026-06-29,2026-06-19
+232,10,Check the dashboard results (task 232),2026-07-17,18,2026-07-18,2026-08-06,2026-07-19
+233,6,Test the data import (task 233),2026-09-11,8,2026-09-11,2026-09-18,2026-09-18
+234,9,Update the project documentation (task 234),2026-06-24,14,2026-06-24,2026-07-03,2026-06-30
+235,11,Check the dashboard results (task 235),2026-10-26,2,2026-10-26,2026-11-04,2026-10-31
+236,6,Test the data import (task 236),2026-08-05,24,2026-08-05,2026-08-14,2026-08-11
+237,8,Check the dashboard results (task 237),2026-10-13,13,2026-10-14,2026-11-04,2026-10-20
+238,5,Update the project documentation (task 238),2026-05-08,11,2026-05-08,2026-05-18,2026-05-15
+239,2,Test the data import (task 239),2026-03-15,10,2026-03-18,2026-03-29,
+240,8,Prepare evaluation examples (task 240),2026-09-14,,,2026-09-22,
+241,2,Test the data import (task 241),2026-06-20,3,2026-06-23,2026-06-30,
+242,11,Check the dashboard results (task 242),2026-10-12,12,2026-10-14,2026-10-28,
+243,11,Prepare evaluation examples (task 243),2026-10-06,8,2026-10-07,2026-10-15,
+244,4,Prepare evaluation examples (task 244),2026-08-10,6,2026-08-12,2026-08-28,2026-08-21
+245,10,Check the dashboard results (task 245),2026-08-29,5,2026-08-29,2026-09-12,2026-08-31
+246,8,Check the dashboard results (task 246),2026-08-13,17,2026-08-16,2026-08-23,2026-08-22
+247,2,Update the project documentation (task 247),2026-06-19,6,2026-06-21,2026-06-30,
+248,11,Review customer requirements (task 248),2026-10-19,10,2026-10-20,2026-11-07,2026-10-31
+249,2,Prepare evaluation examples (task 249),2026-07-24,3,2026-07-26,2026-08-05,2026-08-07
+250,6,Review customer requirements (task 250),2026-10-05,,,2026-10-19,
+251,5,Update the project documentation (task 251),2026-04-11,7,2026-04-13,2026-04-22,2026-04-23
+252,2,Update the project documentation (task 252),2026-07-16,3,2026-07-17,2026-07-27,2026-07-29
+253,6,Update the project documentation (task 253),2026-02-22,5,2026-02-22,2026-02-28,
+254,5,Update the project documentation (task 254),2026-04-18,7,2026-04-21,2026-04-26,2026-05-02
+255,5,Check the dashboard results (task 255),2026-06-04,3,2026-06-05,2026-06-22,2026-06-07
+256,1,Update the project documentation (task 256),2026-01-20,9,2026-01-23,2026-02-12,2026-01-29
+257,3,Update the project documentation (task 257),2026-04-10,14,2026-04-12,2026-04-29,2026-04-18
+258,9,Test the data import (task 258),2025-12-28,6,2025-12-29,2026-01-17,2025-12-31
+259,8,Update the project documentation (task 259),2026-06-03,20,2026-06-03,2026-06-09,2026-06-10
+260,7,Test the data import (task 260),2026-09-17,,,2026-09-27,
+261,10,Review model responses (task 261),2026-07-18,6,2026-07-19,2026-07-29,2026-07-28
+262,8,Update the project documentation (task 262),2026-06-18,17,2026-06-18,2026-06-25,
+263,8,Update the project documentation (task 263),2026-06-01,20,2026-06-03,2026-06-09,2026-06-11
+264,11,Review model responses (task 264),2026-10-22,2,2026-10-24,2026-10-29,
+265,3,Update the project documentation (task 265),2026-03-16,14,2026-03-19,2026-04-04,2026-03-20
+266,9,Update the project documentation (task 266),2026-01-19,6,2026-01-21,2026-01-28,2026-01-28
+267,8,Review model responses (task 267),2026-10-13,9,2026-10-15,2026-10-23,2026-10-17
+268,6,Review model responses (task 268),2026-07-24,18,2026-07-26,2026-08-04,2026-08-04
+269,9,Test the data import (task 269),2025-12-11,10,2025-12-11,2025-12-20,2025-12-23
+270,8,Prepare evaluation examples (task 270),2026-10-05,,,2026-10-24,
+271,10,Test the data import (task 271),2026-08-31,17,2026-08-31,2026-09-15,
+272,3,Update the project documentation (task 272),2026-05-21,24,2026-05-23,2026-06-07,2026-06-01
+273,8,Test the data import (task 273),2026-09-29,9,2026-10-01,2026-10-21,
+274,6,Check the dashboard results (task 274),2026-03-29,24,2026-03-31,2026-04-05,2026-04-05
+275,10,Check the dashboard results (task 275),2026-06-11,12,2026-06-11,2026-07-01,2026-06-22
+276,10,Review customer requirements (task 276),2026-08-01,18,2026-08-02,2026-08-14,2026-08-14
+277,4,Prepare evaluation examples (task 277),2025-12-10,9,2025-12-12,2025-12-30,2025-12-24
+278,7,Update the project documentation (task 278),2026-07-07,2,2026-07-10,2026-07-16,
+279,4,Review model responses (task 279),2026-09-14,13,2026-09-17,2026-10-08,2026-09-20
+280,11,Check the dashboard results (task 280),2026-10-11,,,2026-10-27,
+281,11,Test the data import (task 281),2026-10-21,8,2026-10-24,2026-11-04,
+282,9,Prepare evaluation examples (task 282),2026-02-15,14,2026-02-17,2026-03-03,2026-03-01
+283,8,Check the dashboard results (task 283),2026-06-21,17,2026-06-23,2026-07-06,2026-07-03
+284,9,Review customer requirements (task 284),2026-03-08,15,2026-03-10,2026-03-19,2026-03-15
+285,5,Prepare evaluation examples (task 285),2026-02-10,9,2026-02-13,2026-02-26,
+286,4,Update the project documentation (task 286),2026-09-02,13,2026-09-04,2026-09-13,2026-09-16
+287,4,Test the data import (task 287),2026-04-04,6,2026-04-05,2026-04-17,2026-04-12
+288,8,Review model responses (task 288),2026-04-26,20,2026-04-26,2026-05-06,2026-05-04
+289,11,Review customer requirements (task 289),2026-10-07,8,2026-10-09,2026-10-23,2026-10-22
+290,4,Prepare evaluation examples (task 290),2026-10-06,,,2026-10-12,
+291,7,Prepare evaluation examples (task 291),2026-10-12,17,2026-10-12,2026-10-29,
+292,5,Test the data import (task 292),2026-01-20,11,2026-01-22,2026-01-30,
+293,5,Review model responses (task 293),2026-08-21,7,2026-08-24,2026-09-02,
+294,5,Check the dashboard results (task 294),2026-04-09,11,2026-04-11,2026-04-21,
+295,5,Prepare evaluation examples (task 295),2026-04-06,11,2026-04-08,2026-04-22,2026-04-21
+296,3,Check the dashboard results (task 296),2026-09-09,9,2026-09-12,2026-10-03,2026-09-19
+297,2,Review customer requirements (task 297),2026-02-03,3,2026-02-06,2026-02-21,
+298,5,Review model responses (task 298),2026-09-26,,,2026-10-08,
+299,1,Review evaluation results (task 299),2026-10-12,25,2026-10-15,2026-10-22,
+300,1,Review evaluation results (task 300),2026-10-13,25,2026-10-16,2026-10-23,
