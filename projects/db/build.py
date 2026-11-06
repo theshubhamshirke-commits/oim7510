@@ -279,7 +279,7 @@ def _(expenses_by_month, plt):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md("""
     The variation in monthly expense counts looks plausible for
@@ -289,7 +289,7 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md("""
     ## 4. Row Counts
@@ -335,7 +335,7 @@ def _(ask, build_complete):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md("""
     ## 5. A Row It Refuses
@@ -392,6 +392,85 @@ def _(ask, build_complete, database, duckdb):
     """)
 
     refusal_check
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md("""
+    ## 6. Answers You Already Knew
+
+    Before running these queries, I expect:
+
+    1. **Two employees without a manager**, because the two founders
+       report to nobody.
+
+    2. **Thirty unassigned tasks**, because the data-generation
+       script deliberately creates 30 tasks without an assignee.
+
+    3. **Zero project memberships for employee 25**, because this
+       employee was deliberately left without any project memberships.
+
+    Each query below compares its actual count with the expected count.
+    """)
+    return
+
+
+@app.cell
+def _(ask, build_complete):
+    #Query 1 — Employees without a manager
+
+    assert build_complete, "Run the database build cell first."
+
+    known_manager_check = ask("""
+        SELECT
+            2 AS expected_count,
+            COUNT(*) AS actual_count,
+            COUNT(*) = 2 AS matches_expectation
+        FROM people
+        WHERE manager_id IS NULL;
+    """)
+
+    known_manager_check
+    return
+
+
+@app.cell
+def _(ask, build_complete):
+    #Query 2 — Unassigned tasks
+
+
+    assert build_complete, "Run the database build cell first."
+
+    known_unassigned_check = ask("""
+        SELECT
+            30 AS expected_count,
+            COUNT(*) AS actual_count,
+            COUNT(*) = 30 AS matches_expectation
+        FROM tasks
+        WHERE assigned_person_id IS NULL;
+    """)
+
+    known_unassigned_check
+    return
+
+
+@app.cell
+def _(ask, build_complete):
+    #Query 3 — Employee 25’s project memberships
+
+    assert build_complete, "Run the database build cell first."
+
+    known_membership_check = ask("""
+        SELECT
+            0 AS expected_count,
+            COUNT(*) AS actual_count,
+            COUNT(*) = 0 AS matches_expectation
+        FROM project_memberships
+        WHERE person_id = 25;
+    """)
+
+    known_membership_check
     return
 
 
