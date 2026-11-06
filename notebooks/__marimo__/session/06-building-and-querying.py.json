@@ -142,14 +142,14 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='a9d3c323-96ba-8c05-0f4f-7ee2b9b27b80'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;counties&#92;&quot;:14,&#92;&quot;towns&#92;&quot;:351}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;counties&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='e5a00617-1f39-3fff-0677-b0205de61f39'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;counties&#92;&quot;:14,&#92;&quot;towns&#92;&quot;:351}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;counties&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "Hstk",
+      "id": "emfo",
       "code_hash": "e05678a755e50c6716f858730b78b84c",
       "outputs": [
         {
@@ -162,7 +162,33 @@
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "Hstk",
+      "code_hash": "0369b1edc2ae72568eb036bc93bb637a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Hstk-0' random-id='08dc59c4-9bb2-58f1-d99b-74be4cfeef7b'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;fiscal_year&#92;&quot;:2023,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:18087},{&#92;&quot;name&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;fiscal_year&#92;&quot;:2022,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:16889}]&quot;' data-total-rows='2' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;fiscal_year&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UtBU",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
       "code_hash": "b0f36f16b7d5623c0deaf313ce8cb8e7",
       "outputs": [
         {
@@ -175,13 +201,20 @@
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "ROlb",
       "code_hash": "31b661e637bceeb0e383d67fabd83f54",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;Constraint Error: Violates foreign key constraint because key &quot;name: Atlantis&quot; does not exist in the referenced table&#x27;</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "ZHCJ",
+      "id": "qnkX",
       "code_hash": "985ad6c044394d96f0dec49777b1136b",
       "outputs": [
         {
@@ -194,7 +227,20 @@
       "console": []
     },
     {
-      "id": "ROlb",
+      "id": "EgtI",
+      "code_hash": "b805e9d9a6ba16f008389d56d5ea1dd4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='EgtI-0' random-id='040c8e96-671f-8fb5-10bc-e0b1acf54d37'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;rule broken&#92;&quot;:&#92;&quot;duplicate name&#92;&quot;,&#92;&quot;message&#92;&quot;:&#92;&quot;Constraint Error: Duplicate key &#92;&#92;&#92;&quot;name: Wellesley&#92;&#92;&#92;&quot; violates primary key constraint.&#92;&quot;},{&#92;&quot;rule broken&#92;&quot;:&#92;&quot;population of zero&#92;&quot;,&#92;&quot;message&#92;&quot;:&#92;&quot;Constraint Error: CHECK constraint failed on table towns with expression CHECK((population &#92;u003e 0))&#92;&quot;},{&#92;&quot;rule broken&#92;&quot;:&#92;&quot;county does not exist&#92;&quot;,&#92;&quot;message&#92;&quot;:&#92;&quot;Constraint Error: Violates foreign key constraint because key &#92;&#92;&#92;&quot;name: Atlantis&#92;&#92;&#92;&quot; does not exist in the referenced table&#92;&quot;}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;rule broken&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;message&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
       "code_hash": "1a7c4018335d6cb069c0c7ca66b973af",
       "outputs": [
         {
@@ -207,13 +253,20 @@
       "console": []
     },
     {
-      "id": "qnkX",
+      "id": "Vxnm",
       "code_hash": "e322948be7e2a30bd9bad072b58b2ae9",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Vxnm-0' random-id='e28ecf40-c501-1c9a-9502-ca4c38f59d33'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:26237},{&#92;&quot;name&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;population&#92;&quot;:31242,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:20551},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dover&#92;&quot;,&#92;&quot;population&#92;&quot;:6057,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:19088},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cohasset&#92;&quot;,&#92;&quot;population&#92;&quot;:8532,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:16814},{&#92;&quot;name&#92;&quot;:&#92;&quot;Needham&#92;&quot;,&#92;&quot;population&#92;&quot;:32931,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:16690}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "DnEU",
       "code_hash": "d7ab3bfb612d5a47767718c6ed30ad0e",
       "outputs": [
         {
@@ -226,7 +279,20 @@
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "cdkH",
+      "code_hash": "b3b18d9e642a5dbbfb3417b17b9c4909",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='cdkH-0' random-id='4ef3aaa5-ef6f-ccb4-3d84-1b40a737198b'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:26237},{&#92;&quot;name&#92;&quot;:&#92;&quot;Newton&#92;&quot;,&#92;&quot;population&#92;&quot;:90700,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:17077},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:14678},{&#92;&quot;name&#92;&quot;:&#92;&quot;Somerville&#92;&quot;,&#92;&quot;population&#92;&quot;:82149,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:9376},{&#92;&quot;name&#92;&quot;:&#92;&quot;Quincy&#92;&quot;,&#92;&quot;population&#92;&quot;:103434,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:8250}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
       "code_hash": "19905b2ac849960732f5993a6eb355d2",
       "outputs": [
         {
@@ -239,13 +305,20 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "ecfG",
       "code_hash": "3c646d2de1df110536de16ea37161658",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ecfG-0' random-id='c9d13c68-9666-9c24-d1b1-37072b593e2b'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;towns&#92;&quot;:2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;towns&#92;&quot;:1},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;towns&#92;&quot;:1}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "Pvdt",
       "code_hash": "e6d98347e93a30a396d5dc513dd136ce",
       "outputs": [
         {
@@ -258,13 +331,20 @@
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "ZBYS",
       "code_hash": "cd2a7c8908f4b4d3a326b3d562608cd1",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ZBYS-0' random-id='fa629b73-4d53-8a58-f39e-a068c8a121cb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "aLJB",
       "code_hash": "a965a75acaf0ec53a54a78f3ebec6470",
       "outputs": [
         {
@@ -277,7 +357,7 @@
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "nHfw",
       "code_hash": "c64d616861c10560c7a19125454b29b2",
       "outputs": [
         {
@@ -290,13 +370,20 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "xXTn",
       "code_hash": "26c29b84d27276e5089e7e93b9a706f9",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='xXTn-0' random-id='ac931d93-c29d-c707-5ddf-20f6d508d921'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;towns&#92;&quot;:2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;towns&#92;&quot;:1},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;towns&#92;&quot;:1}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "AjVT",
       "code_hash": "dc5486f8a0542c682bf19aef50190e8a",
       "outputs": [
         {
@@ -309,7 +396,7 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "pHFh",
       "code_hash": "9515b9e216d9b7f586517edd61034cda",
       "outputs": [
         {
@@ -322,13 +409,20 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "NCOB",
       "code_hash": "4bf85498e810420ebb569c0797c110e8",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='NCOB-0' random-id='46ee12d5-d38a-57ee-015f-789f8b380107'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;orders&#92;&quot;:16282}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "aqbW",
       "code_hash": "1754cc0a1be9c542861085cc24cb0bdb",
       "outputs": [
         {
@@ -341,7 +435,7 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "TRpd",
       "code_hash": "a29ff83358cedb190f2d82bd8c63e255",
       "outputs": [
         {
@@ -354,7 +448,7 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "TXez",
       "code_hash": "81283c0067831d792da9437eb5bc36ee",
       "outputs": [
         {

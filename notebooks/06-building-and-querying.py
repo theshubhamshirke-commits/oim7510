@@ -218,6 +218,32 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask, database, duckdb):
+    #Section A : Q1, Q2, Q3, Q4
+
+    with duckdb.connect(database) as _con:
+        _con.execute("""
+            CREATE TABLE IF NOT EXISTS town_bills (
+                name                                VARCHAR NOT NULL REFERENCES towns(name),
+                fiscal_year                         INTEGER NOT NULL,
+                average_single_family_bill_dollars  INTEGER,
+                PRIMARY KEY (name, fiscal_year)
+            )
+        """)
+        _con.execute("DELETE FROM town_bills WHERE name = 'Wellesley' AND fiscal_year IN (2023, 2022)")
+        _con.execute("INSERT INTO town_bills VALUES ('Wellesley', 2023, 18087)")
+        _con.execute("INSERT INTO town_bills VALUES ('Wellesley', 2022, 16889)")
+
+    ask("SELECT * FROM town_bills")
+    return
+
+
+@app.cell
+def _():
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -254,6 +280,38 @@ def _(mo):
     return
 
 
+@app.cell
+def _(database, duckdb, pl):
+    #Section B : three broken rules
+
+    try:
+        with duckdb.connect(database) as _con:
+            _con.execute("INSERT INTO towns VALUES ('Wellesley', 'Norfolk', 100, 50000, 5000)")
+        duplicate_name_result = "accepted"
+    except duckdb.ConstraintException as _error:
+        duplicate_name_result = str(_error).splitlines()[0]
+
+    try:
+        with duckdb.connect(database) as _con:
+            _con.execute("INSERT INTO towns VALUES ('Testville', 'Norfolk', 0, 50000, 5000)")
+        zero_population_result = "accepted"
+    except duckdb.ConstraintException as _error:
+        zero_population_result = str(_error).splitlines()[0]
+
+    try:
+        with duckdb.connect(database) as _con:
+            _con.execute("INSERT INTO towns VALUES ('Nowhere', 'Atlantis', 10, 20000, 3000)")
+        missing_county_result = "accepted"
+    except duckdb.ConstraintException as _error:
+        missing_county_result = str(_error).splitlines()[0]
+
+    pl.DataFrame({
+        "rule broken": ["duplicate name", "population of zero", "county does not exist"],
+        "message": [duplicate_name_result, zero_population_result, missing_county_result],
+    })
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -286,6 +344,18 @@ def _(mo):
     *Check yourself: Brookline, Newton, Cambridge, Somerville, Quincy.*
 
     **Going further.** Ask the same question of `counties` and `towns` together: which county is each of those five in, and what share of its county's people does each hold? That needs both tables at once, which the topic slides call a join.
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    ask("""
+        SELECT name, population, average_single_family_bill_dollars
+        FROM towns
+        WHERE population > 50000
+        ORDER BY average_single_family_bill_dollars DESC
+        LIMIT 5
     """)
     return
 
