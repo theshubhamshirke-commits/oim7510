@@ -22,7 +22,7 @@ def _(duckdb, mo):
         with duckdb.connect(database, read_only=True) as _con:
             return _con.sql(sql).pl()
 
-    return (database,)
+    return ask, database
 
 
 @app.cell
@@ -183,7 +183,7 @@ def _(database, duckdb):
 
     build_complete = True
     print("Database rebuilt and CSV data loaded successfully.")
-    return
+    return (build_complete,)
 
 
 @app.cell
@@ -286,6 +286,57 @@ def _(mo):
     a simplified startup dataset where projects start, finish,
     or pause at different times, so I kept `make_data.py` unchanged.
     """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md("""
+    ## 4. Row Counts
+
+    The following table shows the number of rows stored in each
+    database table after loading the CSV files.
+    """)
+    return
+
+
+@app.cell
+def _(ask, build_complete):
+    assert build_complete, "Run the database build cell first."
+
+    row_counts = ask("""
+        SELECT 'people' AS table_name, COUNT(*) AS row_count
+        FROM people
+
+        UNION ALL
+
+        SELECT 'projects', COUNT(*)
+        FROM projects
+
+        UNION ALL
+
+        SELECT 'project_memberships', COUNT(*)
+        FROM project_memberships
+
+        UNION ALL
+
+        SELECT 'tasks', COUNT(*)
+        FROM tasks
+
+        UNION ALL
+
+        SELECT 'expenses', COUNT(*)
+        FROM expenses
+
+        ORDER BY table_name;
+    """)
+
+    row_counts
+    return
+
+
+@app.cell
+def _():
     return
 
 

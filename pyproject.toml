@@ -10,5 +10,6 @@ dependencies = [
     "marimo[recommended]>=0.24.2",
     "matplotlib>=3.11.2",
     "polars>=1.44.2",
+    "pyarrow>=25.0.1",
     "yfinance>=1.7.0",
 ]

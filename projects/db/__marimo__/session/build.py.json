@@ -128,6 +128,38 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "Wqqo",
+      "code_hash": "1455b9925bc43546036a2b775548e353",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-row-counts\">4. Row Counts</h2>\n<span class=\"paragraph\">The following table shows the number of rows stored in each\ndatabase table after loading the CSV files.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kzKp",
+      "code_hash": "300378c3b7d8b5558f28ec17743844dc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='kzKp-0' random-id='368f63ca-0a9d-8a6a-f898-d0bf38debdb3'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;expenses&#92;&quot;,&#92;&quot;row_count&#92;&quot;:180},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;people&#92;&quot;,&#92;&quot;row_count&#92;&quot;:25},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;project_memberships&#92;&quot;,&#92;&quot;row_count&#92;&quot;:60},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;projects&#92;&quot;,&#92;&quot;row_count&#92;&quot;:12},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;tasks&#92;&quot;,&#92;&quot;row_count&#92;&quot;:300}]&quot;' data-total-rows='5' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;row_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LRCa",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
     }
   ]
 }
