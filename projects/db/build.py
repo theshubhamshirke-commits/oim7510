@@ -336,7 +336,62 @@ def _(ask, build_complete):
 
 
 @app.cell
-def _():
+def _(mo):
+    mo.md("""
+    ## 5. A Row It Refuses
+
+    I attempt to insert an expense of -50.00 for project 1.
+    I expect the database to reject it because every expense
+    must have an amount greater than zero.
+    """)
+    return
+
+
+@app.cell
+def _(ask, build_complete, database, duckdb):
+    assert build_complete, "Run the database build cell first."
+
+    with duckdb.connect(database) as _con:
+        _con.execute("BEGIN TRANSACTION")
+
+        try:
+            _con.execute("""
+                INSERT INTO expenses (
+                    expense_id,
+                    project_id,
+                    expense_date,
+                    amount,
+                    category,
+                    note
+                )
+                VALUES (
+                    9999,
+                    1,
+                    DATE '2026-10-31',
+                    -50.00,
+                    'software',
+                    'Test: negative expense'
+                );
+            """)
+
+        except duckdb.ConstraintException as _error:
+            print("Database refused the row:")
+            print(_error)
+
+        else:
+            print("Unexpected result: the negative expense was accepted.")
+            print("Check that the expenses table has CHECK (amount > 0).")
+
+        finally:
+            _con.execute("ROLLBACK")
+
+    refusal_check = ask("""
+        SELECT COUNT(*) AS test_rows_remaining
+        FROM expenses
+        WHERE expense_id = 9999;
+    """)
+
+    refusal_check
     return
 
 

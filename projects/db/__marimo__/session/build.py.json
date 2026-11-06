@@ -157,9 +157,36 @@
     },
     {
       "id": "LRCa",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "a233ac028d84aad36f520f9a4fc7cea3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-a-row-it-refuses\">5. A Row It Refuses</h2>\n<span class=\"paragraph\">I attempt to insert an expense of -50.00 for project 1.\nI expect the database to reject it because every expense\nmust have an amount greater than zero.</span></span>"
+          }
+        }
+      ],
       "console": []
+    },
+    {
+      "id": "arNj",
+      "code_hash": "21cb45f047d8a32990742d97e8c7ca48",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='arNj-0' random-id='b97ce61b-05a6-3244-0c3a-e8638b5b6d94'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;test_rows_remaining&#92;&quot;:0}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;test_rows_remaining&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Database refused the row:\nConstraint Error: CHECK constraint failed on table expenses with expression CHECK((amount > 0))\n",
+          "mimetype": "text/plain"
+        }
+      ]
     }
   ]
 }
