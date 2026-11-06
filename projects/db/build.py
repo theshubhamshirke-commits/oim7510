@@ -8,8 +8,10 @@ app = marimo.App(width="medium")
 def _():
     import marimo as mo
     import duckdb
+    import polars as pl
+    import matplotlib.pyplot as plt
 
-    return duckdb, mo
+    return duckdb, mo, pl, plt
 
 
 @app.cell
@@ -213,6 +215,76 @@ def _(mo):
     Projects 11 and 12 intentionally have no expenses.
     Employee 25 intentionally has no project memberships.
     There are also 30 unassigned tasks.
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md("""
+    ## 3. A Look at the Data
+
+    I read `expenses.csv` with Polars and counted the expense
+    records in each month to inspect their distribution over time.
+    """)
+    return
+
+
+@app.cell
+def _(mo, pl):
+    expenses_csv = pl.read_csv(
+        mo.notebook_dir() / "data" / "expenses.csv",
+        try_parse_dates=True
+    )
+
+    expenses_by_month = (
+        expenses_csv
+        .with_columns(
+            pl.col("expense_date").dt.strftime("%Y-%m").alias("month")
+        )
+        .group_by("month")
+        .agg(
+            pl.len().alias("expense_count")
+        )
+        .sort("month")
+    )
+
+    expenses_by_month
+    return (expenses_by_month,)
+
+
+@app.cell
+def _(expenses_by_month, plt):
+    _fig, _ax = plt.subplots(figsize=(10, 4))
+
+    _bars = _ax.bar(
+        expenses_by_month["month"].to_list(),
+        expenses_by_month["expense_count"].to_list(),
+        color="steelblue"
+    )
+
+    _ax.set_title(
+        "BabsonAI Labs: Expense Records by Month (Synthetic Data)"
+    )
+    _ax.set_xlabel("Month")
+    _ax.set_ylabel("Number of expense records")
+
+    _ax.tick_params(axis="x", labelrotation=45)
+    _ax.set_ylim(0, expenses_by_month["expense_count"].max() + 5)
+    _ax.bar_label(_bars, padding=3)
+
+    _fig.tight_layout()
+
+    _fig
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md("""
+    The variation in monthly expense counts looks plausible for
+    a simplified startup dataset where projects start, finish,
+    or pause at different times, so I kept `make_data.py` unchanged.
     """)
     return
 

@@ -1116,6 +1116,7 @@ dependencies = [
     { name = "edit" },
     { name = "marimo", extra = ["recommended"] },
     { name = "matplotlib" },
+    { name = "polars" },
     { name = "yfinance" },
 ]
 
@@ -1125,6 +1126,7 @@ requires-dist = [
     { name = "edit", specifier = ">=0.0.4" },
     { name = "marimo", extras = ["recommended"], specifier = ">=0.24.2" },
     { name = "matplotlib", specifier = ">=3.11.2" },
+    { name = "polars", specifier = ">=1.44.2" },
     { name = "yfinance", specifier = ">=1.7.0" },
 ]
 
