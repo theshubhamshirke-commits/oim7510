@@ -167,6 +167,42 @@ def _(database, duckdb):
                 [_csv_path]
             )
 
+        # NEW: Create the view after loading the CSV files.
+        _con.execute("""
+            CREATE VIEW project_budget_summary AS
+            SELECT
+                p.project_id,
+                p.project_name,
+                p.budget,
+                COALESCE(SUM(e.amount), 0) AS total_expenses,
+                p.budget - COALESCE(SUM(e.amount), 0) AS remaining_budget
+            FROM projects AS p
+            LEFT JOIN expenses AS e
+                ON p.project_id = e.project_id
+            GROUP BY
+                p.project_id,
+                p.project_name,
+                p.budget;
+        """)
+
+         # Save a query for the founders' weekly budget review.
+        _con.execute("""
+            CREATE OR REPLACE VIEW project_budget_summary AS
+            SELECT
+                p.project_id,
+                p.project_name,
+                p.budget,
+                COALESCE(SUM(e.amount), 0) AS total_expenses,
+                p.budget - COALESCE(SUM(e.amount), 0) AS remaining_budget
+            FROM projects AS p
+            LEFT JOIN expenses AS e
+                ON p.project_id = e.project_id
+            GROUP BY
+                p.project_id,
+                p.project_name,
+                p.budget;
+        """)
+
         # Display the number of rows actually loaded into each table.
         for _table in [
             "people",
@@ -227,6 +263,11 @@ def _(mo):
     I read `expenses.csv` with Polars and counted the expense
     records in each month to inspect their distribution over time.
     """)
+    return
+
+
+@app.cell
+def _():
     return
 
 

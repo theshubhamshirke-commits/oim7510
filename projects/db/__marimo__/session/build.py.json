@@ -46,7 +46,7 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "59007052a7e84e10d47f3aa80dc5da2d",
+      "code_hash": "d3e81b62a37971fc2b872483e371d695",
       "outputs": [
         {
           "type": "data",
@@ -85,6 +85,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-a-look-at-the-data\">3. A Look at the Data</h2>\n<span class=\"paragraph\">I read <code>expenses.csv</code> with Polars and counted the expense\nrecords in each month to inspect their distribution over time.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WoXz",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
           }
         }
       ],
@@ -149,7 +162,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='kzKp-0' random-id='2bf0f0b5-9973-625a-569e-0dc468be9e21'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;expenses&#92;&quot;,&#92;&quot;row_count&#92;&quot;:180},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;people&#92;&quot;,&#92;&quot;row_count&#92;&quot;:25},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;project_memberships&#92;&quot;,&#92;&quot;row_count&#92;&quot;:60},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;projects&#92;&quot;,&#92;&quot;row_count&#92;&quot;:12},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;tasks&#92;&quot;,&#92;&quot;row_count&#92;&quot;:300}]&quot;' data-total-rows='5' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;row_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='kzKp-0' random-id='dfb47d36-bba3-ed9f-13ca-a3c761fc913c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;expenses&#92;&quot;,&#92;&quot;row_count&#92;&quot;:180},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;people&#92;&quot;,&#92;&quot;row_count&#92;&quot;:25},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;project_memberships&#92;&quot;,&#92;&quot;row_count&#92;&quot;:60},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;projects&#92;&quot;,&#92;&quot;row_count&#92;&quot;:12},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;tasks&#92;&quot;,&#92;&quot;row_count&#92;&quot;:300}]&quot;' data-total-rows='5' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;row_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -175,7 +188,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='arNj-0' random-id='80aa4790-3ce7-fbdb-91f9-b5cf2d72b486'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;test_rows_remaining&#92;&quot;:0}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;test_rows_remaining&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='arNj-0' random-id='cb0add52-464b-6876-6de6-71845571af77'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;test_rows_remaining&#92;&quot;:0}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;test_rows_remaining&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -208,7 +221,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='tqSw-0' random-id='82a1e3c7-34cb-5479-6f04-931334cee571'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:2,&#92;&quot;actual_count&#92;&quot;:2,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='tqSw-0' random-id='b48b35f2-f8b8-ab00-2773-20829dd6e32a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:2,&#92;&quot;actual_count&#92;&quot;:2,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -221,7 +234,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='wlfn-0' random-id='8fadf7f2-9fe4-7265-51b7-abab53be2db5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:30,&#92;&quot;actual_count&#92;&quot;:30,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='wlfn-0' random-id='e592e9b3-a26c-db87-983f-f5ef948f865c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:30,&#92;&quot;actual_count&#92;&quot;:30,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -234,7 +247,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='kpzu-0' random-id='1fa742b1-d7d6-4501-94e7-60549f8cdc98'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:0,&#92;&quot;actual_count&#92;&quot;:0,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='kpzu-0' random-id='9470c358-52b1-02b2-81d3-56254dc04038'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:0,&#92;&quot;actual_count&#92;&quot;:0,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
