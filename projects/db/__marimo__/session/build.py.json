@@ -1,0 +1,68 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "a6c36a1810209f6079919efcd59da643",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LtcP",
+      "code_hash": "05c7196ca6ab8e557b0c78302945dd29",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pSGN",
+      "code_hash": "cde8d7fc70245c8b3db52fd29d627f76",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"babsonai-labs-database-build\">BabsonAI Labs \u2014 Database Build</h1>\n<h2 id=\"1-the-tables\">1. The Tables</h2>\n<span class=\"paragraph\">This section defines the five tables, their primary and foreign\nkeys, and the rules that the database will enforce.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HxDe",
+      "code_hash": "a0feb8c827d8055ab69d194432edda8f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Created 5 empty tables successfully.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}
