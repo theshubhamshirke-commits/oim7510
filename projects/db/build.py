@@ -135,8 +135,52 @@ def _(database, duckdb):
             );
         """)
 
+        # Locate the folder containing the CSV files.
+        _data_folder = database.parent / "data"
+
+        # Read employees in ID order: managers come before their reports.
+        _people_rows = _con.execute(
+            "SELECT * FROM read_csv(?, header = true) ORDER BY person_id",
+            [str(_data_folder / "people.csv")]
+        ).fetchall()
+
+        # Insert employees individually because people references itself.
+        for _person in _people_rows:
+            _con.execute(
+                "INSERT INTO people VALUES (?, ?, ?, ?, ?, ?, ?)",
+                _person
+            )
+
+        # Load the remaining tables in dependency order.
+        for _table in [
+            "projects",
+            "project_memberships",
+            "tasks",
+            "expenses"
+        ]:
+            _csv_path = str(_data_folder / f"{_table}.csv")
+
+            _con.execute(
+                f"INSERT INTO {_table} SELECT * FROM read_csv(?, header = true)",
+                [_csv_path]
+            )
+
+        # Display the number of rows actually loaded into each table.
+        for _table in [
+            "people",
+            "projects",
+            "project_memberships",
+            "tasks",
+            "expenses"
+        ]:
+            _count = _con.execute(
+                f"SELECT COUNT(*) FROM {_table}"
+            ).fetchall()[0][0]
+
+            print(f"{_table}: {_count} rows")
+
     build_complete = True
-    print("Created 5 empty tables successfully.")
+    print("Database rebuilt and CSV data loaded successfully.")
     return
 
 

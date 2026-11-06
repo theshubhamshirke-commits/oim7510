@@ -46,7 +46,7 @@
     },
     {
       "id": "HxDe",
-      "code_hash": "a0feb8c827d8055ab69d194432edda8f",
+      "code_hash": "59007052a7e84e10d47f3aa80dc5da2d",
       "outputs": [
         {
           "type": "data",
@@ -59,7 +59,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Created 5 empty tables successfully.\n",
+          "text": "people: 25 rows\nprojects: 12 rows\nproject_memberships: 60 rows\ntasks: 300 rows\nexpenses: 180 rows\nDatabase rebuilt and CSV data loaded successfully.\n",
           "mimetype": "text/plain"
         }
       ]
