@@ -46,7 +46,7 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "d3e81b62a37971fc2b872483e371d695",
+      "code_hash": "44d281874328aa11cfbd9dcf4d020911",
       "outputs": [
         {
           "type": "data",
@@ -91,16 +91,9 @@
       "console": []
     },
     {
-      "id": "WoXz",
+      "id": "Xref",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -110,14 +103,14 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='SFPL-0' random-id='a56027cb-b451-9d7b-7698-e2009056aa35'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-11&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:4},{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-12&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:7},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-01&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:18},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-02&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:7},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-03&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:22},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-04&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:18},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-05&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:21},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-06&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:21},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-07&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:19},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-08&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:20}]&quot;' data-total-rows='12' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;expense_count&quot;,[&quot;integer&quot;,&quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='SFPL-0' random-id='2d3aa8c7-7d9b-fb4d-8492-d6df94cb79f2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-11&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:4},{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-12&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:7},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-01&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:18},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-02&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:7},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-03&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:22},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-04&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:18},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-05&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:21},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-06&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:21},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-07&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:19},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-08&#92;&quot;,&#92;&quot;expense_count&#92;&quot;:20}]&quot;' data-total-rows='12' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;expense_count&quot;,[&quot;integer&quot;,&quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "nUpK",
+      "id": "BYtC",
       "code_hash": "b6396cc41aa755ad541353fb04bca01e",
       "outputs": [
         {
@@ -130,7 +123,7 @@
       "console": []
     },
     {
-      "id": "aQfC",
+      "id": "RGSE",
       "code_hash": "ea05868ba5251cb291c8a83150a9bbad",
       "outputs": [
         {
@@ -143,7 +136,7 @@
       "console": []
     },
     {
-      "id": "Wqqo",
+      "id": "Kclp",
       "code_hash": "1455b9925bc43546036a2b775548e353",
       "outputs": [
         {
@@ -156,20 +149,20 @@
       "console": []
     },
     {
-      "id": "kzKp",
+      "id": "emfo",
       "code_hash": "300378c3b7d8b5558f28ec17743844dc",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='kzKp-0' random-id='dfb47d36-bba3-ed9f-13ca-a3c761fc913c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;expenses&#92;&quot;,&#92;&quot;row_count&#92;&quot;:180},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;people&#92;&quot;,&#92;&quot;row_count&#92;&quot;:25},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;project_memberships&#92;&quot;,&#92;&quot;row_count&#92;&quot;:60},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;projects&#92;&quot;,&#92;&quot;row_count&#92;&quot;:12},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;tasks&#92;&quot;,&#92;&quot;row_count&#92;&quot;:300}]&quot;' data-total-rows='5' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;row_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='192610d9-0792-0cd9-5610-f294ef8ad021'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;expenses&#92;&quot;,&#92;&quot;row_count&#92;&quot;:180},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;people&#92;&quot;,&#92;&quot;row_count&#92;&quot;:25},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;project_memberships&#92;&quot;,&#92;&quot;row_count&#92;&quot;:60},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;projects&#92;&quot;,&#92;&quot;row_count&#92;&quot;:12},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;tasks&#92;&quot;,&#92;&quot;row_count&#92;&quot;:300}]&quot;' data-total-rows='5' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;row_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "LRCa",
+      "id": "Hstk",
       "code_hash": "a233ac028d84aad36f520f9a4fc7cea3",
       "outputs": [
         {
@@ -182,13 +175,13 @@
       "console": []
     },
     {
-      "id": "arNj",
+      "id": "nWHF",
       "code_hash": "21cb45f047d8a32990742d97e8c7ca48",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='arNj-0' random-id='cb0add52-464b-6876-6de6-71845571af77'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;test_rows_remaining&#92;&quot;:0}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;test_rows_remaining&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='nWHF-0' random-id='c3aea689-6283-b863-954e-7d8768486579'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;test_rows_remaining&#92;&quot;:0}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;test_rows_remaining&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -202,7 +195,7 @@
       ]
     },
     {
-      "id": "mJkF",
+      "id": "iLit",
       "code_hash": "1bc307e96d7b36a99089054778767d59",
       "outputs": [
         {
@@ -215,39 +208,65 @@
       "console": []
     },
     {
-      "id": "tqSw",
+      "id": "ZHCJ",
       "code_hash": "039a11e6a08583de488f81bde142948b",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='tqSw-0' random-id='b48b35f2-f8b8-ab00-2773-20829dd6e32a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:2,&#92;&quot;actual_count&#92;&quot;:2,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='ZHCJ-0' random-id='7ace2d0e-abd3-9a78-3a4d-0d91fbd1096a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:2,&#92;&quot;actual_count&#92;&quot;:2,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "wlfn",
+      "id": "ROlb",
       "code_hash": "fd67bc9e196f8966abb37f4be88d8008",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='wlfn-0' random-id='e592e9b3-a26c-db87-983f-f5ef948f865c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:30,&#92;&quot;actual_count&#92;&quot;:30,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='ROlb-0' random-id='083d11ae-3172-01ff-aca7-4fa2ca779e3d'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:30,&#92;&quot;actual_count&#92;&quot;:30,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "kpzu",
+      "id": "qnkX",
       "code_hash": "d9711c6d419d228b8e3295f91204b728",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='kpzu-0' random-id='9470c358-52b1-02b2-81d3-56254dc04038'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:0,&#92;&quot;actual_count&#92;&quot;:0,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='qnkX-0' random-id='ef9c5222-13c9-c10d-ee30-18fd83276a6e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;expected_count&#92;&quot;:0,&#92;&quot;actual_count&#92;&quot;:0,&#92;&quot;matches_expectation&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;expected_count&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;matches_expectation&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "7c73f0e6abe659767ad252ab1053dcc9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"7-a-view\">7. A View</h2>\n<span class=\"paragraph\">The founders could ask each week:\n<strong>How much has each project spent, and how much of its budget remains?</strong></span>\n<span class=\"paragraph\">The <code>project_budget_summary</code> view returns one row per project,\nshowing its budget, total expenses, and remaining budget.\nIt includes projects with no expenses and is recreated\nin the database-build cell.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "393d57b4f7407930081bfe45f6befeb6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Vxnm-0' random-id='7ddaaf9d-e6b3-f57a-baad-928ba0be478f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;12000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;42586.60&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-30586.60&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:2,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;18000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;22406.14&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-4406.14&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:3,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;20000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;12666.57&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;7333.43&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:4,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Retail FAQ Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;25000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;25907.68&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-907.68&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:5,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;22000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;8426.38&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;13573.62&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:6,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Document Review Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;28000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;13244.56&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;14755.44&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:7,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Sales Analytics Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;24000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;21334.04&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;2665.96&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:8,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Meeting Notes Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;15000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;33342.41&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-18342.41&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:9,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Restaurant Booking Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;16000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;16070.69&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-70.69&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:10,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Inventory Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;21000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;28193.78&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-7193.78&#92;&quot;}]&quot;' data-total-rows='12' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;project_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;budget&quot;,[&quot;number&quot;,&quot;decimal[12,2]&quot;]],[&quot;total_expenses&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;remaining_budget&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],

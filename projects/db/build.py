@@ -167,23 +167,6 @@ def _(database, duckdb):
                 [_csv_path]
             )
 
-        # NEW: Create the view after loading the CSV files.
-        _con.execute("""
-            CREATE VIEW project_budget_summary AS
-            SELECT
-                p.project_id,
-                p.project_name,
-                p.budget,
-                COALESCE(SUM(e.amount), 0) AS total_expenses,
-                p.budget - COALESCE(SUM(e.amount), 0) AS remaining_budget
-            FROM projects AS p
-            LEFT JOIN expenses AS e
-                ON p.project_id = e.project_id
-            GROUP BY
-                p.project_id,
-                p.project_name,
-                p.budget;
-        """)
 
          # Save a query for the founders' weekly budget review.
         _con.execute("""
@@ -512,6 +495,36 @@ def _(ask, build_complete):
     """)
 
     known_membership_check
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md("""
+    ## 7. A View
+
+    The founders could ask each week:
+    **How much has each project spent, and how much of its budget remains?**
+
+    The `project_budget_summary` view returns one row per project,
+    showing its budget, total expenses, and remaining budget.
+    It includes projects with no expenses and is recreated
+    in the database-build cell.
+    """)
+    return
+
+
+@app.cell
+def _(ask, build_complete):
+    assert build_complete, "Run the database build cell first."
+
+    project_budget_view = ask("""
+        SELECT *
+        FROM project_budget_summary
+        ORDER BY project_id;
+    """)
+
+    project_budget_view
     return
 
 
