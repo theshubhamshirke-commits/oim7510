@@ -91,4 +91,41 @@ erDiagram
 - **expenses:** One row represents one expense incurred for one
   project, including its date, amount, category, and note.
 
+
+
+
 # 4. Design Choices
+
+
+### 1. Why I chose this primary key
+
+I used `person_id` as the primary key instead of the employee’s email
+address. The scenario says that email addresses can change when someone
+changes their title. A person’s ID stays the same, so their tasks and
+project memberships remain connected to the right person. Each email
+address must still be unique.
+
+### 2. Which information is optional
+
+An employee can have no manager because the two founders do not report
+to anyone. A project can have no client name because some projects are
+internal. A task can have no assigned person when it is first created.
+Its completion date also stays empty until the task is finished.
+
+### 3. Which rules need separate checks
+
+My current table constraints do not check whether a task’s assigned
+person belongs to that project or whether the assignment happened
+before the person started working at the company.
+
+I will check these rules using SQL queries that compare tasks with
+project memberships and employee start dates. Tasks 299 and 300
+deliberately break the project-membership rule so I can check that
+my query finds them.
+
+### 4. One change I made to the AI-generated build
+
+The AI-generated code created the same budget summary view twice.
+I removed the duplicate block and kept one block using
+`CREATE OR REPLACE VIEW`. This makes the build easier to follow
+and avoids creating the same view twice.
