@@ -15,7 +15,7 @@
 
 import marimo
 
-__generated_with = "0.25.1"
+__generated_with = "0.24.2"
 app = marimo.App(width="medium", sql_output="polars")
 
 
@@ -398,6 +398,33 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask, northwind_database):
+    ask(northwind_database, """
+        SELECT c.CategoryName, count(*) AS number_of_products
+        FROM products AS p
+        JOIN categories AS c ON p.CategoryID = c.CategoryID
+        GROUP BY c.CategoryName
+        ORDER BY number_of_products DESC
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Result: Confections has the most products, with 13.
+
+    How it works, line by line:
+
+    JOIN categories AS c ON p.CategoryID = c.CategoryID matches each product to its category, since products stores only the category's ID, not its name.
+    GROUP BY c.CategoryName collects all products with the same category into one group.
+    count(*) counts the rows in each group — here, the number of products in that category.
+    ORDER BY number_of_products DESC puts the largest category first, so you read off the answer from the top row.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -443,7 +470,7 @@ def _(mo, os, pl):
             return pl.DataFrame(_cursor.fetchall(), schema=_columns, orient="row")
 
     ask_server("SELECT TOP 5 SalesOrderID, OrderDate, Freight FROM Sales.SalesOrderHeader ORDER BY SalesOrderID")
-    return (ask_server,)
+    return
 
 
 @app.cell(hide_code=True)
