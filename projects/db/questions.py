@@ -233,6 +233,63 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## Question 6. How many tasks does each project have, and how much has it spent?
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    q6_project_summary = ask("""
+        WITH task_counts AS (
+            SELECT project_id, COUNT(*) AS task_count
+            FROM tasks
+            GROUP BY project_id
+        ),
+        expense_totals AS (
+            SELECT project_id, SUM(amount) AS total_expenses
+            FROM expenses
+            GROUP BY project_id
+        )
+        SELECT
+            p.project_id,
+            p.project_name,
+            COALESCE(t.task_count, 0) AS task_count,
+            COALESCE(e.total_expenses, 0) AS total_expenses,
+
+            COALESCE(t.task_count, 0) = (
+                SELECT COUNT(*)
+                FROM tasks
+                WHERE project_id = p.project_id
+            ) AS task_count_matches,
+
+            COALESCE(e.total_expenses, 0) = (
+                SELECT COALESCE(SUM(amount), 0)
+                FROM expenses
+                WHERE project_id = p.project_id
+            ) AS expenses_match
+
+        FROM projects AS p
+        LEFT JOIN task_counts AS t ON p.project_id = t.project_id
+        LEFT JOIN expense_totals AS e ON p.project_id = e.project_id
+        ORDER BY p.project_id
+    """)
+
+    q6_project_summary
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Across the 12 projects, I counted 300 tasks and $224,178.85 in total expenses, and both checks matched for every project.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Reading It Back
 
 

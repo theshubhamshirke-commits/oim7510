@@ -240,6 +240,45 @@
       "console": []
     },
     {
+      "id": "nGoE",
+      "code_hash": "795a6b031db0463785715dc030143f5d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-6-how-many-tasks-does-each-project-have-and-how-much-has-it-spent\">Question 6. How many tasks does each project have, and how much has it spent?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XYYm",
+      "code_hash": "0a6079e98d95e5be1faf6b130d763a85",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='XYYm-0' random-id='901d6d9a-b3d0-bc37-1690-8ef55e9e9f52'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;task_count&#92;&quot;:26,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;42586.60&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:2,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;task_count&#92;&quot;:27,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;22406.14&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:3,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;task_count&#92;&quot;:27,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;12666.57&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:4,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Retail FAQ Assistant&#92;&quot;,&#92;&quot;task_count&#92;&quot;:22,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;25907.68&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:5,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;task_count&#92;&quot;:45,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;8426.38&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:6,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Document Review Assistant&#92;&quot;,&#92;&quot;task_count&#92;&quot;:28,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;13244.56&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:7,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Sales Analytics Pipeline&#92;&quot;,&#92;&quot;task_count&#92;&quot;:20,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;21334.04&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:8,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Meeting Notes Assistant&#92;&quot;,&#92;&quot;task_count&#92;&quot;:29,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;33342.41&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:9,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Restaurant Booking Assistant&#92;&quot;,&#92;&quot;task_count&#92;&quot;:23,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;16070.69&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true},{&#92;&quot;project_id&#92;&quot;:10,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Inventory Data Pipeline&#92;&quot;,&#92;&quot;task_count&#92;&quot;:21,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;28193.78&#92;&quot;,&#92;&quot;task_count_matches&#92;&quot;:true,&#92;&quot;expenses_match&#92;&quot;:true}]&quot;' data-total-rows='12' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;project_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;task_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;total_expenses&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;task_count_matches&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;expenses_match&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fJlq",
+      "code_hash": "547d0956c5e2012fbfefbcebbfae7ef7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Across the 12 projects, I counted 300 tasks and $224,178.85 in total expenses, and both checks matched for every project.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "ZHCJ",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [
