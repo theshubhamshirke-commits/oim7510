@@ -1,0 +1,54 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "0dfce91a1e983b8c14cc66f67d9f90ad",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MMCM",
+      "code_hash": "264b3bd41e4f3a3bc397b76f28cbf481",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cSoH",
+      "code_hash": "3b97389a48d36eba038f709a94d4f4c7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"3-reading-it-back\">3. Reading It Back</h3>\n<span class=\"paragraph\">I am picking Q7 from the list: \u201cEvery task checked against the rule that its assignee works on its project, and a list of any that break it.\u201d</span>\n<span class=\"paragraph\"><em>I chose Question 7 because I want to check whether each assigned task goes to someone who works on that project. I expect the joins to return 300 rows before I filter or group the results. I start with 300 tasks. For each task, I look up the assigned employee and check whether they belong to that project. Each task can match at most one employee and one membership for that employee on that project. Since I\u2019m using LEFT JOIN, I keep the task even if either match is missing. That leaves me with one row per task.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "JwvD",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
