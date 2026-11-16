@@ -100,6 +100,50 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## Question 3. How many hours per week has each person committed to active projects, and who is above 40 hours?
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    q3_hours = ask("""
+        WITH active_hours AS (
+            SELECT
+                m.person_id,
+                SUM(m.weekly_hours) AS weekly_hours
+            FROM project_memberships AS m
+            JOIN projects AS p
+                ON m.project_id = p.project_id
+            WHERE p.status = 'active'
+            GROUP BY m.person_id
+        )
+        SELECT
+            e.person_id,
+            e.first_name || ' ' || e.last_name AS employee_name,
+            COALESCE(a.weekly_hours, 0) AS active_weekly_hours,
+            COALESCE(a.weekly_hours, 0) > 40 AS above_40_hours
+        FROM people AS e
+        LEFT JOIN active_hours AS a
+            ON e.person_id = a.person_id
+        ORDER BY active_weekly_hours DESC, e.person_id
+    """)
+
+    q3_hours
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Across the nine active projects, two of the 25 employees have committed more than 40 hours per week: Rohan Patel at 100 hours and Noah Kim at 80 hours.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Reading It Back
 
 

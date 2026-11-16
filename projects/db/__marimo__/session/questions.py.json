@@ -110,6 +110,45 @@
       "console": []
     },
     {
+      "id": "bCYR",
+      "code_hash": "bd5918fa7cba2c270333f346609b9401",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-3-how-many-hours-per-week-has-each-person-committed-to-active-projects-and-who-is-above-40-hours\">Question 3. How many hours per week has each person committed to active projects, and who is above 40 hours?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZOkw",
+      "code_hash": "b831289123ee2ecc473a15d71f51ad2f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ZOkw-0' random-id='e1c2d842-7e39-78c9-8925-461a9b97a56e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;person_id&#92;&quot;:3,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;100.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:true},{&#92;&quot;person_id&#92;&quot;:9,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;80.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:true},{&#92;&quot;person_id&#92;&quot;:8,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Zara Khan&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;40.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:15,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Mateo Rivera&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;40.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:1,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Aarav Shah&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;35.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:5,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Ethan Brooks&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:6,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Anika Rao&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:10,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Priya Mehta&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:17,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Arjun Nair&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:24,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Grace Turner&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false}]&quot;' data-total-rows='25' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;person_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;employee_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;active_weekly_hours&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;above_40_hours&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SsiH",
+      "code_hash": "c033e614fe7903c79ccd46278940d029",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Across the nine active projects, two of the 25 employees have committed more than 40 hours per week: Rohan Patel at 100 hours and Noah Kim at 80 hours.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "cSoH",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [
