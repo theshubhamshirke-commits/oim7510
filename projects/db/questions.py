@@ -22,7 +22,7 @@ def _(date, duckdb, mo):
         with duckdb.connect(database, read_only=True) as _con:
             return _con.sql(sql).pl()
 
-    return (ask,)
+    return as_of, ask
 
 
 @app.cell(hide_code=True)
@@ -61,7 +61,46 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ### 3. Reading It Back
+    ## Question 2. Which tasks were overdue and still unfinished, which projects did they belong to, and who was assigned to them?
+    """)
+    return
+
+
+@app.cell
+def _(as_of, ask):
+    q2_overdue = ask(f"""
+        SELECT
+            t.task_id,
+            t.description,
+            p.project_name,
+            COALESCE(e.first_name || ' ' || e.last_name, 'Unassigned') AS assigned_to,
+            t.due_date
+        FROM tasks AS t
+        JOIN projects AS p
+            ON t.project_id = p.project_id
+        LEFT JOIN people AS e
+            ON t.assigned_person_id = e.person_id
+        WHERE t.due_date < DATE '{as_of}'
+          AND (t.completed_date IS NULL OR t.completed_date > DATE '{as_of}')
+        ORDER BY t.due_date, t.task_id
+    """)
+
+    q2_overdue
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    As of October 31, 2026, 106 tasks were past their due date and still unfinished, including 82 assigned to an employee and 24 that were unassigned.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## 3. Reading It Back
 
 
     I am picking Q7 from the list: “Every task checked against the rule that its assignee works on its project, and a list of any that break it.”

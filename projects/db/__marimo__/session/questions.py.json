@@ -33,12 +33,12 @@
     },
     {
       "id": "FHPc",
-      "code_hash": "c4d4264ffe5277e4ecb5648cdf8255a1",
+      "code_hash": "1a2f786cad524c25ffe0ae546f4ad3e3",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-1-how-much-of-its-budget-has-each-project-spent\">Question 1. How much of its budget has each project spent?</h2></span>"
           }
         }
       ],
@@ -71,13 +71,52 @@
       "console": []
     },
     {
-      "id": "cSoH",
-      "code_hash": "3b97389a48d36eba038f709a94d4f4c7",
+      "id": "FANr",
+      "code_hash": "9175ab0ee7cb771d6460c8fec91ec0e8",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"3-reading-it-back\">3. Reading It Back</h3>\n<span class=\"paragraph\">I am picking Q7 from the list: \u201cEvery task checked against the rule that its assignee works on its project, and a list of any that break it.\u201d</span>\n<span class=\"paragraph\"><em>I chose Question 7 because I want to check whether each assigned task goes to someone who works on that project. I expect the joins to return 300 rows before I filter or group the results. I start with 300 tasks. For each task, I look up the assigned employee and check whether they belong to that project. Each task can match at most one employee and one membership for that employee on that project. Since I\u2019m using LEFT JOIN, I keep the task even if either match is missing. That leaves me with one row per task.</em></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-2-which-tasks-were-overdue-and-still-unfinished-which-projects-did-they-belong-to-and-who-was-assigned-to-them\">Question 2. Which tasks were overdue and still unfinished, which projects did they belong to, and who was assigned to them?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SbQx",
+      "code_hash": "8ed2c5792080d93b0e4af99ba3b16a77",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='SbQx-0' random-id='1a0741f1-bc52-346f-cca0-6d6ea72d1128'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;task_id&#92;&quot;:1,&#92;&quot;description&#92;&quot;:&#92;&quot;Review model responses (task 1)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2025-12-09&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:113,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 113)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Nina Das&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2025-12-24&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:114,&#92;&quot;description&#92;&quot;:&#92;&quot;Review model responses (task 114)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-24&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:89,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 89)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Grace Turner&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-25&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:67,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 67)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Priya Mehta&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-28&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:55,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 55)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-29&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:292,&#92;&quot;description&#92;&quot;:&#92;&quot;Test the data import (task 292)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Lucas Reed&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-30&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:31,&#92;&quot;description&#92;&quot;:&#92;&quot;Test the data import (task 31)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-09&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:38,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 38)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-13&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:297,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 297)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-21&#92;&quot;}]&quot;' data-total-rows='106' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;task_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;description&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;assigned_to&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;due_date&quot;,[&quot;date&quot;,&quot;date&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vkuE",
+      "code_hash": "862df46bbe33ef07df638ab45c2022d6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">As of October 31, 2026, 106 tasks were past their due date and still unfinished, including 82 assigned to an employee and 24 that were unassigned.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cSoH",
+      "code_hash": "fb72809879a9ed86d7de3b1689794b49",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-reading-it-back\">3. Reading It Back</h2>\n<span class=\"paragraph\">I am picking Q7 from the list: \u201cEvery task checked against the rule that its assignee works on its project, and a list of any that break it.\u201d</span>\n<span class=\"paragraph\"><em>I chose Question 7 because I want to check whether each assigned task goes to someone who works on that project. I expect the joins to return 300 rows before I filter or group the results. I start with 300 tasks. For each task, I look up the assigned employee and check whether they belong to that project. Each task can match at most one employee and one membership for that employee on that project. Since I\u2019m using LEFT JOIN, I keep the task even if either match is missing. That leaves me with one row per task.</em></span></span>"
           }
         }
       ],
