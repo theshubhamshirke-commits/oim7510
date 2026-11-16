@@ -279,6 +279,45 @@
       "console": []
     },
     {
+      "id": "ZPCa",
+      "code_hash": "c3ee8b5807556e938cd04320d68e41c9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-7-which-tasks-are-assigned-to-someone-who-is-not-a-member-of-the-tasks-project\">Question 7. Which tasks are assigned to someone who is not a member of the task\u2019s project?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "eRPb",
+      "code_hash": "a2bdecc8316a0e95ba8fc9a9affb6a06",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='eRPb-0' random-id='42debee0-7fcc-d81e-691a-7db79c696ea5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;task_id&#92;&quot;:299,&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;assigned_person_id&#92;&quot;:25,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Omar Said&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:300,&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;assigned_person_id&#92;&quot;:25,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Omar Said&#92;&quot;}]&quot;' data-total-rows='2' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;task_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;project_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;assigned_person_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;assigned_to&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ANro",
+      "code_hash": "0ac6e5fe4926638771f78bc9e8516e51",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Two tasks broke the membership rule: tasks 299 and 300 were both assigned to Omar Said (employee 25) on project 1, even though he was not a member of that project.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "ZHCJ",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [

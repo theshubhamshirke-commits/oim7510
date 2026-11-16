@@ -290,6 +290,49 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## Question 7. Which tasks are assigned to someone who is not a member of the task’s project?
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    q7_joins = """
+        FROM tasks AS t
+        LEFT JOIN people AS p
+            ON t.assigned_person_id = p.person_id
+        LEFT JOIN project_memberships AS m
+            ON t.project_id = m.project_id
+            AND t.assigned_person_id = m.person_id
+    """
+
+    q7_violations = ask(f"""
+        SELECT
+            t.task_id,
+            t.project_id,
+            t.assigned_person_id,
+            p.first_name || ' ' || p.last_name AS assigned_to
+        {q7_joins}
+        WHERE t.assigned_person_id IS NOT NULL
+          AND m.person_id IS NULL
+        ORDER BY t.task_id
+    """)
+
+    q7_violations
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Two tasks broke the membership rule: tasks 299 and 300 were both assigned to Omar Said (employee 25) on project 1, even though he was not a member of that project.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Reading It Back
 
 
