@@ -19,7 +19,7 @@
       "console": []
     },
     {
-      "id": "MMCM",
+      "id": "MJUe",
       "code_hash": "264b3bd41e4f3a3bc397b76f28cbf481",
       "outputs": [
         {
@@ -32,7 +32,7 @@
       "console": []
     },
     {
-      "id": "FHPc",
+      "id": "vblA",
       "code_hash": "1a2f786cad524c25ffe0ae546f4ad3e3",
       "outputs": [
         {
@@ -45,20 +45,20 @@
       "console": []
     },
     {
-      "id": "fXDw",
+      "id": "bkHC",
       "code_hash": "ce99624e275665c69aa12ceeed8ccf2c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='fXDw-0' random-id='4d3406de-6ae6-0124-d30c-dfbf9a17b91a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;12000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;42586.60&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-30586.60&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:354.89},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Meeting Notes Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;15000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;33342.41&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-18342.41&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:222.28},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Inventory Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;21000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;28193.78&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-7193.78&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:134.26},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;18000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;22406.14&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-4406.14&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:124.48},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Retail FAQ Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;25000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;25907.68&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-907.68&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:103.63},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Restaurant Booking Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;16000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;16070.69&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-70.69&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:100.44},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Sales Analytics Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;24000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;21334.04&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;2665.96&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:88.89},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;20000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;12666.57&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;7333.43&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:63.33},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Document Review Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;28000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;13244.56&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;14755.44&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:47.3},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;22000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;8426.38&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;13573.62&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:38.3}]&quot;' data-total-rows='12' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;budget&quot;,[&quot;number&quot;,&quot;decimal[12,2]&quot;]],[&quot;total_expenses&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;remaining_budget&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;percent_spent&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='deb1198a-08c8-e4cc-95f1-142aa39f84d6'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;12000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;42586.60&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-30586.60&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:354.89},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Meeting Notes Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;15000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;33342.41&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-18342.41&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:222.28},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Inventory Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;21000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;28193.78&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-7193.78&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:134.26},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;18000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;22406.14&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-4406.14&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:124.48},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Retail FAQ Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;25000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;25907.68&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-907.68&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:103.63},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Restaurant Booking Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;16000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;16070.69&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-70.69&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:100.44},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Sales Analytics Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;24000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;21334.04&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;2665.96&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:88.89},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;20000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;12666.57&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;7333.43&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:63.33},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Document Review Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;28000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;13244.56&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;14755.44&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:47.3},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;22000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;8426.38&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;13573.62&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:38.3}]&quot;' data-total-rows='12' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;budget&quot;,[&quot;number&quot;,&quot;decimal[12,2]&quot;]],[&quot;total_expenses&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;remaining_budget&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;percent_spent&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "cxeJ",
+      "id": "lEQa",
       "code_hash": "c8194c0949569b746a1b636a6a1f3c1f",
       "outputs": [
         {
@@ -71,7 +71,7 @@
       "console": []
     },
     {
-      "id": "FANr",
+      "id": "PKri",
       "code_hash": "9175ab0ee7cb771d6460c8fec91ec0e8",
       "outputs": [
         {
@@ -84,20 +84,20 @@
       "console": []
     },
     {
-      "id": "SbQx",
+      "id": "Xref",
       "code_hash": "8ed2c5792080d93b0e4af99ba3b16a77",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='SbQx-0' random-id='1a0741f1-bc52-346f-cca0-6d6ea72d1128'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;task_id&#92;&quot;:1,&#92;&quot;description&#92;&quot;:&#92;&quot;Review model responses (task 1)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2025-12-09&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:113,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 113)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Nina Das&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2025-12-24&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:114,&#92;&quot;description&#92;&quot;:&#92;&quot;Review model responses (task 114)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-24&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:89,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 89)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Grace Turner&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-25&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:67,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 67)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Priya Mehta&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-28&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:55,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 55)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-29&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:292,&#92;&quot;description&#92;&quot;:&#92;&quot;Test the data import (task 292)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Lucas Reed&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-30&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:31,&#92;&quot;description&#92;&quot;:&#92;&quot;Test the data import (task 31)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-09&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:38,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 38)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-13&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:297,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 297)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-21&#92;&quot;}]&quot;' data-total-rows='106' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;task_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;description&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;assigned_to&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;due_date&quot;,[&quot;date&quot;,&quot;date&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='aa17331d-57ee-bfff-21a2-4bbe7033a984'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;task_id&#92;&quot;:1,&#92;&quot;description&#92;&quot;:&#92;&quot;Review model responses (task 1)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2025-12-09&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:113,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 113)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Nina Das&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2025-12-24&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:114,&#92;&quot;description&#92;&quot;:&#92;&quot;Review model responses (task 114)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-24&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:89,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 89)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Grace Turner&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-25&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:67,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 67)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Priya Mehta&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-28&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:55,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 55)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-29&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:292,&#92;&quot;description&#92;&quot;:&#92;&quot;Test the data import (task 292)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Lucas Reed&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-01-30&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:31,&#92;&quot;description&#92;&quot;:&#92;&quot;Test the data import (task 31)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-09&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:38,&#92;&quot;description&#92;&quot;:&#92;&quot;Update the project documentation (task 38)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-13&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:297,&#92;&quot;description&#92;&quot;:&#92;&quot;Review customer requirements (task 297)&#92;&quot;,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;due_date&#92;&quot;:&#92;&quot;2026-02-21&#92;&quot;}]&quot;' data-total-rows='106' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;task_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;description&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;assigned_to&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;due_date&quot;,[&quot;date&quot;,&quot;date&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "vkuE",
+      "id": "SFPL",
       "code_hash": "862df46bbe33ef07df638ab45c2022d6",
       "outputs": [
         {
@@ -110,7 +110,7 @@
       "console": []
     },
     {
-      "id": "bCYR",
+      "id": "BYtC",
       "code_hash": "bd5918fa7cba2c270333f346609b9401",
       "outputs": [
         {
@@ -123,20 +123,20 @@
       "console": []
     },
     {
-      "id": "ZOkw",
+      "id": "RGSE",
       "code_hash": "b831289123ee2ecc473a15d71f51ad2f",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='ZOkw-0' random-id='e1c2d842-7e39-78c9-8925-461a9b97a56e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;person_id&#92;&quot;:3,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;100.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:true},{&#92;&quot;person_id&#92;&quot;:9,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;80.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:true},{&#92;&quot;person_id&#92;&quot;:8,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Zara Khan&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;40.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:15,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Mateo Rivera&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;40.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:1,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Aarav Shah&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;35.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:5,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Ethan Brooks&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:6,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Anika Rao&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:10,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Priya Mehta&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:17,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Arjun Nair&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:24,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Grace Turner&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false}]&quot;' data-total-rows='25' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;person_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;employee_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;active_weekly_hours&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;above_40_hours&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='RGSE-0' random-id='4af908f0-8688-f738-f9ee-db6fc10ce9b4'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;person_id&#92;&quot;:3,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Rohan Patel&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;100.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:true},{&#92;&quot;person_id&#92;&quot;:9,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Noah Kim&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;80.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:true},{&#92;&quot;person_id&#92;&quot;:8,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Zara Khan&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;40.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:15,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Mateo Rivera&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;40.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:1,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Aarav Shah&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;35.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:5,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Ethan Brooks&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:6,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Anika Rao&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:10,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Priya Mehta&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:17,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Arjun Nair&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false},{&#92;&quot;person_id&#92;&quot;:24,&#92;&quot;employee_name&#92;&quot;:&#92;&quot;Grace Turner&#92;&quot;,&#92;&quot;active_weekly_hours&#92;&quot;:&#92;&quot;25.00&#92;&quot;,&#92;&quot;above_40_hours&#92;&quot;:false}]&quot;' data-total-rows='25' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;person_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;employee_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;active_weekly_hours&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;above_40_hours&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "SsiH",
+      "id": "Kclp",
       "code_hash": "c033e614fe7903c79ccd46278940d029",
       "outputs": [
         {
@@ -149,7 +149,7 @@
       "console": []
     },
     {
-      "id": "IlLg",
+      "id": "emfo",
       "code_hash": "7e953ad584f77044b606547e27d984be",
       "outputs": [
         {
@@ -162,33 +162,33 @@
       "console": []
     },
     {
-      "id": "omne",
+      "id": "Hstk",
       "code_hash": "28f23f89e51a101c72868be5ce8c44e3",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='omne-0' random-id='2b69e53f-ad7e-4b83-8de5-9baed559c45e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;GPU cloud&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;36733.93&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Hstk-0' random-id='2e321454-09e3-49d1-c981-e5c99cedd69d'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;GPU cloud&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;36733.93&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "sVuE",
+      "id": "nWHF",
       "code_hash": "213eedbd4ebd1f43c44d5d275badd558",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='sVuE-0' random-id='ffbc3161-4119-2e23-8de7-390f61c67b64'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;GPU cloud&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;36733.93&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;data labeling&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;8635.69&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;software&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;1422.81&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;travel&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;704.76&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='nWHF-0' random-id='edabb88e-8c47-4e1d-82e9-4dd05a762bc0'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;GPU cloud&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;36733.93&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;data labeling&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;8635.69&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;software&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;1422.81&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;travel&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;704.76&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "bbqw",
+      "id": "iLit",
       "code_hash": "37b09db3c311b8c38b2958983c93cd52",
       "outputs": [
         {
@@ -201,7 +201,46 @@
       "console": []
     },
     {
-      "id": "cSoH",
+      "id": "MvnL",
+      "code_hash": "1776ec81d1114a2b1213014ca8367542",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-5-which-projects-have-no-recorded-expenses\">Question 5. Which projects have no recorded expenses?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cDpU",
+      "code_hash": "98f66b2c58e49b10eb85a41a576d4933",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='cDpU-0' random-id='00717106-51c2-8f87-9377-7c0ee710e4e7'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;project_id&#92;&quot;:11,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Feedback Pilot&#92;&quot;,&#92;&quot;status&#92;&quot;:&#92;&quot;active&#92;&quot;},{&#92;&quot;project_id&#92;&quot;:12,&#92;&quot;project_name&#92;&quot;:&#92;&quot;Employee Onboarding Tool&#92;&quot;,&#92;&quot;status&#92;&quot;:&#92;&quot;planned&#92;&quot;}]&quot;' data-total-rows='2' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;project_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;status&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LLbI",
+      "code_hash": "9a658ca77407083d52fb2513ccb39569",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Two of the 12 projects have no recorded expenses: Customer Feedback Pilot, which is active, and Employee Onboarding Tool, which is planned.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [
         {
@@ -214,9 +253,16 @@
       "console": []
     },
     {
-      "id": "JwvD",
+      "id": "ROlb",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     }
   ]

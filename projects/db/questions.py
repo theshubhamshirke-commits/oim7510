@@ -199,6 +199,40 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## Question 5. Which projects have no recorded expenses?
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    q5_no_expenses = ask("""
+        SELECT
+            p.project_id,
+            p.project_name,
+            p.status
+        FROM projects AS p
+        LEFT JOIN expenses AS e
+            ON p.project_id = e.project_id
+        WHERE e.expense_id IS NULL
+        ORDER BY p.project_id
+    """)
+
+    q5_no_expenses
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Two of the 12 projects have no recorded expenses: Customer Feedback Pilot, which is active, and Employee Onboarding Tool, which is planned.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Reading It Back
 
 
