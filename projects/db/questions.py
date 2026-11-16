@@ -319,7 +319,7 @@ def _(ask):
     """)
 
     q7_violations
-    return (q7_violations,)
+    return q7_joins, q7_violations
 
 
 @app.cell(hide_code=True)
@@ -451,7 +451,32 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(ask, q7_joins):
+    q7_prediction_check = ask(f"""
+        SELECT
+            300 AS predicted_rows,
+            COUNT(*) AS actual_rows,
+            COUNT(*) = 300 AS prediction_matched
+        {q7_joins}
+    """)
+
+    q7_prediction_check
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    My prediction matched. I expected 300 rows, and the joins returned 300.
+    Each task stayed in the list even if it had no assignee or no matching
+    project membership. Each task could match at most one employee and one
+    membership for that employee on that project, so no task appeared twice.
+
+    After filtering, each row represents one task assigned to someone who
+    was not a member of that project. Tasks 299 and 300 both appeared
+    because they are two separate tasks, even though both were assigned
+    to Omar Said on project 1.
+    """)
     return
 
 

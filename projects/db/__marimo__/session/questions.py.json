@@ -437,12 +437,25 @@
     },
     {
       "id": "ROlb",
-      "code_hash": null,
+      "code_hash": "d8fe17391e433117fdee137db227e37c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='ROlb-0' random-id='0738a2ef-aaef-4c66-7ac2-a635ac5363ac'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;predicted_rows&#92;&quot;:300,&#92;&quot;actual_rows&#92;&quot;:300,&#92;&quot;prediction_matched&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;predicted_rows&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;actual_rows&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;prediction_matched&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hnSR",
+      "code_hash": "41febde7d9c1456fcea6a09b08e92c1d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">My prediction matched. I expected 300 rows, and the joins returned 300.\nEach task stayed in the list even if it had no assignee or no matching\nproject membership. Each task could match at most one employee and one\nmembership for that employee on that project, so no task appeared twice.</span>\n<span class=\"paragraph\">After filtering, each row represents one task assigned to someone who\nwas not a member of that project. Tasks 299 and 300 both appeared\nbecause they are two separate tasks, even though both were assigned\nto Omar Said on project 1.</span></span>"
           }
         }
       ],
