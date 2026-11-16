@@ -421,6 +421,25 @@ def _(ask, q7_violations):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## 2. Working With the Agent
+
+    For Question 4, the agent’s first query showed that GPU cloud was the
+    only expense category above average. I wanted to understand where the
+    $11,874.30 average came from, so I added a cell called
+    `q4_category_totals` to show the spending for all four categories.
+
+    The four totals added up to $47,497.19. Dividing by four gave me
+    $11,874.30, rounded to the nearest cent. With all four amounts visible,
+    I could see that only GPU cloud, at $36,733.93, was above that average.
+
+    [See my Question 4 commit.](https://github.com/theshubhamshirke-commits/oim7510/commit/7de4ddec8cb69515cbecc97599182fc55587985d)
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Reading It Back
 
 

@@ -410,6 +410,19 @@
       ]
     },
     {
+      "id": "DvWs",
+      "code_hash": "1e56458fa415f4263745adbe8b986714",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-working-with-the-agent\">2. Working With the Agent</h2>\n<span class=\"paragraph\">For Question 4, the agent\u2019s first query showed that GPU cloud was the\nonly expense category above average. I wanted to understand where the\n$11,874.30 average came from, so I added a cell called\n<code>q4_category_totals</code> to show the spending for all four categories.</span>\n<span class=\"paragraph\">The four totals added up to $47,497.19. Dividing by four gave me\n$11,874.30, rounded to the nearest cent. With all four amounts visible,\nI could see that only GPU cloud, at $36,733.93, was above that average.</span>\n<span class=\"paragraph\"><a href=\"https://github.com/theshubhamshirke-commits/oim7510/commit/7de4ddec8cb69515cbecc97599182fc55587985d\" rel=\"noopener noreferrer\" target=\"_blank\">See my Question 4 commit.</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "ZHCJ",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [
