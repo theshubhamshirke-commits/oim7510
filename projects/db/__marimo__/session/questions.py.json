@@ -149,6 +149,58 @@
       "console": []
     },
     {
+      "id": "IlLg",
+      "code_hash": "7e953ad584f77044b606547e27d984be",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-4-which-expense-categories-had-above-average-total-spending-in-the-last-90-days\">Question 4. Which expense categories had above-average total spending in the last 90 days?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "omne",
+      "code_hash": "28f23f89e51a101c72868be5ce8c44e3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='omne-0' random-id='2b69e53f-ad7e-4b83-8de5-9baed559c45e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;GPU cloud&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;36733.93&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "sVuE",
+      "code_hash": "213eedbd4ebd1f43c44d5d275badd558",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='sVuE-0' random-id='ffbc3161-4119-2e23-8de7-390f61c67b64'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;GPU cloud&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;36733.93&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;data labeling&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;8635.69&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;software&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;1422.81&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;travel&#92;&quot;,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;704.76&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bbqw",
+      "code_hash": "37b09db3c311b8c38b2958983c93cd52",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">From August 3 through October 31, 2026, the four categories totaled $47,497.19, giving an average of <marimo-tex class=\"arithmatex\">||(11,874.30 per category (||)</marimo-tex>47,497.19/4); only GPU cloud exceeded that average, with $36,733.93 in expenses.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "cSoH",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [

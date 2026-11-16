@@ -144,6 +144,61 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## Question 4. Which expense categories had above-average total spending in the last 90 days?
+    """)
+    return
+
+
+@app.cell
+def _(as_of, ask):
+    q4_expenses = ask(f"""
+        WITH category_totals AS (
+            SELECT
+                category,
+                SUM(amount) AS total_spent
+            FROM expenses
+            WHERE expense_date BETWEEN DATE '{as_of}' - 89 AND DATE '{as_of}'
+            GROUP BY category
+        )
+        SELECT
+            category,
+            total_spent
+        FROM category_totals
+        WHERE total_spent > (SELECT AVG(total_spent) FROM category_totals)
+        ORDER BY total_spent DESC
+    """)
+
+    q4_expenses
+    return
+
+
+@app.cell
+def _(as_of, ask):
+    q4_category_totals = ask(f"""
+        SELECT
+            category,
+            SUM(amount) AS total_spent
+        FROM expenses
+        WHERE expense_date BETWEEN DATE '{as_of}' - 89 AND DATE '{as_of}'
+        GROUP BY category
+        ORDER BY total_spent DESC
+    """)
+
+    q4_category_totals
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    From August 3 through October 31, 2026, the four categories totaled $47,497.19, giving an average of $11,874.30 per category ($47,497.19/4); only GPU cloud exceeded that average, with $36,733.93 in expenses.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Reading It Back
 
 
