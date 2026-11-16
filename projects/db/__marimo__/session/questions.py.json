@@ -32,6 +32,45 @@
       "console": []
     },
     {
+      "id": "FHPc",
+      "code_hash": "c4d4264ffe5277e4ecb5648cdf8255a1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fXDw",
+      "code_hash": "ce99624e275665c69aa12ceeed8ccf2c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='fXDw-0' random-id='4d3406de-6ae6-0124-d30c-dfbf9a17b91a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;12000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;42586.60&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-30586.60&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:354.89},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Meeting Notes Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;15000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;33342.41&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-18342.41&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:222.28},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Inventory Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;21000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;28193.78&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-7193.78&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:134.26},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;18000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;22406.14&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-4406.14&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:124.48},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Retail FAQ Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;25000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;25907.68&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-907.68&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:103.63},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Restaurant Booking Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;16000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;16070.69&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;-70.69&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:100.44},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Sales Analytics Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;24000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;21334.04&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;2665.96&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:88.89},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;20000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;12666.57&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;7333.43&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:63.33},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Document Review Assistant&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;28000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;13244.56&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;14755.44&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:47.3},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;budget&#92;&quot;:&#92;&quot;22000.00&#92;&quot;,&#92;&quot;total_expenses&#92;&quot;:&#92;&quot;8426.38&#92;&quot;,&#92;&quot;remaining_budget&#92;&quot;:&#92;&quot;13573.62&#92;&quot;,&#92;&quot;percent_spent&#92;&quot;:38.3}]&quot;' data-total-rows='12' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;budget&quot;,[&quot;number&quot;,&quot;decimal[12,2]&quot;]],[&quot;total_expenses&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;remaining_budget&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;percent_spent&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cxeJ",
+      "code_hash": "c8194c0949569b746a1b636a6a1f3c1f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Six of the 12 projects spent more than their budgets, and Customer Support Copilot spent the largest share at $42,586.60, or 354.89% of its $12,000 budget.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "cSoH",
       "code_hash": "3b97389a48d36eba038f709a94d4f4c7",
       "outputs": [

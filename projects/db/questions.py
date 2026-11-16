@@ -22,6 +22,39 @@ def _(date, duckdb, mo):
         with duckdb.connect(database, read_only=True) as _con:
             return _con.sql(sql).pl()
 
+    return (ask,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## Question 1. How much of its budget has each project spent?
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    q1_budget = ask("""
+        SELECT
+            project_name,
+            budget,
+            total_expenses,
+            remaining_budget,
+            ROUND(100.0 * total_expenses / budget, 2) AS percent_spent
+        FROM project_budget_summary
+        ORDER BY total_expenses / budget DESC, project_id
+    """)
+
+    q1_budget
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Six of the 12 projects spent more than their budgets, and Customer Support Copilot spent the largest share at $42,586.60, or 354.89% of its $12,000 budget.
+    """)
     return
 
 
