@@ -219,7 +219,7 @@ def _(ask):
     """)
 
     q5_no_expenses
-    return
+    return (q5_no_expenses,)
 
 
 @app.cell(hide_code=True)
@@ -319,7 +319,7 @@ def _(ask):
     """)
 
     q7_violations
-    return
+    return (q7_violations,)
 
 
 @app.cell(hide_code=True)
@@ -361,6 +361,60 @@ def _(mo):
     mo.md(r"""
     Among the 11 projects with assigned tasks, Internal Knowledge Search had the longest average wait at 2.81 days across 26 tasks, followed by Customer Support Copilot at 2.35 days across 26 tasks.
     """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## 1. How I Know These Numbers Are Right
+
+    I checked two answers a second way. For Question 5, I compared the IDs
+    of projects with no expenses. For Question 7, I compared the IDs of
+    tasks assigned to someone outside the project.
+    """)
+    return
+
+
+@app.cell
+def _(ask, q5_no_expenses):
+    _q5_check = ask("""
+        SELECT project_id FROM projects
+        EXCEPT
+        SELECT project_id FROM expenses
+        ORDER BY project_id
+    """)
+
+    _original = q5_no_expenses["project_id"].to_list()
+    _checked = _q5_check["project_id"].to_list()
+
+    print("Question 5 project IDs:", _original)
+    print("Independent check:", _checked)
+    print("IDs match:", _original == _checked)
+    return
+
+
+@app.cell
+def _(ask, q7_violations):
+    _q7_check = ask("""
+        SELECT t.task_id
+        FROM tasks AS t
+        WHERE t.assigned_person_id IS NOT NULL
+          AND NOT EXISTS (
+              SELECT 1
+              FROM project_memberships AS m
+              WHERE m.person_id = t.assigned_person_id
+                AND m.project_id = t.project_id
+          )
+        ORDER BY t.task_id
+    """)
+
+    _original = q7_violations["task_id"].to_list()
+    _checked = _q7_check["task_id"].to_list()
+
+    print("Question 7 task IDs:", _original)
+    print("Independent check:", _checked)
+    print("IDs match:", _original == _checked)
     return
 
 

@@ -357,6 +357,59 @@
       "console": []
     },
     {
+      "id": "nhRN",
+      "code_hash": "069db0db43db68f94353be66ced12777",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-how-i-know-these-numbers-are-right\">1. How I Know These Numbers Are Right</h2>\n<span class=\"paragraph\">I checked two answers a second way. For Question 5, I compared the IDs\nof projects with no expenses. For Question 7, I compared the IDs of\ntasks assigned to someone outside the project.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rvFu",
+      "code_hash": "3c11d22207a24a74dcc6874409edcd7e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Question 5 project IDs: [11, 12]\nIndependent check: [11, 12]\nIDs match: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "YFXb",
+      "code_hash": "f7bcb5efed7f15030757e81cd9e39414",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Question 7 task IDs: [299, 300]\nIndependent check: [299, 300]\nIDs match: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "ZHCJ",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [
