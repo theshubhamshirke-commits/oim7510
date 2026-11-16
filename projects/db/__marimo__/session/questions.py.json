@@ -318,6 +318,45 @@
       "console": []
     },
     {
+      "id": "UODy",
+      "code_hash": "33b5b154dd40b4e9025e322a92ed5c74",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-8-which-projects-take-the-longest-on-average-to-assign-a-task-after-it-is-created\">Question 8. Which projects take the longest, on average, to assign a task after it is created?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pEQM",
+      "code_hash": "c9b87be73030b3aa009785004c87233d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='pEQM-0' random-id='7f7c061a-9952-0c9a-eea7-7681821cb27c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Internal Knowledge Search&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:26,&#92;&quot;avg_days_to_assign&#92;&quot;:2.81},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Support Copilot&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:26,&#92;&quot;avg_days_to_assign&#92;&quot;:2.35},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Retail FAQ Assistant&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:20,&#92;&quot;avg_days_to_assign&#92;&quot;:1.75},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Sales Analytics Pipeline&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:14,&#92;&quot;avg_days_to_assign&#92;&quot;:1.71},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Invoice Data Pipeline&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:25,&#92;&quot;avg_days_to_assign&#92;&quot;:1.68},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Lead Scoring Pipeline&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:42,&#92;&quot;avg_days_to_assign&#92;&quot;:1.6},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Document Review Assistant&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:22,&#92;&quot;avg_days_to_assign&#92;&quot;:1.59},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Customer Feedback Pilot&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:27,&#92;&quot;avg_days_to_assign&#92;&quot;:1.41},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Meeting Notes Assistant&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:24,&#92;&quot;avg_days_to_assign&#92;&quot;:1.33},{&#92;&quot;project_name&#92;&quot;:&#92;&quot;Restaurant Booking Assistant&#92;&quot;,&#92;&quot;assigned_tasks&#92;&quot;:23,&#92;&quot;avg_days_to_assign&#92;&quot;:1.3}]&quot;' data-total-rows='11' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;project_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;assigned_tasks&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;avg_days_to_assign&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hHIf",
+      "code_hash": "725257f0fbf8741d0cf1a9f85887b837",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Among the 11 projects with assigned tasks, Internal Knowledge Search had the longest average wait at 2.81 days across 26 tasks, followed by Customer Support Copilot at 2.35 days across 26 tasks.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "ZHCJ",
       "code_hash": "fb72809879a9ed86d7de3b1689794b49",
       "outputs": [

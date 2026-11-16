@@ -333,6 +333,40 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## Question 8. Which projects take the longest, on average, to assign a task after it is created?
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    q8_assignment_time = ask("""
+        SELECT
+            p.project_name,
+            COUNT(*) AS assigned_tasks,
+            ROUND(AVG(t.assigned_date - t.created_date), 2) AS avg_days_to_assign
+        FROM tasks AS t
+        JOIN projects AS p ON t.project_id = p.project_id
+        WHERE t.assigned_date IS NOT NULL
+        GROUP BY p.project_id, p.project_name
+        ORDER BY AVG(t.assigned_date - t.created_date) DESC, p.project_id
+    """)
+
+    q8_assignment_time
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Among the 11 projects with assigned tasks, Internal Knowledge Search had the longest average wait at 2.81 days across 26 tasks, followed by Customer Support Copilot at 2.35 days across 26 tasks.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Reading It Back
 
 
