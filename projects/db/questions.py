@@ -47,7 +47,7 @@ def _(ask):
     """)
 
     q1_budget
-    return
+    return (q1_budget,)
 
 
 @app.cell(hide_code=True)
@@ -476,6 +476,54 @@ def _(mo):
     was not a member of that project. Tasks 299 and 300 both appeared
     because they are two separate tasks, even though both were assigned
     to Omar Said on project 1.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## 4. Going Further
+
+    I turned my Question 1 results into the chart below so I could compare
+    all 12 projects against their budgets. Six projects crossed the 100%
+    line. Customer Support Copilot spent the largest share of its budget
+    at 354.89%.
+    """)
+    return
+
+
+@app.cell
+def _(q1_budget):
+    import matplotlib.pyplot as plt
+
+    _names = q1_budget["project_name"].to_list()
+    _percentages = q1_budget["percent_spent"].to_list()
+    _colors = ["darkorange" if value > 100 else "steelblue" for value in _percentages]
+
+    _fig, _ax = plt.subplots(figsize=(10, 6))
+    _bars = _ax.barh(_names, _percentages, color=_colors)
+    _ax.invert_yaxis()
+
+    _ax.axvline(100, color="black", linestyle="--", label="100% of budget")
+    _ax.bar_label(_bars, fmt="%.2f%%", padding=4)
+    _ax.set_xlim(0, max(_percentages) * 1.2)
+    _ax.set_xlabel("Budget spent (%)")
+    _ax.set_ylabel("Project")
+    _ax.set_title("How much of its budget has each project spent?")
+    _ax.legend()
+
+    _fig.tight_layout()
+    _fig
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## 5. Time Spent
+
+    I spent approximately 8.5 hours outside class working on Parts A and B combined.
     """)
     return
 
