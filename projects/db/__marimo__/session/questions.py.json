@@ -298,7 +298,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='eRPb-0' random-id='42debee0-7fcc-d81e-691a-7db79c696ea5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;task_id&#92;&quot;:299,&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;assigned_person_id&#92;&quot;:25,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Omar Said&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:300,&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;assigned_person_id&#92;&quot;:25,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Omar Said&#92;&quot;}]&quot;' data-total-rows='2' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;task_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;project_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;assigned_person_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;assigned_to&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='ecfG-0' random-id='a7ba0b65-fda3-8b10-b7d9-2311d4e13911'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;task_id&#92;&quot;:299,&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;assigned_person_id&#92;&quot;:25,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Omar Said&#92;&quot;},{&#92;&quot;task_id&#92;&quot;:300,&#92;&quot;project_id&#92;&quot;:1,&#92;&quot;assigned_person_id&#92;&quot;:25,&#92;&quot;assigned_to&#92;&quot;:&#92;&quot;Omar Said&#92;&quot;}]&quot;' data-total-rows='2' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;task_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;project_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;assigned_person_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;assigned_to&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -462,7 +462,7 @@
       "console": []
     },
     {
-      "id": "VAZv",
+      "id": "dNNg",
       "code_hash": "56bbd038155f697a2bc3b4c094a00fe1",
       "outputs": [
         {
@@ -475,7 +475,7 @@
       "console": []
     },
     {
-      "id": "EkXA",
+      "id": "yCnT",
       "code_hash": "df6d5abe4a9c9671f0387d8e689395f8",
       "outputs": [
         {
@@ -488,7 +488,7 @@
       "console": []
     },
     {
-      "id": "BLET",
+      "id": "wlCL",
       "code_hash": "3b425c7d0131220f3e6b54daae1313f4",
       "outputs": [
         {
