@@ -370,6 +370,32 @@
       "console": []
     },
     {
+      "id": "tAOe",
+      "code_hash": "56e93128a81dc0e123e6174d33e3270b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='tAOe-0' random-id='e69d8c59-1cf4-a3d2-4f05-2e3084b46604'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;total_towns&#92;&quot;:&#92;&quot;351&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;total_towns&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RbvX",
+      "code_hash": "192b24bf82c7d85f09b8c4c983f94f31",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The sum has to equal the number of rows in <code>towns</code> because <code>GROUP BY county</code> sorts every row in <code>towns</code> into exactly one group: each town has one county, so it is counted in one group and never left out, skipped, or counted twice. Adding the group counts back up is the same as counting every row in <code>towns</code> once, just in a different order. That is why the total is 351.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "xXTn",
       "code_hash": "c64d616861c10560c7a19125454b29b2",
       "outputs": [

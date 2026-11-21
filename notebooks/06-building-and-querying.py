@@ -434,6 +434,29 @@ def _(ask):
     return
 
 
+@app.cell
+def _(ask):
+    #Section D : Q2
+
+    ask("""
+        SELECT sum(town_count) AS total_towns
+        FROM (
+            SELECT county, count(*) AS town_count
+            FROM towns
+            GROUP BY county
+        )
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    The sum has to equal the number of rows in `towns` because `GROUP BY county` sorts every row in `towns` into exactly one group: each town has one county, so it is counted in one group and never left out, skipped, or counted twice. Adding the group counts back up is the same as counting every row in `towns` once, just in a different order. That is why the total is 351.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
