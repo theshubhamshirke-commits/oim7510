@@ -216,6 +216,69 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask, towns_database):
+    #1
+
+    towns_and_counties = ask(towns_database, """
+        SELECT t.name, t.county, t.population, c.population AS county_population
+        FROM towns AS t
+        JOIN counties AS c ON t.county = c.name
+        ORDER BY t.population DESC
+    """)
+    len(towns_and_counties)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    #1 and #3
+
+    The count is 351, the same as the number of rows in `towns`, because every town has exactly one county, and every county named in `towns` also appears in `counties`. So `JOIN` finds a match for each town, one row of `counties` for each row of `towns`, and no town is dropped and none is duplicated.
+
+    Nantucket's share is exactly 100 because Nantucket is both a town and the only town in its county: `towns` lists one town named Nantucket in a county named Nantucket, so that town's population and its county's population are the same number. A share of a total that equals the whole total is 100%.
+    """)
+    return
+
+
+@app.cell
+def _(ask, towns_database):
+    #2
+
+    ask(towns_database, """
+        SELECT t.name, t.county, t.population, c.population AS county_population,
+               round(t.population * 100.0 / c.population, 1) AS share_of_county_percent
+        FROM towns AS t
+        JOIN counties AS c ON t.county = c.name
+        ORDER BY share_of_county_percent DESC
+        LIMIT 5
+    """)
+    return
+
+
+@app.cell
+def _(ask, towns_database):
+    ask(towns_database, """
+        SELECT t.county, t.name, t.population, c.population AS county_population,
+               round(t.population * 100.0 / c.population, 1) AS share_of_county_percent
+        FROM towns AS t
+        JOIN counties AS c ON t.county = c.name
+        WHERE t.population = (
+            SELECT max(t2.population)
+            FROM towns AS t2
+            WHERE t2.county = t.county
+        )
+        ORDER BY t.county
+    """)
+    return
+
+
+@app.cell
+def _():
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""

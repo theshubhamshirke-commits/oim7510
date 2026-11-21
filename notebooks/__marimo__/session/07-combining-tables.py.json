@@ -116,7 +116,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='14674513-e588-53c4-653d-80de86d29b62'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;categories&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;customers&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;employee_territories&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;employees&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;order_details&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;orders&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;products&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;regions&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;shippers&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;suppliers&#92;&quot;}]&quot;' data-total-rows='11' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='97547936-0408-ad98-65e4-008505021a84'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;categories&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;customers&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;employee_territories&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;employees&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;order_details&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;orders&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;products&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;regions&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;shippers&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;suppliers&#92;&quot;}]&quot;' data-total-rows='11' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -142,7 +142,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='22016723-3c17-79d1-706c-e4373ac88f3e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;column_name&#92;&quot;:&#92;&quot;OrderID&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;INTEGER&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;ProductID&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;INTEGER&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;UnitPrice&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;DECIMAL(12,4)&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;Quantity&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;INTEGER&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;Discount&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;DOUBLE&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;column_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;data_type&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='ac32c27e-c65a-c740-0a24-8af86b8e42cf'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;column_name&#92;&quot;:&#92;&quot;OrderID&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;INTEGER&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;ProductID&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;INTEGER&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;UnitPrice&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;DECIMAL(12,4)&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;Quantity&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;INTEGER&#92;&quot;},{&#92;&quot;column_name&#92;&quot;:&#92;&quot;Discount&#92;&quot;,&#92;&quot;data_type&#92;&quot;:&#92;&quot;DOUBLE&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;column_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;data_type&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -181,7 +181,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='nWHF-0' random-id='7fc9588f-ee0f-523b-49a0-addac32eb135'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Boston&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;population&#92;&quot;:673458,&#92;&quot;county_population&#92;&quot;:793144},{&#92;&quot;name&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;population&#92;&quot;:211286,&#92;&quot;county_population&#92;&quot;:881248},{&#92;&quot;name&#92;&quot;:&#92;&quot;Springfield&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;population&#92;&quot;:154888,&#92;&quot;county_population&#92;&quot;:464151},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;county_population&#92;&quot;:1668956},{&#92;&quot;name&#92;&quot;:&#92;&quot;Lowell&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;population&#92;&quot;:120418,&#92;&quot;county_population&#92;&quot;:1668956}]&quot;' data-total-rows='5' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;county_population&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='nWHF-0' random-id='af20f6fb-fde4-7d05-1819-54e5636506ca'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Boston&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;population&#92;&quot;:673458,&#92;&quot;county_population&#92;&quot;:793144},{&#92;&quot;name&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;population&#92;&quot;:211286,&#92;&quot;county_population&#92;&quot;:881248},{&#92;&quot;name&#92;&quot;:&#92;&quot;Springfield&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;population&#92;&quot;:154888,&#92;&quot;county_population&#92;&quot;:464151},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;county_population&#92;&quot;:1668956},{&#92;&quot;name&#92;&quot;:&#92;&quot;Lowell&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;population&#92;&quot;:120418,&#92;&quot;county_population&#92;&quot;:1668956}]&quot;' data-total-rows='5' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;county_population&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -220,7 +220,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='ROlb-0' random-id='8c508fce-77f1-d595-6c8c-371e4dc0b0d2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Sherborn&#92;&quot;,&#92;&quot;income_per_capita_dollars&#92;&quot;:352250,&#92;&quot;monthly_income&#92;&quot;:29354.2},{&#92;&quot;name&#92;&quot;:&#92;&quot;Weston&#92;&quot;,&#92;&quot;income_per_capita_dollars&#92;&quot;:340262,&#92;&quot;monthly_income&#92;&quot;:28355.2},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dover&#92;&quot;,&#92;&quot;income_per_capita_dollars&#92;&quot;:264727,&#92;&quot;monthly_income&#92;&quot;:22060.6}]&quot;' data-total-rows='3' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;income_per_capita_dollars&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;monthly_income&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='ROlb-0' random-id='45e0d83a-2220-c89e-317a-4e5528b4667f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Sherborn&#92;&quot;,&#92;&quot;income_per_capita_dollars&#92;&quot;:352250,&#92;&quot;monthly_income&#92;&quot;:29354.2},{&#92;&quot;name&#92;&quot;:&#92;&quot;Weston&#92;&quot;,&#92;&quot;income_per_capita_dollars&#92;&quot;:340262,&#92;&quot;monthly_income&#92;&quot;:28355.2},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dover&#92;&quot;,&#92;&quot;income_per_capita_dollars&#92;&quot;:264727,&#92;&quot;monthly_income&#92;&quot;:22060.6}]&quot;' data-total-rows='3' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;income_per_capita_dollars&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;monthly_income&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -253,6 +253,71 @@
       "console": []
     },
     {
+      "id": "INaZ",
+      "code_hash": "10692497d5eb95d07bad669d3bb9c8ca",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>351</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NrMy",
+      "code_hash": "12d4ea9dd519c5ef4cea4dc659c19f6a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">#1 and #3</span>\n<span class=\"paragraph\">The count is 351, the same as the number of rows in <code>towns</code>, because every town has exactly one county, and every county named in <code>towns</code> also appears in <code>counties</code>. So <code>JOIN</code> finds a match for each town, one row of <code>counties</code> for each row of <code>towns</code>, and no town is dropped and none is duplicated.</span>\n<span class=\"paragraph\">Nantucket's share is exactly 100 because Nantucket is both a town and the only town in its county: <code>towns</code> lists one town named Nantucket in a county named Nantucket, so that town's population and its county's population are the same number. A share of a total that equals the whole total is 100%.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "eFnY",
+      "code_hash": "4c29d614c7b9f218109558143ad8154c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='eFnY-0' random-id='b439cd85-a5ad-e23e-6116-b9955ee96fe3'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;population&#92;&quot;:14670,&#92;&quot;county_population&#92;&quot;:14670,&#92;&quot;share_of_county_percent&#92;&quot;:100.0},{&#92;&quot;name&#92;&quot;:&#92;&quot;Boston&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;population&#92;&quot;:673458,&#92;&quot;county_population&#92;&quot;:793144,&#92;&quot;share_of_county_percent&#92;&quot;:84.9},{&#92;&quot;name&#92;&quot;:&#92;&quot;Pittsfield&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;,&#92;&quot;population&#92;&quot;:43121,&#92;&quot;county_population&#92;&quot;:128726,&#92;&quot;share_of_county_percent&#92;&quot;:33.5},{&#92;&quot;name&#92;&quot;:&#92;&quot;Springfield&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;population&#92;&quot;:154888,&#92;&quot;county_population&#92;&quot;:464151,&#92;&quot;share_of_county_percent&#92;&quot;:33.4},{&#92;&quot;name&#92;&quot;:&#92;&quot;Oak Bluffs&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;population&#92;&quot;:5407,&#92;&quot;county_population&#92;&quot;:21061,&#92;&quot;share_of_county_percent&#92;&quot;:25.7}]&quot;' data-total-rows='5' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;county_population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;share_of_county_percent&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Eezl",
+      "code_hash": "54439057d2a414e55845b5f7b4187c78",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Eezl-0' random-id='e224e8db-b6d3-3bd9-a6a7-449179d9e9b2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;population&#92;&quot;:49831,&#92;&quot;county_population&#92;&quot;:232570,&#92;&quot;share_of_county_percent&#92;&quot;:21.4},{&#92;&quot;county&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Pittsfield&#92;&quot;,&#92;&quot;population&#92;&quot;:43121,&#92;&quot;county_population&#92;&quot;:128726,&#92;&quot;share_of_county_percent&#92;&quot;:33.5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;New Bedford&#92;&quot;,&#92;&quot;population&#92;&quot;:101318,&#92;&quot;county_population&#92;&quot;:588593,&#92;&quot;share_of_county_percent&#92;&quot;:17.2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Oak Bluffs&#92;&quot;,&#92;&quot;population&#92;&quot;:5407,&#92;&quot;county_population&#92;&quot;:21061,&#92;&quot;share_of_county_percent&#92;&quot;:25.7},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Lynn&#92;&quot;,&#92;&quot;population&#92;&quot;:103489,&#92;&quot;county_population&#92;&quot;:823938,&#92;&quot;share_of_county_percent&#92;&quot;:12.6},{&#92;&quot;county&#92;&quot;:&#92;&quot;Franklin&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Greenfield&#92;&quot;,&#92;&quot;population&#92;&quot;:17633,&#92;&quot;county_population&#92;&quot;:70871,&#92;&quot;share_of_county_percent&#92;&quot;:24.9},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Springfield&#92;&quot;,&#92;&quot;population&#92;&quot;:154888,&#92;&quot;county_population&#92;&quot;:464151,&#92;&quot;share_of_county_percent&#92;&quot;:33.4},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Amherst&#92;&quot;,&#92;&quot;population&#92;&quot;:40989,&#92;&quot;county_population&#92;&quot;:165399,&#92;&quot;share_of_county_percent&#92;&quot;:24.8},{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;county_population&#92;&quot;:1668956,&#92;&quot;share_of_county_percent&#92;&quot;:7.3},{&#92;&quot;county&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;population&#92;&quot;:14670,&#92;&quot;county_population&#92;&quot;:14670,&#92;&quot;share_of_county_percent&#92;&quot;:100.0}]&quot;' data-total-rows='14' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;county_population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;share_of_county_percent&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rvMZ",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "Vxnm",
       "code_hash": "07abec9c33d499fe7c91699eb76dac8b",
       "outputs": [
@@ -272,7 +337,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='DnEU-0' random-id='8ec0cde0-6056-591d-78a1-6b8cd3b01f6a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Bristol&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dukes&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Franklin&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampden&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;}]&quot;' data-total-rows='10' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='DnEU-0' random-id='39674a27-f876-e9ff-707a-856a4bcd0e3c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Bristol&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dukes&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Franklin&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampden&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;}]&quot;' data-total-rows='10' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -324,7 +389,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='ZBYS-0' random-id='12b26b20-a43a-29ef-73fb-aaa2833d6561'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;orders&#92;&quot;:16282,&#92;&quot;order_lines&#92;&quot;:609283,&#92;&quot;joined&#92;&quot;:609283}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;order_lines&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;joined&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='ZBYS-0' random-id='8b57a031-b45e-22e6-98a7-31cc6c481428'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;orders&#92;&quot;:16282,&#92;&quot;order_lines&#92;&quot;:609283,&#92;&quot;joined&#92;&quot;:609283}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;order_lines&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;joined&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -363,7 +428,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='xXTn-0' random-id='e8286bf8-b14c-7697-0e1d-69ae00a0ac36'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;freight&#92;&quot;:&#92;&quot;4047470.5000&#92;&quot;,&#92;&quot;freight_after_the_join&#92;&quot;:&#92;&quot;206911676.0000&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;freight&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]],[&quot;freight_after_the_join&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='xXTn-0' random-id='74b0288f-121c-c5e5-2e63-2f5679b6095c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;freight&#92;&quot;:&#92;&quot;4047470.5000&#92;&quot;,&#92;&quot;freight_after_the_join&#92;&quot;:&#92;&quot;206911676.0000&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;freight&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]],[&quot;freight_after_the_join&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -402,7 +467,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='NCOB-0' random-id='2827c715-5a3a-adad-e237-4ed6b0c7c679'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;repeated_in_orders&#92;&quot;:0,&#92;&quot;repeated_in_order_details&#92;&quot;:15948}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;repeated_in_orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;repeated_in_order_details&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='NCOB-0' random-id='1dbddd07-b54c-be4c-8f41-c42fc5b63092'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;repeated_in_orders&#92;&quot;:0,&#92;&quot;repeated_in_order_details&#92;&quot;:15948}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;repeated_in_orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;repeated_in_order_details&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -448,20 +513,20 @@
       "console": []
     },
     {
-      "id": "tPsl",
+      "id": "dNNg",
       "code_hash": "fe36fd2608885c347f193a30a29a8832",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='tPsl-0' random-id='99013ce6-1ca2-bdd4-0bdb-54e35e0e83b5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Confections&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:13},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Seafood&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:12},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Beverages&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:12},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Condiments&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:12},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Dairy Products&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:10},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Grains/Cereals&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:7},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Meat/Poultry&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:6},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Produce&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:5}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;CategoryName&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;number_of_products&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='dNNg-0' random-id='19335c74-ab4b-0405-0bca-2e3cca9d645a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Confections&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:13},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Condiments&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:12},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Seafood&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:12},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Beverages&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:12},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Dairy Products&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:10},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Grains/Cereals&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:7},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Meat/Poultry&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:6},{&#92;&quot;CategoryName&#92;&quot;:&#92;&quot;Produce&#92;&quot;,&#92;&quot;number_of_products&#92;&quot;:5}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;CategoryName&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;number_of_products&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "DfTg",
+      "id": "yCnT",
       "code_hash": "f1f195d76651821a4394580363c78464",
       "outputs": [
         {
@@ -474,7 +539,7 @@
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "wlCL",
       "code_hash": "1d9ee8fa29085c2175feb3e8ffb11f24",
       "outputs": [
         {
@@ -487,7 +552,7 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "kqZH",
       "code_hash": "5eca7e34c31653e170bf0f33223b3f1b",
       "outputs": [
         {
@@ -500,7 +565,7 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "wAgl",
       "code_hash": "81c40dfeb6cdcfe03c502ab0937d1c4d",
       "outputs": [
         {
@@ -513,7 +578,7 @@
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "rEll",
       "code_hash": "a7a02dc7c870020e368d094d624321a8",
       "outputs": [
         {
@@ -526,7 +591,7 @@
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "dGlV",
       "code_hash": "0b7b9a843f9e940b7bb37cb237cfb354",
       "outputs": [
         {
@@ -539,7 +604,7 @@
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "SdmI",
       "code_hash": "8e752c24abf91a4c1598eec523eee78a",
       "outputs": [
         {
@@ -552,7 +617,7 @@
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "lgWD",
       "code_hash": "a7592057143b06d5b1eda78114fb31c7",
       "outputs": [
         {
@@ -565,7 +630,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "yOPj",
       "code_hash": "27a1d0f6c103554ec3ff61e35fa213ff",
       "outputs": [
         {
@@ -578,7 +643,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "fwwy",
       "code_hash": "382ab71761cabf23fc29e06dc863bed2",
       "outputs": [
         {
@@ -591,7 +656,7 @@
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "LJZf",
       "code_hash": "bc95bf007d854138e772acea417598c6",
       "outputs": [
         {
@@ -604,7 +669,7 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "urSm",
       "code_hash": "25e2994058a7fdc8f44ca3c28303937b",
       "outputs": [
         {
