@@ -417,6 +417,23 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask):
+    #Section D : Q1
+
+    ask("""
+        SELECT counties.name AS county,
+               counties.towns AS towns_column,
+               count(towns.name) AS counted_towns,
+               counties.towns = count(towns.name) AS agree
+        FROM counties
+        JOIN towns ON towns.county = counties.name
+        GROUP BY counties.name, counties.towns
+        ORDER BY counted_towns DESC
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
