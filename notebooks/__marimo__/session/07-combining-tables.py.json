@@ -370,6 +370,58 @@
       "console": []
     },
     {
+      "id": "QmNI",
+      "code_hash": "9f56c8c490330cdc1dd1f8c0e656f326",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='QmNI-0' random-id='e6df6857-d56d-dd10-139c-339b79ac4278'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;78759&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Austin&#92;&quot;},{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;72716&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Bentonville&#92;&quot;},{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;29202&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Columbia&#92;&quot;},{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;75234&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Dallas&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;TerritoryID&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;TerritoryDescription&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NJtl",
+      "code_hash": "4c21731566e4bad34990ef763ee0b590",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='NJtl-0' random-id='637cc7b5-025a-3697-1022-4f8a46a641a9'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;EmployeeID&#92;&quot;:7,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Robert&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;King&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:10},{&#92;&quot;EmployeeID&#92;&quot;:2,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Andrew&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Fuller&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:7},{&#92;&quot;EmployeeID&#92;&quot;:5,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Steven&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Buchanan&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:7},{&#92;&quot;EmployeeID&#92;&quot;:9,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Anne&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Dodsworth&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:7},{&#92;&quot;EmployeeID&#92;&quot;:6,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Michael&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Suyama&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:5},{&#92;&quot;EmployeeID&#92;&quot;:3,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Janet&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Leverling&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:4},{&#92;&quot;EmployeeID&#92;&quot;:8,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Laura&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Callahan&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:4},{&#92;&quot;EmployeeID&#92;&quot;:4,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Margaret&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Peacock&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:3},{&#92;&quot;EmployeeID&#92;&quot;:1,&#92;&quot;FirstName&#92;&quot;:&#92;&quot;Nancy&#92;&quot;,&#92;&quot;LastName&#92;&quot;:&#92;&quot;Davolio&#92;&quot;,&#92;&quot;number_of_territories&#92;&quot;:2}]&quot;' data-total-rows='9' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;EmployeeID&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;FirstName&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;LastName&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;number_of_territories&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RcuX",
+      "code_hash": "eb2bf73d98e9593e672ce782000aa9cb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='RcuX-0' random-id='7bcdfe97-d128-c3eb-b072-2eadfa924c9d'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;sum_of_counts&#92;&quot;:&#92;&quot;49&#92;&quot;,&#92;&quot;rows_in_employee_territories&#92;&quot;:49}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;sum_of_counts&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]],[&quot;rows_in_employee_territories&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KodD",
+      "code_hash": "caac9e69aa7b61b1dce0e35c63a69536",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='KodD-0' random-id='f3495208-5b66-2c37-a551-6b7d88f4ba91'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;78759&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Austin&#92;&quot;},{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;72716&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Bentonville&#92;&quot;},{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;29202&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Columbia&#92;&quot;},{&#92;&quot;TerritoryID&#92;&quot;:&#92;&quot;75234&#92;&quot;,&#92;&quot;TerritoryDescription&#92;&quot;:&#92;&quot;Dallas&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;TerritoryID&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;TerritoryDescription&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "Pvdt",
       "code_hash": "744035161ab741a2ef96168e8f0fca03",
       "outputs": [

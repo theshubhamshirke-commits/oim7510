@@ -340,6 +340,66 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask, northwind_database):
+    ask(northwind_database, """
+        SELECT t.TerritoryID, t.TerritoryDescription
+        FROM territories AS t
+        LEFT JOIN employee_territories AS e ON e.TerritoryID = t.TerritoryID
+        WHERE e.TerritoryID IS NULL
+        ORDER BY t.TerritoryDescription
+    """)
+    return
+
+
+@app.cell
+def _(ask, northwind_database):
+    #1. Employees with their territory count
+
+    ask(northwind_database, """
+        SELECT e.EmployeeID, e.FirstName, e.LastName, count(t.TerritoryID) AS number_of_territories
+        FROM employees AS e
+        LEFT JOIN employee_territories AS t ON t.EmployeeID = e.EmployeeID
+        GROUP BY e.EmployeeID, e.FirstName, e.LastName
+        ORDER BY number_of_territories DESC
+    """)
+    return
+
+
+@app.cell
+def _(ask, northwind_database):
+    #2. Check the counts add up to the rows of employee_territories
+
+    ask(northwind_database, """
+        SELECT
+            (SELECT sum(number_of_territories) FROM (
+                SELECT e.EmployeeID, count(t.TerritoryID) AS number_of_territories
+                FROM employees AS e
+                LEFT JOIN employee_territories AS t ON t.EmployeeID = e.EmployeeID
+                GROUP BY e.EmployeeID
+            )) AS sum_of_counts,
+            (SELECT count(*) FROM employee_territories) AS rows_in_employee_territories
+    """)
+    return
+
+
+@app.cell
+def _(ask, northwind_database):
+    #3. The same four territories, with NOT EXISTS
+
+    ask(northwind_database, """
+        SELECT t.TerritoryID, t.TerritoryDescription
+        FROM territories AS t
+        WHERE NOT EXISTS (
+            SELECT 1
+            FROM employee_territories AS e
+            WHERE e.TerritoryID = t.TerritoryID
+        )
+        ORDER BY t.TerritoryDescription
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
