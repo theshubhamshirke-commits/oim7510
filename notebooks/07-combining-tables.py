@@ -501,6 +501,32 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask, northwind_database):
+    ask(northwind_database, """
+        SELECT ShipCountry, sum(Freight) AS total_freight
+        FROM orders
+        GROUP BY ShipCountry
+        ORDER BY total_freight DESC
+    """)
+    return
+
+
+@app.cell
+def _(ask, northwind_database):
+    ask(northwind_database, """
+        SELECT o.OrderID, o.Freight, l.number_of_lines
+        FROM orders AS o
+        JOIN (
+            SELECT OrderID, count(*) AS number_of_lines
+            FROM order_details
+            GROUP BY OrderID
+        ) AS l ON l.OrderID = o.OrderID
+        ORDER BY o.OrderID
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""

@@ -552,6 +552,32 @@
       "console": []
     },
     {
+      "id": "lsVi",
+      "code_hash": "40aea432bbffd2ec08878f780b9b9d9d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lsVi-0' random-id='e37e6add-53c8-caf3-09aa-bfc5290f9350'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;USA&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;573251.0000&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;Germany&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;537189.7500&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;France&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;442055.7500&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;Brazil&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;418464.5000&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;UK&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;326250.0000&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;Mexico&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;228138.7500&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;Venezuela&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;174448.5000&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;Spain&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;172833.0000&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;Argentina&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;140088.5000&#92;&quot;},{&#92;&quot;ShipCountry&#92;&quot;:&#92;&quot;Canada&#92;&quot;,&#92;&quot;total_freight&#92;&quot;:&#92;&quot;132277.0000&#92;&quot;}]&quot;' data-total-rows='21' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;ShipCountry&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_freight&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KroU",
+      "code_hash": "cec8a3e90939e0193735ba882a7d785e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='KroU-0' random-id='ce7c4a70-3cfc-a975-93a0-2e5f26d43243'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;OrderID&#92;&quot;:10248,&#92;&quot;Freight&#92;&quot;:&#92;&quot;16.7500&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:3},{&#92;&quot;OrderID&#92;&quot;:10249,&#92;&quot;Freight&#92;&quot;:&#92;&quot;22.2500&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:2},{&#92;&quot;OrderID&#92;&quot;:10250,&#92;&quot;Freight&#92;&quot;:&#92;&quot;25.0000&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:3},{&#92;&quot;OrderID&#92;&quot;:10251,&#92;&quot;Freight&#92;&quot;:&#92;&quot;20.2500&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:3},{&#92;&quot;OrderID&#92;&quot;:10252,&#92;&quot;Freight&#92;&quot;:&#92;&quot;36.2500&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:3},{&#92;&quot;OrderID&#92;&quot;:10253,&#92;&quot;Freight&#92;&quot;:&#92;&quot;35.5000&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:3},{&#92;&quot;OrderID&#92;&quot;:10254,&#92;&quot;Freight&#92;&quot;:&#92;&quot;24.2500&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:3},{&#92;&quot;OrderID&#92;&quot;:10255,&#92;&quot;Freight&#92;&quot;:&#92;&quot;37.5000&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:4},{&#92;&quot;OrderID&#92;&quot;:10256,&#92;&quot;Freight&#92;&quot;:&#92;&quot;16.7500&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:2},{&#92;&quot;OrderID&#92;&quot;:10257,&#92;&quot;Freight&#92;&quot;:&#92;&quot;21.5000&#92;&quot;,&#92;&quot;number_of_lines&#92;&quot;:3}]&quot;' data-total-rows='16282' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;OrderID&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;Freight&quot;,[&quot;number&quot;,&quot;decimal[12,4]&quot;]],[&quot;number_of_lines&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "TXez",
       "code_hash": "32b9f5190b70d897e6bb17678fd2f289",
       "outputs": [
