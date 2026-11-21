@@ -457,6 +457,30 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask):
+    #Section D : Q3
+
+    ask("""
+        SELECT county,
+               sum(population) AS total_population,
+               sum(CASE WHEN average_single_family_bill_dollars > 10000 THEN population ELSE 0 END) AS population_in_high_bill_towns,
+               sum(CASE WHEN average_single_family_bill_dollars > 10000 THEN population ELSE 0 END) * 1.0 / sum(population) AS share_high_bill
+        FROM towns
+        GROUP BY county
+        ORDER BY total_population DESC
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    #Section D : Q3 check
+
+    ask("SELECT sum(population) AS total_population FROM towns")
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""

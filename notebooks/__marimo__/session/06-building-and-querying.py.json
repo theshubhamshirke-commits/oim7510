@@ -396,6 +396,32 @@
       "console": []
     },
     {
+      "id": "uRdY",
+      "code_hash": "4916e4bce8fe97b81a1f72f88db2606c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='uRdY-0' random-id='926a5439-b892-2acb-09e7-6fa2da5f1278'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;1668956&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;651079&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.39011154278483073},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;881248&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;61892&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.07023221612985221},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;823938&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;160867&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.19524163225873792},{&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;793144&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;0&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.0},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;740754&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;267818&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.36154782829387355},{&#92;&quot;county&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;588593&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;0&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.0},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;542090&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;86753&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.1600343116456677},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;464151&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;15712&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.033851052782391935},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;232570&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;3729&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.016033882272004127},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;,&#92;&quot;total_population&#92;&quot;:&#92;&quot;165399&#92;&quot;,&#92;&quot;population_in_high_bill_towns&#92;&quot;:&#92;&quot;0&#92;&quot;,&#92;&quot;share_high_bill&#92;&quot;:0.0}]&quot;' data-total-rows='14' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_population&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]],[&quot;population_in_high_bill_towns&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]],[&quot;share_high_bill&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pMww",
+      "code_hash": "1d5a89752a3ae3c2a4dde7016020f3ca",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='pMww-0' random-id='29ea380b-1474-c945-2f1c-d70a6f3daaa9'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;total_population&#92;&quot;:&#92;&quot;7136171&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;total_population&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "xXTn",
       "code_hash": "c64d616861c10560c7a19125454b29b2",
       "outputs": [
