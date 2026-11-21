@@ -410,12 +410,64 @@
     },
     {
       "id": "pMww",
-      "code_hash": "1d5a89752a3ae3c2a4dde7016020f3ca",
+      "code_hash": "1d69b35d4db0fbecd405a478eee00162",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='pMww-0' random-id='29ea380b-1474-c945-2f1c-d70a6f3daaa9'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;total_population&#92;&quot;:&#92;&quot;7136171&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;total_population&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='pMww-0' random-id='f824f008-6e92-e138-5306-86225e54dd6f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;total_population&#92;&quot;:&#92;&quot;7136171&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;total_population&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Lnwz",
+      "code_hash": "c4f2a98b2f35c64b7d9a011122f6a4e1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Going further</strong> </span>\n<span class=\"paragraph\">My question: Which county has the highest average single-family bill among its towns?</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OVxc",
+      "code_hash": "3d8bc3b432e22cb1f38add4d4e7d2d89",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='OVxc-0' random-id='f904b6a5-23f5-929e-dffa-196dee21a5ca'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:11327.037037037036},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:11148.464285714286},{&#92;&quot;county&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:9904.0},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:9797.64705882353},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:8458.285714285714},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:8264.62962962963},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6919.466666666666},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6877.2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6427.0},{&#92;&quot;county&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6275.7}]&quot;' data-total-rows='14' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;average_bill&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "JUDr",
+      "code_hash": "151466c315f1f8673f134c96c9cafea0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='JUDr-0' random-id='b1bc5ac6-955e-05c9-6101-025b302c7f7c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:11327.037037037036},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:11148.464285714286},{&#92;&quot;county&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:9904.0},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:9797.64705882353},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:8458.285714285714},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:8264.62962962963},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6919.466666666666},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6877.2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6427.0},{&#92;&quot;county&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;average_bill&#92;&quot;:6275.7}]&quot;' data-total-rows='14' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;average_bill&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DXMO",
+      "code_hash": "89123d4530117baa9429968dddb4cbab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Answer:</strong> Middlesex County has the highest average single-family bill among its towns, at about <strong>$11,327</strong>. Norfolk is a close second at about $11,148. The SQL query and the polars check agree on this, row for row.</span></span>"
           }
         }
       ],

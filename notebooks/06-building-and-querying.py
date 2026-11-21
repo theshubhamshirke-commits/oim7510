@@ -100,7 +100,7 @@ def _(mo, pl, requests):
         town_rows = pl.DataFrame(_records).select(town_columns)
 
     county_rows.shape, town_rows.shape
-    return
+    return (town_rows,)
 
 
 @app.cell(hide_code=True)
@@ -475,9 +475,44 @@ def _(ask):
 
 @app.cell
 def _(ask):
-    #Section D : Q3 check
-
     ask("SELECT sum(population) AS total_population FROM towns")
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    **Going further**
+
+    My question: Which county has the highest average single-family bill among its towns?
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    ask("""
+        SELECT county, avg(average_single_family_bill_dollars) AS average_bill
+        FROM towns
+        GROUP BY county
+        ORDER BY average_bill DESC
+    """)
+    return
+
+
+@app.cell
+def _(pl, town_rows):
+    town_rows.group_by("county").agg(
+        pl.col("average_single_family_bill_dollars").mean().alias("average_bill")
+    ).sort("average_bill", descending=True)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    **Answer:** Middlesex County has the highest average single-family bill among its towns, at about **$11,327**. Norfolk is a close second at about $11,148. The SQL query and the polars check agree on this, row for row.
+    """)
     return
 
 
