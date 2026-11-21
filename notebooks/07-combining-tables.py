@@ -550,26 +550,85 @@ def _(mo):
 @app.cell
 def _(ask, northwind_database):
     ask(northwind_database, """
-        SELECT c.CategoryName, count(*) AS number_of_products
-        FROM products AS p
-        JOIN categories AS c ON p.CategoryID = c.CategoryID
+        SELECT c.CategoryName,
+               sum(d.UnitPrice * d.Quantity * (1 - d.Discount)) AS revenue
+        FROM order_details AS d
+        JOIN orders AS o ON o.OrderID = d.OrderID
+        JOIN products AS p ON p.ProductID = d.ProductID
+        JOIN categories AS c ON c.CategoryID = p.CategoryID
+        WHERE o.ShipCountry = 'USA'
         GROUP BY c.CategoryName
-        ORDER BY number_of_products DESC
+        ORDER BY revenue DESC
     """)
     return
 
 
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    Result: Confections has the most products, with 13.
+@app.cell
+def _(ask, northwind_database):
+    ask(northwind_database, """
+        SELECT
+            (SELECT sum(revenue) FROM (
+                SELECT c.CategoryName,
+                       sum(d.UnitPrice * d.Quantity * (1 - d.Discount)) AS revenue
+                FROM order_details AS d
+                JOIN orders AS o ON o.OrderID = d.OrderID
+                JOIN products AS p ON p.ProductID = d.ProductID
+                JOIN categories AS c ON c.CategoryID = p.CategoryID
+                WHERE o.ShipCountry = 'USA'
+                GROUP BY c.CategoryName
+            )) AS sum_of_categories,
+            (SELECT sum(d.UnitPrice * d.Quantity * (1 - d.Discount))
+             FROM order_details AS d
+             JOIN orders AS o ON o.OrderID = d.OrderID
+             WHERE o.ShipCountry = 'USA') AS usa_revenue_without_categories
+    """)
+    return
 
-    How it works, line by line:
 
-    JOIN categories AS c ON p.CategoryID = c.CategoryID matches each product to its category, since products stores only the category's ID, not its name.
-    GROUP BY c.CategoryName collects all products with the same category into one group.
-    count(*) counts the rows in each group — here, the number of products in that category.
-    ORDER BY number_of_products DESC puts the largest category first, so you read off the answer from the top row.
+@app.cell
+def _(ask, northwind_database):
+    ask(northwind_database, """
+        SELECT c.CategoryName, extract(year FROM o.OrderDate) AS year,
+               round(sum(d.UnitPrice * d.Quantity * (1 - d.Discount)), 2) AS revenue
+        FROM order_details AS d
+        JOIN orders AS o ON o.OrderID = d.OrderID
+        JOIN products AS p ON p.ProductID = d.ProductID
+        JOIN categories AS c ON c.CategoryID = p.CategoryID
+        GROUP BY c.CategoryName, year
+        ORDER BY c.CategoryName, year
+    """)
+    return
+
+
+@app.cell
+def _(ask, northwind_database):
+    ask(northwind_database, """
+        SELECT first_year.CategoryName,
+               first_year.revenue AS revenue_2013,
+               last_year.revenue AS revenue_2022,
+               round(last_year.revenue - first_year.revenue, 2) AS growth_dollars,
+               round((last_year.revenue - first_year.revenue) * 100.0 / first_year.revenue, 1) AS growth_percent
+        FROM (
+            SELECT c.CategoryName,
+                   sum(d.UnitPrice * d.Quantity * (1 - d.Discount)) AS revenue
+            FROM order_details AS d
+            JOIN orders AS o ON o.OrderID = d.OrderID
+            JOIN products AS p ON p.ProductID = d.ProductID
+            JOIN categories AS c ON c.CategoryID = p.CategoryID
+            WHERE extract(year FROM o.OrderDate) = 2013
+            GROUP BY c.CategoryName
+        ) AS first_year
+        JOIN (
+            SELECT c.CategoryName,
+                   sum(d.UnitPrice * d.Quantity * (1 - d.Discount)) AS revenue
+            FROM order_details AS d
+            JOIN orders AS o ON o.OrderID = d.OrderID
+            JOIN products AS p ON p.ProductID = d.ProductID
+            JOIN categories AS c ON c.CategoryID = p.CategoryID
+            WHERE extract(year FROM o.OrderDate) = 2022
+            GROUP BY c.CategoryName
+        ) AS last_year ON last_year.CategoryName = first_year.CategoryName
+        ORDER BY growth_percent DESC
     """)
     return
 
