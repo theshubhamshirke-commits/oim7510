@@ -678,7 +678,7 @@ def _(mo, os, pl):
             return pl.DataFrame(_cursor.fetchall(), schema=_columns, orient="row")
 
     ask_server("SELECT TOP 5 SalesOrderID, OrderDate, Freight FROM Sales.SalesOrderHeader ORDER BY SalesOrderID")
-    return
+    return (ask_server,)
 
 
 @app.cell(hide_code=True)
@@ -701,6 +701,19 @@ def _(mo):
     3. Find the customers in `Sales.Customer` who never placed an order, and the products in `Production.Product` that never sold. *Check yourself: 701 customers and 238 products.*
 
     **Going further.** Answer one question of your own about AdventureWorks that needs three tables, and check it against a total you can get from one of them.
+    """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    ask_server("""
+        SELECT
+            (SELECT count(*) FROM Sales.SalesOrderHeader) AS orders,
+            (SELECT count(*) FROM Sales.SalesOrderDetail) AS order_lines,
+            (SELECT count(*)
+             FROM Sales.SalesOrderHeader AS h
+             JOIN Sales.SalesOrderDetail AS d ON d.SalesOrderID = h.SalesOrderID) AS joined
     """)
     return
 

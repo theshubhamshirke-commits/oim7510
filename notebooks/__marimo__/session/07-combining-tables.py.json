@@ -695,6 +695,19 @@
       "console": []
     },
     {
+      "id": "PwYo",
+      "code_hash": "597b6e19a9d6d7b00c0a60718cc89877",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;Copy the four lines from the Canvas page into .env first, as step 3 describes.&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "dGlV",
       "code_hash": "0b7b9a843f9e940b7bb37cb237cfb354",
       "outputs": [
