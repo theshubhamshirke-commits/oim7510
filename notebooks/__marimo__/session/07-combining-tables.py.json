@@ -699,13 +699,20 @@
       "code_hash": "597b6e19a9d6d7b00c0a60718cc89877",
       "outputs": [
         {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;Copy the four lines from the Canvas page into .env first, as step 3 describes.&#x27;</pre>"
-          }
+          "type": "error",
+          "ename": "exception",
+          "evalue": "'ATIC_SERVER'",
+          "traceback": null
         }
       ],
-      "console": []
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_13768\\__marimo__cell_PwYo_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">ask_server</span><span class=\"p\">(</span><span class=\"s2\">\"\"\"</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~^^^^</span>\n<span class=\"w\">    </span>    <span class=\"n\">SELECT</span>\n<span class=\"w\">        </span><span class=\"pm\">^^^^^^</span>\n<span class=\"w\">    </span><span class=\"o\">...&lt;</span><span class=\"mi\">4</span> <span class=\"n\">lines</span><span class=\"o\">&gt;...</span>\n<span class=\"w\">    </span>         <span class=\"n\">JOIN</span> <span class=\"n\">Sales</span><span class=\"o\">.</span><span class=\"n\">SalesOrderDetail</span> <span class=\"n\">AS</span> <span class=\"n\">d</span> <span class=\"n\">ON</span> <span class=\"n\">d</span><span class=\"o\">.</span><span class=\"n\">SalesOrderID</span> <span class=\"o\">=</span> <span class=\"n\">h</span><span class=\"o\">.</span><span class=\"n\">SalesOrderID</span><span class=\"p\">)</span> <span class=\"n\">AS</span> <span class=\"n\">joined</span>\n<span class=\"w\">             </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n<span class=\"w\">    </span><span class=\"s2\">\"\"\")</span>\n<span class=\"w\">    </span><span class=\"pm\">^^^^</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_13768\\__marimo__cell_kqZH_.py\"</span>, line <span class=\"m\">13</span>, in <span class=\"n\">ask_server</span>\n<span class=\"w\">    </span><span class=\"n\">server</span><span class=\"o\">=</span><span class=\"n\">os</span><span class=\"o\">.</span><span class=\"n\">environ</span><span class=\"p\">[</span><span class=\"s2\">\"ATIC_SERVER\"</span><span class=\"p\">],</span>\n<span class=\"w\">           </span><span class=\"pm\">~~~~~~~~~~^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">\"&lt;frozen os&gt;\"</span>, line <span class=\"m\">709</span>, in <span class=\"n\">__getitem__</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">'ATIC_SERVER'</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
     },
     {
       "id": "dGlV",
