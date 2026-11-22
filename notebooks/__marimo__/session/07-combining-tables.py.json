@@ -662,7 +662,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<pre class='text-xs'>&#x27;Copy the four lines from the Canvas page into .env first, as step 3 describes.&#x27;</pre>"
+            "text/html": "<marimo-ui-element object-id='kqZH-0' random-id='50c56457-2158-a258-a831-b38c1c502efa'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;SalesOrderID&#92;&quot;:43659,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;616.0984&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43660,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;38.8276&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43661,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;985.5530&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43662,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;867.2389&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43663,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;12.5838&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;SalesOrderID&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;OrderDate&quot;,[&quot;datetime&quot;,&quot;datetime[\u03bcs]&quot;]],[&quot;Freight&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -695,33 +695,130 @@
       "console": []
     },
     {
-      "id": "zZwE",
-      "code_hash": "0b2cba869fbb75aa7d02c58cde97ebd3",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "(40515, b\"Reference to database and/or server name in 'AdventureWorks2022.Sales.SalesOrderHeader' is not supported in this version of SQL Server.DB-Lib error message 20018, severity 15:\\nGeneral SQL Server error: Check messages from the SQL Server\\n\")",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"src/pymssql/_pymssql.pyx\"</span>, line <span class=\"m\">475</span>, in <span class=\"n\">pymssql._pymssql.Cursor.execute</span>\n  File <span class=\"nb\">\"src/pymssql/_mssql.pyx\"</span>, line <span class=\"m\">1217</span>, in <span class=\"n\">pymssql._mssql.MSSQLConnection.execute_query</span>\n  File <span class=\"nb\">\"src/pymssql/_mssql.pyx\"</span>, line <span class=\"m\">1248</span>, in <span class=\"n\">pymssql._mssql.MSSQLConnection.execute_query</span>\n  File <span class=\"nb\">\"src/pymssql/_mssql.pyx\"</span>, line <span class=\"m\">1381</span>, in <span class=\"n\">pymssql._mssql.MSSQLConnection.format_and_run_query</span>\n  File <span class=\"nb\">\"src/pymssql/_mssql.pyx\"</span>, line <span class=\"m\">1976</span>, in <span class=\"n\">pymssql._mssql.check_cancel_and_raise</span>\n  File <span class=\"nb\">\"src/pymssql/_mssql.pyx\"</span>, line <span class=\"m\">2022</span>, in <span class=\"n\">pymssql._mssql.raise_MSSQLDatabaseException</span>\n<span class=\"gr\">pymssql._mssql.MSSQLDatabaseException</span>: <span class=\"n\">(40515, b\"Reference to database and/or server name in 'AdventureWorks2022.Sales.SalesOrderHeader' is not supported in this version of SQL Server.DB-Lib error message 20018, severity 15:\\nGeneral SQL Server error: Check messages from the SQL Server\\n\")</span>\n\n<span class=\"gt\">During handling of the above exception, another exception occurred:</span>\n\n<span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_13768\\__marimo__cell_zZwE_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">ask_server</span><span class=\"p\">(</span><span class=\"s2\">\"\"\"</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~^^^^</span>\n<span class=\"w\">    </span>    <span class=\"n\">SELECT</span>\n<span class=\"w\">        </span><span class=\"pm\">^^^^^^</span>\n<span class=\"w\">    </span><span class=\"o\">...&lt;</span><span class=\"mi\">4</span> <span class=\"n\">lines</span><span class=\"o\">&gt;...</span>\n<span class=\"w\">    </span>         <span class=\"n\">JOIN</span> <span class=\"n\">AdventureWorks2022</span><span class=\"o\">.</span><span class=\"n\">Sales</span><span class=\"o\">.</span><span class=\"n\">SalesOrderDetail</span> <span class=\"n\">AS</span> <span class=\"n\">d</span> <span class=\"n\">ON</span> <span class=\"n\">d</span><span class=\"o\">.</span><span class=\"n\">SalesOrderID</span> <span class=\"o\">=</span> <span class=\"n\">h</span><span class=\"o\">.</span><span class=\"n\">SalesOrderID</span><span class=\"p\">)</span> <span class=\"n\">AS</span> <span class=\"n\">joined</span>\n<span class=\"w\">             </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n<span class=\"w\">    </span><span class=\"s2\">\"\"\")</span>\n<span class=\"w\">    </span><span class=\"pm\">^^^^</span>\n  File <span class=\"nb\">\"C:\\Users\\alpha\\AppData\\Local\\Temp\\marimo_13768\\__marimo__cell_kqZH_.py\"</span>, line <span class=\"m\">20</span>, in <span class=\"n\">ask_server</span>\n<span class=\"w\">    </span><span class=\"n\">_cursor</span><span class=\"o\">.</span><span class=\"n\">execute</span><span class=\"p\">(</span><span class=\"n\">sql</span><span class=\"p\">)</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~~~~~^^^^^</span>\n  File <span class=\"nb\">\"src/pymssql/_pymssql.pyx\"</span>, line <span class=\"m\">493</span>, in <span class=\"n\">pymssql._pymssql.Cursor.execute</span>\n<span class=\"gr\">pymssql.exceptions.OperationalError</span>: <span class=\"n\">(40515, b\"Reference to database and/or server name in 'AdventureWorks2022.Sales.SalesOrderHeader' is not supported in this version of SQL Server.DB-Lib error message 20018, severity 15:\\nGeneral SQL Server error: Check messages from the SQL Server\\n\")</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
-    },
-    {
-      "id": "AlzC",
-      "code_hash": "1a9c2fd28e629716fd61cceb0ac9e6c2",
+      "id": "crnJ",
+      "code_hash": "7f8613dac3372409df75eeef55648904",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='AlzC-0' random-id='bdaabef6-092a-8136-3352-fe942162d08c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Alphabetical list of products&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Categories&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Category Sales for 1997&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Current Product List&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer and Suppliers by City&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;CustomerCustomerDemo&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;CustomerDemographics&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customers&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Employees&#92;&quot;},{&#92;&quot;TABLE_SCHEMA&#92;&quot;:&#92;&quot;dbo&#92;&quot;,&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;EmployeeTerritories&#92;&quot;}]&quot;' data-total-rows='30' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;TABLE_SCHEMA&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;TABLE_NAME&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='crnJ-0' random-id='1ac0702b-0607-dc1d-a07e-40fa8a086d1c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;orders&#92;&quot;:31465,&#92;&quot;order_lines&#92;&quot;:121317,&#92;&quot;joined&#92;&quot;:121317}]&quot;' data-total-rows='1' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;order_lines&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;joined&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kWSF",
+      "code_hash": "c66049fbdc3daaa8b9afbfe957b29fe4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The join has exactly as many rows as <code>Sales.SalesOrderDetail</code>, 121,317, because each row of <code>Sales.SalesOrderDetail</code> names exactly one <code>SalesOrderID</code>, and that <code>SalesOrderID</code> always matches exactly one row of <code>Sales.SalesOrderHeader</code> (an order has exactly one header). So the join finds one matching header for every line: no line is dropped, because every order has a header, and no line is duplicated, because each header appears only once. The result ends up with one row per line, the same count as <code>Sales.SalesOrderDetail</code> alone.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UkcZ",
+      "code_hash": "510da707e52f8ae94916bbce46078b1d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='UkcZ-0' random-id='1badeb38-755d-115e-5e99-f5c6bf45c2c4'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;freight&#92;&quot;:&#92;&quot;3183430.2518&#92;&quot;,&#92;&quot;freight_after_the_join&#92;&quot;:&#92;&quot;78690398.2031&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;freight&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]],[&quot;freight_after_the_join&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cdif",
+      "code_hash": "bfe22e63218a527f2b527be4cd7f4984",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='cdif-0' random-id='ebce3124-ee73-3a23-fd55-ef1f161bd401'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;AccountNumber&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;CustomerID&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;ModifiedDate&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;PersonID&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;rowguid&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;StoreID&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Customer&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;TerritoryID&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Product&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;Class&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Product&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;Color&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;Product&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;DaysToManufacture&#92;&quot;}]&quot;' data-total-rows='69' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;TABLE_NAME&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;COLUMN_NAME&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ptHj",
+      "code_hash": "360b65351a04a4c41f1b2826e0b9dae3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ptHj-0' random-id='b7968636-69f3-192f-e245-b91e12592f4e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;customers_never_ordered&#92;&quot;:701}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;customers_never_ordered&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kjXj",
+      "code_hash": "f78eac3aecbb0030a370c54173a49f17",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='kjXj-0' random-id='e3353410-1c03-0f20-83e2-b89b1914b5a2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;products_never_sold&#92;&quot;:238}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;products_never_sold&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HvIt",
+      "code_hash": "1242d519f12779492835183b299e91fc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='HvIt-0' random-id='80a29e9b-4cbc-9cc5-56c2-31277db007b1'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;SalesOrderDetail&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;LineTotal&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;SalesOrderHeader&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;SubTotal&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;SalesOrderHeader&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;TerritoryID&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;SalesOrderHeader&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;TotalDue&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;SalesTerritory&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;Name&#92;&quot;},{&#92;&quot;TABLE_NAME&#92;&quot;:&#92;&quot;SalesTerritory&#92;&quot;,&#92;&quot;COLUMN_NAME&#92;&quot;:&#92;&quot;TerritoryID&#92;&quot;}]&quot;' data-total-rows='6' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;TABLE_NAME&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;COLUMN_NAME&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KjGk",
+      "code_hash": "606ce93653dd7fcbc32f181e412b39cd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='KjGk-0' random-id='c2e5e4df-1172-30c4-6350-1ee0d060bf27'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Southwest&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;24184609.600000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Canada&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;16355770.450000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Northwest&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;16084942.550000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Australia&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;10655335.960000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Central&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;7909009.010000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Southeast&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;7879655.070000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;United Kingdom&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;7670721.040000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;France&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;7251555.650000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Northeast&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;6939374.480000&#92;&quot;},{&#92;&quot;Territory&#92;&quot;:&#92;&quot;Germany&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;4915407.600000&#92;&quot;}]&quot;' data-total-rows='10' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;Territory&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_revenue&quot;,[&quot;number&quot;,&quot;decimal[38,6]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "EqTQ",
+      "code_hash": "ef015abbf93646fb9db12162fa7e6b7e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='EqTQ-0' random-id='9823d5b1-fa3d-4da9-a687-d60353c2d777'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;sum_of_territories&#92;&quot;:&#92;&quot;109846381.399888&#92;&quot;,&#92;&quot;total_from_detail_alone&#92;&quot;:&#92;&quot;109846381.399888&#92;&quot;}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;sum_of_territories&quot;,[&quot;number&quot;,&quot;decimal[38,6]&quot;]],[&quot;total_from_detail_alone&quot;,[&quot;number&quot;,&quot;decimal[38,6]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "EvGX",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
           }
         }
       ],

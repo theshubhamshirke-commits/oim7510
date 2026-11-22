@@ -707,13 +707,48 @@ def _(mo):
 
 @app.cell
 def _(ask_server):
+    #1
+
     ask_server("""
         SELECT
-            (SELECT count(*) FROM AdventureWorks2022.Sales.SalesOrderHeader) AS orders,
-            (SELECT count(*) FROM AdventureWorks2022.Sales.SalesOrderDetail) AS order_lines,
+            (SELECT count(*) FROM Sales.SalesOrderHeader) AS orders,
+            (SELECT count(*) FROM Sales.SalesOrderDetail) AS order_lines,
             (SELECT count(*)
-             FROM AdventureWorks2022.Sales.SalesOrderHeader AS h
-             JOIN AdventureWorks2022.Sales.SalesOrderDetail AS d ON d.SalesOrderID = h.SalesOrderID) AS joined
+             FROM Sales.SalesOrderHeader AS h
+             JOIN Sales.SalesOrderDetail AS d ON d.SalesOrderID = h.SalesOrderID) AS joined
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    The join has exactly as many rows as `Sales.SalesOrderDetail`, 121,317, because each row of `Sales.SalesOrderDetail` names exactly one `SalesOrderID`, and that `SalesOrderID` always matches exactly one row of `Sales.SalesOrderHeader` (an order has exactly one header). So the join finds one matching header for every line: no line is dropped, because every order has a header, and no line is duplicated, because each header appears only once. The result ends up with one row per line, the same count as `Sales.SalesOrderDetail` alone.
+    """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    #2
+    ask_server("""
+        SELECT
+            (SELECT sum(Freight) FROM Sales.SalesOrderHeader) AS freight,
+            (SELECT sum(h.Freight)
+             FROM Sales.SalesOrderHeader AS h
+             JOIN Sales.SalesOrderDetail AS d ON d.SalesOrderID = h.SalesOrderID) AS freight_after_the_join
+    """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    #3
+    ask_server("""
+        SELECT TABLE_NAME, COLUMN_NAME
+        FROM INFORMATION_SCHEMA.COLUMNS
+        WHERE TABLE_NAME IN ('Customer', 'Product', 'SalesOrderHeader', 'SalesOrderDetail')
+        ORDER BY TABLE_NAME, COLUMN_NAME
     """)
     return
 
@@ -721,10 +756,70 @@ def _(ask_server):
 @app.cell
 def _(ask_server):
     ask_server("""
-        SELECT TABLE_SCHEMA, TABLE_NAME
-        FROM INFORMATION_SCHEMA.TABLES
-        ORDER BY TABLE_SCHEMA, TABLE_NAME
+        SELECT count(*) AS customers_never_ordered
+        FROM Sales.Customer AS c
+        LEFT JOIN Sales.SalesOrderHeader AS h ON h.CustomerID = c.CustomerID
+        WHERE h.CustomerID IS NULL
     """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    ask_server("""
+        SELECT count(*) AS products_never_sold
+        FROM Production.Product AS p
+        LEFT JOIN Sales.SalesOrderDetail AS d ON d.ProductID = p.ProductID
+        WHERE d.ProductID IS NULL
+    """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    #GOING FURTHER
+
+    ask_server("""
+        SELECT TABLE_NAME, COLUMN_NAME
+        FROM INFORMATION_SCHEMA.COLUMNS
+        WHERE TABLE_NAME IN ('SalesOrderDetail', 'SalesOrderHeader', 'SalesTerritory')
+        AND (COLUMN_NAME LIKE '%Territory%' OR COLUMN_NAME LIKE '%Total%' OR COLUMN_NAME = 'Name')
+        ORDER BY TABLE_NAME, COLUMN_NAME
+    """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    ask_server("""
+        SELECT t.Name AS Territory, round(sum(d.LineTotal), 2) AS total_revenue
+        FROM Sales.SalesOrderDetail AS d
+        JOIN Sales.SalesOrderHeader AS h ON h.SalesOrderID = d.SalesOrderID
+        JOIN Sales.SalesTerritory AS t ON t.TerritoryID = h.TerritoryID
+        GROUP BY t.Name
+        ORDER BY total_revenue DESC
+    """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    ask_server("""
+        SELECT
+            (SELECT sum(revenue) FROM (
+                SELECT t.Name AS Territory, sum(d.LineTotal) AS revenue
+                FROM Sales.SalesOrderDetail AS d
+                JOIN Sales.SalesOrderHeader AS h ON h.SalesOrderID = d.SalesOrderID
+                JOIN Sales.SalesTerritory AS t ON t.TerritoryID = h.TerritoryID
+                GROUP BY t.Name
+            ) AS by_territory) AS sum_of_territories,
+            (SELECT sum(LineTotal) FROM Sales.SalesOrderDetail) AS total_from_detail_alone
+    """)
+    return
+
+
+@app.cell
+def _():
     return
 
 
