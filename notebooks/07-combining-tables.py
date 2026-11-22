@@ -709,11 +709,21 @@ def _(mo):
 def _(ask_server):
     ask_server("""
         SELECT
-            (SELECT count(*) FROM Sales.SalesOrderHeader) AS orders,
-            (SELECT count(*) FROM Sales.SalesOrderDetail) AS order_lines,
+            (SELECT count(*) FROM AdventureWorks2022.Sales.SalesOrderHeader) AS orders,
+            (SELECT count(*) FROM AdventureWorks2022.Sales.SalesOrderDetail) AS order_lines,
             (SELECT count(*)
-             FROM Sales.SalesOrderHeader AS h
-             JOIN Sales.SalesOrderDetail AS d ON d.SalesOrderID = h.SalesOrderID) AS joined
+             FROM AdventureWorks2022.Sales.SalesOrderHeader AS h
+             JOIN AdventureWorks2022.Sales.SalesOrderDetail AS d ON d.SalesOrderID = h.SalesOrderID) AS joined
+    """)
+    return
+
+
+@app.cell
+def _(ask_server):
+    ask_server("""
+        SELECT TABLE_SCHEMA, TABLE_NAME
+        FROM INFORMATION_SCHEMA.TABLES
+        ORDER BY TABLE_SCHEMA, TABLE_NAME
     """)
     return
 
